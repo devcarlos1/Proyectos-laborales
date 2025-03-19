@@ -1,0 +1,133 @@
+.c-play {
+  background-color: $red-crimson;
+  background-image: url(../img/background-game/madera_wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  &__paragraph {
+    @include inuit-font-size(36px);
+    margin: 0.8rem 0;
+    color: $white;
+  }
+  &__devices {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 4%;
+    &__tablet {
+      border: 10px solid black;
+      border-radius: 12px;
+      width: 16rem;
+      height: 10rem;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__laptop {
+      width: 520px;
+      height: 320px;
+      &__monitor {
+        position: relative;
+        width: 480px;
+        height: 320px;
+        margin: 0 auto;
+        border: 10px solid black;
+        border-radius: 12px;
+        iframe {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        img {
+          display: none;
+          width: 100%;
+          height: 100%;
+        }
+        &__table{
+          color: white;
+          position: absolute;
+          z-index: 10;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          font-size: 2.4rem;
+          font-weight: 900;
+        }
+      }
+   
+      &__keyboard {
+        height: 5%;
+        width: 100%;
+        background-color: gray;
+        border-radius: 12px;
+      }
+    }
+    &__mobile {
+      border: 10px solid black;
+      border-radius: 12px;
+      width: 13rem;
+      height: 7rem;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__img {
+    display: block;
+    width: 80%;
+  }
+  &__lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 3%;
+
+    &__android {
+      filter: invert(75%) sepia(14%) saturate(3776%) hue-rotate(92deg)
+        brightness(100%) contrast(70%);
+    }
+    &__apple {
+      filter: invert(35%) sepia(11%) saturate(12%) hue-rotate(45deg)
+        brightness(100%) contrast(84%);
+    }
+    &__windows {
+      filter: invert(41%) sepia(86%) saturate(901%) hue-rotate(166deg)
+        brightness(99%) contrast(107%);
+    }
+    &__linux {
+      filter: invert(0%) sepia(1%) saturate(4%) hue-rotate(320deg)
+        brightness(97%) contrast(104%);
+    }
+  }
+  &__button {
+    display: block;
+    border-radius: 1.4rem;
+    padding: 0.5rem 1.5rem;
+    @include inuit-font-size(22px);
+    & > a {
+      color: $white;
+    }
+  }
+}
+
+.c-play__devices {
+  @include mq($from: mobile, $until: desktop) {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  &__laptop {
+    @include mq($from: mobile, $until: desktop) {
+      display: none;
+    }
+  }
+  &__tablet {
+    @include mq($from: mobile, $until: desktop) {
+      display: none;
+    }
+  }
+}

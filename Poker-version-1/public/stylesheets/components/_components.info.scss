@@ -1,0 +1,31 @@
+.c-info {
+  &__title {
+    @include inuit-font-size(42px);
+    margin-bottom: 0.7rem;
+  }
+  &__paragraph {
+    @include inuit-font-size(20px);
+    margin-bottom: 3rem;
+  }
+  &__contain {
+    width: 85%;
+    &__block {
+      width: 100%;
+      margin-top: 2.5rem;
+      &__lista {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.c-info{
+  @include mq($from: mobile, $until: tablet) {
+   padding: 1rem 0 !important;
+    }
+    &__title{
+      @include mq($from: mobile, $until: tablet) {
+       margin-top: 0 !important;
+         }
+    }
+}

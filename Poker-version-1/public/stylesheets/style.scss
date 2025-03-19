@@ -1,0 +1,37 @@
+//SASS-MQ
+@import "../../node_modules/sass-mq/mq";
+//SETTINGS
+@import "../../node_modules/inuitcss/settings/settings.core";
+@import "settings/setting.colors";
+@import "settings/settings.global";
+//TOOLS
+@import "../../node_modules/inuitcss/tools/tools.font-size";
+@import "../../node_modules/inuitcss/tools/tools.hidden";
+@import "../../node_modules/inuitcss/tools/tools.clearfix";
+//GENERIC
+@import "../../node_modules/inuitcss/generic/generic.box-sizing";
+@import "../../node_modules/inuitcss/generic/generic.reset";
+@import "../../node_modules/inuitcss/generic/generic.normalize";
+//ELEMENTS
+@import "elements/elements";
+//OBJECTS
+@import "objects/objects.media";
+@import "../../node_modules/inuitcss/objects/objects.layout";
+@import "objects/objects.margin";
+@import "objects/objects.padding";
+@import "objects/objects.block";
+//COMPONENTS
+@import "components/_components.header";
+@import "components/_components.play_o_download";
+@import "components/_components.buttons";
+@import "components/_components.question";
+@import "components/_components.contact";
+@import "components/_components.modal__box";
+@import "components/_components.tables";
+@import "components/_components.language";
+@import "components/_components.navegation";
+@import "components/_components.info";
+@import "components/_components.counter";
+
+//UTILITIES
+@import "../../node_modules/inuitcss/utilities/utilities.hide";

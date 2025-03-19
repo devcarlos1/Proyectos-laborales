@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylo.css">
+    <link rel="stylesheet" href="mq.css">
+
+    <title>Sixt</title>
+</head>
+<body>
+<!--Header-->
+<header class="header">
+  <div class="header__izq">
+  <div class="header__btn__logo">
+    <div class="header__btn__menu--desktop">
+        <div class="header__btn__menu--linea"></div>
+        <div class="header__btn__menu--linea"></div>
+        <div class="header__btn__menu--linea"></div>
+     </div>
+     <div class="header__btn__menu--mobile ">
+        <div class="header__btn__menu--linea"></div>
+        <div class="header__btn__menu--linea"></div>
+        <div class="header__btn__menu--linea"></div>
+     </div>
+     <a href="" class="header__btn__logo__img">     
+    <svg width="100" height="40" viewBox="0 0 184 76" fill="none"><path d="M126.363 13.9319L116.363 29.4814H116.182C115.454 28.5558 110.909 22.6322 110.909 22.6322C105.454 26.8898 99.0907 30.0367 92.5453 31.8878C92.5453 31.8878 100.727 42.6244 100.727 42.8095V43.1797C99.4544 45.0308 83.0907 69.6508 83.0907 69.8359H82.9089V34.2943C77.4544 35.0348 71.9998 35.405 66.5453 35.405H61.4544V49.4735C61.4544 49.4735 61.2726 49.6586 61.2726 49.4735C60.7271 47.6224 59.6362 45.9564 58.3635 44.6606C51.4544 37.2561 27.818 34.4794 24.3635 30.5921C23.6362 29.8516 23.4544 28.7409 23.4544 27.8154C23.4544 24.6685 25.4544 22.6322 30.5453 22.4471C34.3635 22.262 37.4544 24.1131 38.1817 31.5176H59.2726C59.2726 30.5921 59.0907 29.6665 58.9089 28.7409C57.818 17.8193 52.3635 11.1552 31.818 11.1552C19.2726 11.1552 10.5453 13.3766 5.6362 18.3746C2.36347 21.7067 0.727106 25.9642 1.09074 30.5921C0.908924 34.4794 2.18165 38.3668 4.72711 41.3286C7.81802 44.6606 14.3635 46.882 20.9089 48.9182C29.0907 51.3247 37.4544 53.3609 39.0907 55.3971C39.6362 56.3227 39.9998 57.2483 39.9998 58.3589C39.9998 63.1719 35.2726 64.6528 30.5453 64.6528C28.1817 64.8379 25.818 63.9123 24.1817 62.2463C22.5453 60.0249 21.818 57.4334 21.9998 54.6567H0.545288C0.727106 61.3207 1.6362 66.5039 5.6362 70.021C9.6362 73.5382 17.2726 75.9446 30.1817 75.9446C48.9089 75.9446 58.1817 70.7615 61.2726 62.6165H61.4544V74.2786H103.091L114.909 57.0631H115.091C116 58.544 126.363 74.2786 126.363 74.2786H170.727V31.3325H183.454V13.9319C183.454 13.9504 126.363 13.9504 126.363 13.9319ZM149.454 69.4657C149.273 69.4657 130.727 43.1797 130.727 43.1797V42.9946C131.454 42.069 138.727 31.5176 138.909 31.3325H149.636V69.0955L149.454 69.4657Z" fill="#191919"></path><path d="M106.909 21.1698C97.0909 28.019 83.4545 31.9063 66 31.7212C64.5454 31.7212 62.909 31.7212 61.4545 31.5361V14.1355C77.2727 15.2462 88 12.4695 94.5454 7.47146C96.9091 5.80545 98.9091 3.5841 100.182 0.992523H122.364C119.455 9.13748 114.182 16.1718 106.909 21.1698Z" fill="#FF5F00"></path></svg>
+     </a>
+    </div>
+     <!--Menu Desplegable movil-->
+     <div class="header__menu--mobile invisible">
+        <div class="header__menu__elementos">
+            <div class="header__menu__elemento">
+                <div class="header__menu__elemento__titulo">
+                    <p>CITIES</p>
+                    <img src="img/chevron-up-solid.svg" alt="">
+                </div>
+                <ul class="header__menu__elemento__lista invisible ">
+                 <li class="header__menu__elemento__lista__elemento"><a href=""> New York  </a> </li>
+                 <li class="header__menu__elemento__lista__elemento"><a href=""> London    </a> </li>
+                 <li class="header__menu__elemento__lista__elemento"><a href=""> Munich    </a> </li>
+                 <li class="header__menu__elemento__lista__elemento"><a href=""> Paris     </a> </li>
+                 <li class="header__menu__elemento__lista__elemento"><a href=""> All Cities</a> </li>
+                </ul>
+            </div>
+            <div class="header__menu__elemento">
+                <div class="header__menu__elemento__titulo">
+                    <p>RIDE SERVICES</p>
+                    <img src="img/chevron-up-solid.svg" alt="">
+                </div>
+                <ul class="header__menu__elemento__lista invisible">
+                 <li class="header__menu__elemento__lista__elemento"><a href="">Airport Transfer </a> </li>
+                 <li class="header__menu__elemento__lista__elemento"><a href="">Taxi             </a> </li>
+                 <li class="header__menu__elemento__lista__elemento"><a href="">Chauffeur Service</a> </li>
+                </ul>
+            </div>
+            <div class="header__menu__elemento">
+                <div class="header__menu__elemento__titulo">
+                    <p>ABOUT US</p>
+                    <img src="img/chevron-up-solid.svg" alt="">
+                </div>
+                <ul class="header__menu__elemento__lista invisible">
+                 <li class="header__menu__elemento__lista__elemento"><a href="">SIXT Group      </a> </li>
+                 <li class="header__menu__elemento__lista__elemento"><a href="">Carrer with SIXT</a> </li>
+                 <li class="header__menu__elemento__lista__elemento"><a href="">Rent a car      </a> </li>
+                </ul>
+            </div>
+            <div class="header__menu__elemento">
+           <div class="header__menu__elemento__titulo">
+               <p>BECOME A PARTNER</p>
+               <img src="img/chevron-up-solid.svg" alt="">
+           </div>
+           <ul class="header__menu__elemento__lista invisible">
+            <li class="header__menu__elemento__lista__elemento"><a href="">Get corporate discounts       </a> </li>
+            <li class="header__menu__elemento__lista__elemento"><a href="">Become a travel agency partner</a> </li>
+            <li class="header__menu__elemento__lista__elemento"><a href="">Sign up for affilate program  </a> </li>
+            <li class="header__menu__elemento__lista__elemento"><a href="">Drive for us                  </a> </li>
+           </ul>
+
+      
+     </div>
+  </div> 
+  </div>
+   <!--Menu Desplegable desktop-->
+   <div class="header__menu--desktop invisible">
+    <div class="header__menu__elementos">
+      <div class="header__menu__elemento">
+          <div class="header__menu__elemento__titulo">
+              <p>CITIES</p>
+          </div>
+          <ul class="header__menu__elemento__lista">
+              <li class="header__menu__elemento__lista__elemento"><a href=""> New York  </a> </li>
+              <li class="header__menu__elemento__lista__elemento"><a href=""> London    </a> </li>
+              <li class="header__menu__elemento__lista__elemento"><a href=""> Munich    </a> </li>
+              <li class="header__menu__elemento__lista__elemento"><a href=""> Paris     </a> </li>
+              <li class="header__menu__elemento__lista__elemento"><a href=""> All Cities</a> </li>
+          </ul>
+      </div>
+      <div class="header__menu__elemento">
+          <div class="header__menu__elemento__titulo">
+              <p>RIDE SERVICES</p>
+          </div>
+          <ul class="header__menu__elemento__lista">
+              <li class="header__menu__elemento__lista__elemento"><a href="">Airport Transfer </a> </li>
+              <li class="header__menu__elemento__lista__elemento"><a href="">Taxi             </a> </li>
+              <li class="header__menu__elemento__lista__elemento"><a href="">Chauffeur Service</a> </li>
+          </ul>
+      </div>
+      <div class="header__menu__elemento">
+          <div class="header__menu__elemento__titulo"> 
+              <p>ABOUT US</p>
+          </div>
+          <ul class="header__menu__elemento__lista">
+              <li class="header__menu__elemento__lista__elemento"><a href="">SIXT Group      </a> </li>
+              <li class="header__menu__elemento__lista__elemento"><a href="">Carrer with SIXT</a> </li>
+              <li class="header__menu__elemento__lista__elemento"><a href="">Rent a car      </a> </li>
+          </ul>
+      </div>
+      <div class="header__menu__elemento">
+          <div class="header__menu__elemento__titulo">
+              <p>BECOME A PARTNER</p>
+          </div>
+          <ul class="header__menu__elemento__lista">
+              <li class="header__menu__elemento__lista__elemento"><a href="">Get corporate discounts       </a> </li>
+              <li class="header__menu__elemento__lista__elemento"><a href="">Become a travel agency partner</a> </li>
+              <li class="header__menu__elemento__lista__elemento"><a href="">Sign up for affilate program  </a> </li>
+              <li class="header__menu__elemento__lista__elemento"><a href="">Drive for us                  </a> </li>
+          </ul>
+      </div>
+    </div>
+   </div>
+   <div class="header__menu__fondo--desktop invisible"></div>
+
+   <!--Menu de navegacion movil-->
+   <nav class="header__nav--mobile ">
+     <div class="header__nav__mostrar--mobile">
+        <p>Ride</p>
+        <img src="img/chevron-up-solid.svg" alt="" >
+        <div class="header__nav__menu--mobile invisible">
+            <a href="" class="header__nav__menu__elementos--mobile">Rent</a>
+            <a href="" class="header__nav__menu__elementos--mobile">Share</a>
+            <a href="" class="header__nav__menu__elementos--mobile">Ride</a>
+            <a href="" class="header__nav__menu__elementos--mobile">Sixt+</a>
+        </div>
+     </div>
+   </nav>
+   <!--Menu de navegacion desktop-->
+   <nav class="header__nav--desktop">
+      <a href="">Rent</a>
+      <a href="">Share</a>
+      <a href="" class="header__nav--desktop__seleccionado">Ride</a>
+      <a href="">Sixt+<span>Car Subscription</span></a>
+   </nav>
+  </div>
+  <div class="header__der">
+    <div class="header__der__mundo">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="#191919" fill-rule="evenodd" d="M10.264 4.189c.443-.098.9-.16 1.367-.18l.01.013a3.67 3.67 0 00-.522.028c-.343.045-.642.098-.855.139zm-.356.087A8.007 8.007 0 004.062 11h3.533c.177-2.257.951-4.5 2.313-6.724zM7.595 13H4.062a8.007 8.007 0 005.846 6.724C8.546 17.5 7.772 15.257 7.595 13zm4.474 6.386c-1.453-2.15-2.27-4.276-2.467-6.386h5.003c-.202 2.108-1.042 4.234-2.536 6.386zM9.602 11c.196-2.11 1.014-4.236 2.467-6.385 1.494 2.15 2.334 4.277 2.536 6.385H9.602zm4.672-6.672c1.376 2.206 2.16 4.431 2.339 6.672h3.325a8.007 8.007 0 00-5.664-6.672zM16.613 13c-.18 2.24-.963 4.466-2.339 6.672A8.007 8.007 0 0019.938 13h-3.325zM2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2 2 6.477 2 12z" clip-rule="evenodd"></path></svg>
+    </div>
+    <!--Formulario mundo-->
+   <div class="formulario--mundo__contenedor invisible">
+    <div class="formulario--mundo">
+        <div class="formulario--mundo__close">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="#191919" fill-rule="evenodd" d="M13.121 11.707L21.414 20 20 21.414l-8.293-8.293-8.293 8.293L2 20l8.293-8.293L2 3.414 3.414 2l8.293 8.293L20 2l1.414 1.414-8.293 8.293z" clip-rule="evenodd"></path></svg>
+        </div>
+    </div>
+   </div>
+    <div class="header__der__usuario">
+        <div class="header__der__usuario__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="#191919" fill-rule="evenodd" d="M20 12a8 8 0 00-8-8 8 8 0 00-6.568 12.569A1.999 1.999 0 016.829 16h10.063a2 2 0 011.554.74A7.965 7.965 0 0020 12zm-2.849 6.122a.34.34 0 00-.259-.12H6.83a.34.34 0 00-.101.015A7.97 7.97 0 0012 20c1.962 0 3.76-.706 5.151-1.878zM22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10zM8 10a4 4 0 108 0 4 4 0 00-8 0zm6 0a2 2 0 11-4 0 2 2 0 014 0z" clip-rule="evenodd"></path></svg>
+        </div>
+        <p>
+            Login in <span>|</span> Registrer
+        </p>
+    </div>
+    <!--Formulario de usuario-->
+    <div class="formulario--usuario__contenedor invisible">
+        <div class="formulario--usuario">
+            <div class="formulario--usuario__close">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="#191919" fill-rule="evenodd" d="M13.121 11.707L21.414 20 20 21.414l-8.293-8.293-8.293 8.293L2 20l8.293-8.293L2 3.414 3.414 2l8.293 8.293L20 2l1.414 1.414-8.293 8.293z" clip-rule="evenodd"></path></svg>
+            </div>
+            <h2 class="formulario--usuario__titulo">
+                Create account or sign in
+            </h2>
+            <form action="" class="formulario--usuario__form">
+                <div class="formulario--usuario__form__input">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <img src="" alt="">
+                </div>
+                <input type="submit" value="Continue"class="formulario--usuario__form__btn" >
+            </form>
+             <a href="" class="formulario--usuario__registrar">Corporate customer? Sign up here</a>
+             <div class="formulario--usuario__terminos">
+                <a href="">Terms & conditions</a>
+                <a href="">Privacy policy</a>
+             </div>
+        </div>
+    </div>
+  </div> 
+</header>
+<!--formulario-->
+<form class="formulario">
+    <div class="formulario__elemento">
+        <p class="formulario__elemento__titulo">PICKUP AT</p>
+       <div class="formulario__elemento__buscador">
+        <div class="formulario__elemento__buscador__img">        <svg class="sc-mdr2-ibe sc-mdr-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><path id="ico_magnifier-a" fill="#fff" d="M19,10 C19,7.23850269 16.7614421,5 14,5 C11.2379557,5 9,7.23814722 9,10 C9,12.7618528 11.2379557,15 14,15 C16.7614421,15 19,12.7614973 19,10 Z M9.80764196,15.6065716 L3.70710678,21.7071068 L2.29289322,20.2928932 L8.39343257,14.1923539 C7.51829899,13.0237915 7,11.5725007 7,10 C7,6.13361603 10.1333479,3 14,3 C17.8660005,3 21,6.13392214 21,10 C21,13.8660779 17.8660005,17 14,17 C12.42744,17 10.976171,16.4816895 9.80764196,15.6065716 Z"></path></svg>
+        </div>
+        <input type="text" name="" id="" placeholder="SEARCH FOR PLACE">
+       </div>
+    </div>
+   <div class="formulario__icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M17.176 7.997H7.003v-2h10.166l-3.586-3.586 1.42-1.414L21 7.001l-5.998 6-1.42-1.414 3.593-3.59zM6.835 16.001h10.168v2H6.83l3.59 3.586-1.414 1.414-6.004-5.997 6.004-6.007 1.414 1.414-3.586 3.59z"></path></svg>
+   </div>
+    <div class="formulario__elemento">
+        <p class="formulario__elemento__titulo">DESTINATION</p>
+<div  class="formulario__elemento__destino">
+    <input type="text" name="" id="" placeholder="DESTINATION" class="formulario__elemento__destino">
+</div>    
+</div>
+    <div class="formulario__elemento">
+        <p class="formulario__elemento__titulo">PICKUP DATE / TIME</p>
+       <div class="formulario__elemento__tiempo">
+        <input type="text" class="fecha" name="" id="" readonly value="01/24/2023">
+        <input type="text" class="tiempo"name="" id="" readonly value="9:00 AM">
+       </div>
+       
+    </div>
+    <input type="submit" value="SHOW OFFERS" class="formulario__btn">
+</form>
+<!--Carusel-1-->
+<section class="carusel--1">
+   <div class="carusel--1__btn">
+    <div class="carusel--1__btn__prev">
+        <img src="img/chevron-up-solid.svg" alt="">
+    </div>
+   </div>
+   <div class="carusel--1__btn__circular">
+    <div class="carusel--1__btn__circular--1 back-punto"></div>
+    <div class="carusel--1__btn__circular--2 back-white"></div>
+</div>
+<div class="carusel--1__btn">
+    <div class="carusel--1__btn__next">
+        <img src="img/chevron-up-solid.svg" alt="">
+    </div>
+</div>
+   <div class="carusel--1__contenido"> 
+        <a href="" class="carusel--1__contenido__elemento--1 ">
+        </a>
+         <a href="" class="carusel--1__contenido__elemento--2 ">
+         </a>
+    </div>
+
+</section>
+<!--Carusel-2-->
+<div class="carusel--2">
+    <div class="carusel--2__titulo__carusel">
+        <h2 class="carusel--2__titulo">CHOOSE FROM OUR RANGE OF RIDE SERVICES</h2>
+        <div class="carusel--2__carusel">
+            <div class="carusel--2__btn__prev invisible">
+                <img src="img/chevron-up-solid.svg" alt="">
+            </div>
+            <div class="carusel--2__btn__next">
+                <img src="img/chevron-up-solid.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="carusel--2__informacion">
+        <div class="carusel--2__informacion__elementos">
+            <div class="carusel--2__informacion__elementos__info">
+                <img src="img/taxi.png" alt="">
+                <div class="carusel--2__informacion__elementos__info__titulos">
+                    <p class="carusel--2__informacion__elementos__info__titulo">TAXI</p>
+                <p class="carusel--2__informacion__elementos__info__parrafo">Hall a ride on demand all around the world</p>
+                </div>
+            </div>
+            <a href="" class="carusel--2__informacion__elementos__btn">
+                DOWNLOAD THE APP NOW
+            </a>
+        </div>
+        <div class="carusel--2__informacion__elementos">
+            <div class="carusel--2__informacion__elementos__info">
+                <img src="img/airport.jpg" alt="" srcset="">
+                <div class="carusel--2__informacion__elementos__info__titulos">
+                    <p class="carusel--2__informacion__elementos__info__titulo">AIRPORT TRANSFERS</p>
+                    <p class="carusel--2__informacion__elementos__info__parrafo">Enjoy hassle-free airport pickups with additional extras</p>    
+                </div>
+            </div>
+            <a href="" class="carusel--2__informacion__elementos__btn">
+               BOOK NOW
+            </a>
+        </div>
+        <div class="carusel--2__informacion__elementos">
+            <div class="carusel--2__informacion__elementos__info">
+                <img src="img/limosina.png" alt="" srcset="">
+                <div class="carusel--2__informacion__elementos__info__titulos">
+                    <p class="carusel--2__informacion__elementos__info__titulo">PREMIUM LIMOUSINE SERVICES</p>
+                    <p class="carusel--2__informacion__elementos__info__parrafo">Professional chauffeurs and maximum comfort</p>
+                </div>
+               
+            </div>
+            <a href="" class="carusel--2__informacion__elementos__btn">
+                BOOK YOUR CHAUFFEUR
+            </a>
+        </div>
+    </div>
+
+</div>
+<!--Info-1-->
+<section class="info--1">
+    <div class="info--1__izq">
+        <h3>TRAVEL WITH YOUR PERSONAL DRIVER</h3>
+        <p>Whether it is for business or for private, in budget or first class 
+    style. With SIXT ride, you get ride services tailored to your 
+    needs. By logging in to our platform, you benefit from a 
+    choice of different booking classes and the largest coverage of 
+    ride services worldwide. Download the SIXT app now!</p>
+    </div>
+    <div class="info--1__der">
+        <img src="img/info--1.jpg" alt="">
+    </div>
+    </section>
+<!--Info-2-->
+<section class="info--2">
+  <div class="info--2__titulos">
+      <h3>OVER ONE MILLION DRIVERS AROUND THE WORLD.</h3>
+    <span>BOOK RIDES AT ANY TIME – WHEREVER YOU ARE.</span>
+  </div>
+    <div >
+    <ul class="info--2__lista">
+     <li class="info--2__lista__elemento">
+<div class="info--2__lista__elemento__img"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.8354 13.5C20.2878 13.5 23.0854 10.7024 23.0854 7.25C23.0854 3.79833 20.2875 1 16.8354 1C13.3834 1 10.5854 3.79833 10.5854 7.25C10.5854 10.7024 13.383 13.5 16.8354 13.5ZM19.8354 21.75V18.25H16.3354V16.25H19.8354V14.25H21.3354V23.25H16.3354V21.25H5.33541V23.25H0.33541V14.8486L1.84406 13.8428L0 12.9208L0.67082 11.5792L2.95483 12.7212L4.83743 8.25H8.33541V9.75H5.83339L4.35971 13.25H11.3354V14.75H3.18749L1.83541 15.6514V16.25H5.33541V18.25H1.83541V21.75H3.83541V19.75H17.8354V21.75H19.8354ZM7.33541 16.25H14.3354V18.25H7.33541V16.25ZM21.5854 7.25C21.5854 4.62671 19.459 2.5 16.8354 2.5C14.2118 2.5 12.0854 4.62671 12.0854 7.25C12.0854 9.87399 14.2114 12 16.8354 12C19.4594 12 21.5854 9.87399 21.5854 7.25ZM17.747 9.71502L18.9238 8.78498L17.5049 6.98942V4.25H16.0049V7.51058L17.747 9.71502Z" fill="#191919"></path></svg></div>        
+<div class="info--2__lista__elemento__info">
+            <h4>Scheduled or on-demand rides</h4>
+        <p>You can book a standard car or luxury sedan in advance, or have a driver pick you up on-demand. Choose the option that works for you.</p>
+        </div>
+     </li>
+     <li class="info--2__lista__elemento">
+        <div class="info--2__lista__elemento__img"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.8354 13.5C20.2878 13.5 23.0854 10.7024 23.0854 7.25C23.0854 3.79833 20.2875 1 16.8354 1C13.3834 1 10.5854 3.79833 10.5854 7.25C10.5854 10.7024 13.383 13.5 16.8354 13.5ZM19.8354 21.75V18.25H16.3354V16.25H19.8354V14.25H21.3354V23.25H16.3354V21.25H5.33541V23.25H0.33541V14.8486L1.84406 13.8428L0 12.9208L0.67082 11.5792L2.95483 12.7212L4.83743 8.25H8.33541V9.75H5.83339L4.35971 13.25H11.3354V14.75H3.18749L1.83541 15.6514V16.25H5.33541V18.25H1.83541V21.75H3.83541V19.75H17.8354V21.75H19.8354ZM7.33541 16.25H14.3354V18.25H7.33541V16.25ZM21.5854 7.25C21.5854 4.62671 19.459 2.5 16.8354 2.5C14.2118 2.5 12.0854 4.62671 12.0854 7.25C12.0854 9.87399 14.2114 12 16.8354 12C19.4594 12 21.5854 9.87399 21.5854 7.25ZM17.747 9.71502L18.9238 8.78498L17.5049 6.98942V4.25H16.0049V7.51058L17.747 9.71502Z" fill="#191919"></path></svg></div>        
+        <div class="info--2__lista__elemento__info">
+            <h4>Cashless payment </h4>
+        <p>Your ride is automatically charged to your card when you get to your destination. There's no need to have cash on you.
+        </p>
+        </div>
+     </li>
+     <li class="info--2__lista__elemento">
+        <div class="info--2__lista__elemento__img"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.8354 13.5C20.2878 13.5 23.0854 10.7024 23.0854 7.25C23.0854 3.79833 20.2875 1 16.8354 1C13.3834 1 10.5854 3.79833 10.5854 7.25C10.5854 10.7024 13.383 13.5 16.8354 13.5ZM19.8354 21.75V18.25H16.3354V16.25H19.8354V14.25H21.3354V23.25H16.3354V21.25H5.33541V23.25H0.33541V14.8486L1.84406 13.8428L0 12.9208L0.67082 11.5792L2.95483 12.7212L4.83743 8.25H8.33541V9.75H5.83339L4.35971 13.25H11.3354V14.75H3.18749L1.83541 15.6514V16.25H5.33541V18.25H1.83541V21.75H3.83541V19.75H17.8354V21.75H19.8354ZM7.33541 16.25H14.3354V18.25H7.33541V16.25ZM21.5854 7.25C21.5854 4.62671 19.459 2.5 16.8354 2.5C14.2118 2.5 12.0854 4.62671 12.0854 7.25C12.0854 9.87399 14.2114 12 16.8354 12C19.4594 12 21.5854 9.87399 21.5854 7.25ZM17.747 9.71502L18.9238 8.78498L17.5049 6.98942V4.25H16.0049V7.51058L17.747 9.71502Z" fill="#191919"></path></svg></div>        
+        <div class="info--2__lista__elemento__info">
+            <h4>Vehicle choice</h4>
+            <p>Whether you want a premium sedan or something more budget-friendly, just enter your destination and choose the ride service that meets your needs.</p>
+        </div>
+     </li>
+     <li class="info--2__lista__elemento">
+        <div class="info--2__lista__elemento__img"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.8354 13.5C20.2878 13.5 23.0854 10.7024 23.0854 7.25C23.0854 3.79833 20.2875 1 16.8354 1C13.3834 1 10.5854 3.79833 10.5854 7.25C10.5854 10.7024 13.383 13.5 16.8354 13.5ZM19.8354 21.75V18.25H16.3354V16.25H19.8354V14.25H21.3354V23.25H16.3354V21.25H5.33541V23.25H0.33541V14.8486L1.84406 13.8428L0 12.9208L0.67082 11.5792L2.95483 12.7212L4.83743 8.25H8.33541V9.75H5.83339L4.35971 13.25H11.3354V14.75H3.18749L1.83541 15.6514V16.25H5.33541V18.25H1.83541V21.75H3.83541V19.75H17.8354V21.75H19.8354ZM7.33541 16.25H14.3354V18.25H7.33541V16.25ZM21.5854 7.25C21.5854 4.62671 19.459 2.5 16.8354 2.5C14.2118 2.5 12.0854 4.62671 12.0854 7.25C12.0854 9.87399 14.2114 12 16.8354 12C19.4594 12 21.5854 9.87399 21.5854 7.25ZM17.747 9.71502L18.9238 8.78498L17.5049 6.98942V4.25H16.0049V7.51058L17.747 9.71502Z" fill="#191919"></path></svg></div>        
+        <div class="info--2__lista__elemento__info">
+            <h4>Security</h4>
+<p>All of SIXT's drivers are trained and licensed. We offer live tracking and provide you with the contact details of your driver in advance.
+</p>       
+ </div>
+     </li>
+     <li class="info--2__lista__elemento">
+        <div class="info--2__lista__elemento__img"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.8354 13.5C20.2878 13.5 23.0854 10.7024 23.0854 7.25C23.0854 3.79833 20.2875 1 16.8354 1C13.3834 1 10.5854 3.79833 10.5854 7.25C10.5854 10.7024 13.383 13.5 16.8354 13.5ZM19.8354 21.75V18.25H16.3354V16.25H19.8354V14.25H21.3354V23.25H16.3354V21.25H5.33541V23.25H0.33541V14.8486L1.84406 13.8428L0 12.9208L0.67082 11.5792L2.95483 12.7212L4.83743 8.25H8.33541V9.75H5.83339L4.35971 13.25H11.3354V14.75H3.18749L1.83541 15.6514V16.25H5.33541V18.25H1.83541V21.75H3.83541V19.75H17.8354V21.75H19.8354ZM7.33541 16.25H14.3354V18.25H7.33541V16.25ZM21.5854 7.25C21.5854 4.62671 19.459 2.5 16.8354 2.5C14.2118 2.5 12.0854 4.62671 12.0854 7.25C12.0854 9.87399 14.2114 12 16.8354 12C19.4594 12 21.5854 9.87399 21.5854 7.25ZM17.747 9.71502L18.9238 8.78498L17.5049 6.98942V4.25H16.0049V7.51058L17.747 9.71502Z" fill="#191919"></path></svg></div>        
+        <div class="info--2__lista__elemento__info">
+            <h4>Everything in one place</h4>
+            <p>You can keep track of your rides in your SIXT account. Add a company profile to easily distinguish between business and private trips.</p>
+        </div>
+     </li>
+    </ul>
+    </div>
+</section>
+<!--Info-3-->
+<section class="info--3">
+    <div class="info--3__izq">
+        <img src="img/info--3.png" alt="">
+    </div>
+    <div class="info--3__der">
+    <h3>BE MOBILE WORLDWIDE</h3>
+   <p>Get a taxi anywhere in the world or book a limousine 
+     conveniently via the app. We only work with qualified 
+     ride service providers and ride-hailing services, so you can book 
+     through our platform and enjoy ride services that meet SIXT' s 
+     quality standards.</p>
+    </div>
+   
+</section>
+<!--redes sociales-->
+<section class="redes-sociales">
+    <p>TRY OUT APP</p>
+    <div class="redes-sociales__tiendas">
+        <a href=""><svg viewBox="0 -1 173 36"><path fill="#191919" fill-rule="nonzero" d="M24.322 18.863a7.716 7.716 0 004.711 7.098 17.689 17.689 0 01-2.45 4.99c-1.443 2.16-2.956 4.269-5.358 4.308-2.334.054-3.118-1.374-5.795-1.374-2.701 0-3.537 1.335-5.776 1.428-2.287.084-4.035-2.305-5.53-4.443-2.99-4.368-5.318-12.309-2.197-17.712a8.577 8.577 0 017.218-4.401c2.289-.048 4.415 1.546 5.822 1.546 1.381 0 4.008-1.906 6.718-1.622a8.174 8.174 0 016.44 3.482 7.986 7.986 0 00-3.803 6.7zM19.915 5.809a6.614 6.614 0 01-5.223 2.47 7.481 7.481 0 011.845-5.425A8 8 0 0121.713.176a7.862 7.862 0 01-1.798 5.633zM54.703 22.76h-7.1l-1.706 5.035H42.89l6.725-18.627h3.125l6.725 18.627h-3.059l-1.703-5.035zm-6.365-2.323h5.628l-2.774-8.171h-.078l-2.776 8.171zm25.65.568c0 4.22-2.258 6.932-5.667 6.932a4.604 4.604 0 01-4.273-2.376h-.064v6.727h-2.788V14.215h2.699v2.26h.05a4.817 4.817 0 014.325-2.402c3.447 0 5.719 2.725 5.719 6.933zm-2.864 0c0-2.75-1.421-4.557-3.59-4.557-2.13 0-3.562 1.846-3.562 4.557 0 2.737 1.433 4.57 3.563 4.57 2.168 0 3.589-1.795 3.589-4.57zm17.813 0c0 4.22-2.26 6.932-5.668 6.932a4.604 4.604 0 01-4.273-2.376h-.065v6.727h-2.787V14.215h2.698v2.26h.051a4.817 4.817 0 014.324-2.402c3.447 0 5.72 2.725 5.72 6.933zm-2.866 0c0-2.75-1.421-4.557-3.589-4.557-2.13 0-3.563 1.846-3.563 4.557 0 2.737 1.433 4.57 3.563 4.57 2.168 0 3.589-1.795 3.589-4.57zm12.743 1.6c.207 1.847 2.001 3.06 4.453 3.06 2.35 0 4.04-1.213 4.04-2.879 0-1.445-1.02-2.311-3.433-2.904l-2.414-.582c-3.42-.826-5.009-2.426-5.009-5.021 0-3.214 2.801-5.422 6.777-5.422 3.937 0 6.636 2.208 6.726 5.422h-2.814c-.168-1.86-1.705-2.981-3.95-2.981-2.246 0-3.783 1.135-3.783 2.787 0 1.317.982 2.092 3.383 2.685l2.052.504c3.822.904 5.408 2.44 5.408 5.164 0 3.485-2.774 5.667-7.19 5.667-4.13 0-6.92-2.131-7.1-5.5h2.854zM116.27 11v3.214h2.583v2.208h-2.583v7.487c0 1.163.517 1.705 1.653 1.705.306-.006.612-.027.917-.065v2.195c-.51.095-1.03.138-1.549.128-2.75 0-3.821-1.032-3.821-3.666v-7.784h-1.975v-2.208h1.975v-3.214h2.8zm4.077 10.005c0-4.273 2.517-6.958 6.44-6.958 3.938 0 6.443 2.685 6.443 6.958 0 4.285-2.491 6.958-6.442 6.958-3.95 0-6.441-2.673-6.441-6.958zm10.043 0c0-2.93-1.343-4.66-3.602-4.66s-3.602 1.742-3.602 4.66c0 2.943 1.343 4.66 3.602 4.66s3.602-1.717 3.602-4.66zm5.139-6.79h2.658v2.31h.065a3.24 3.24 0 013.266-2.453 4.3 4.3 0 01.955.104v2.608a3.897 3.897 0 00-1.252-.169 2.809 2.809 0 00-2.905 3.125v8.055h-2.787v-13.58zm19.797 9.591c-.375 2.465-2.776 4.157-5.848 4.157-3.95 0-6.403-2.647-6.403-6.893 0-4.26 2.466-7.023 6.286-7.023 3.757 0 6.12 2.581 6.12 6.699v.955h-9.592v.169a3.537 3.537 0 003.654 3.846 3.073 3.073 0 003.136-1.91h2.647zm-9.423-4.053h6.79a3.266 3.266 0 00-3.332-3.447 3.438 3.438 0 00-3.458 3.447z"></path></svg></a>
+        <a href=""><svg viewBox="0 -4 173 36"><path fill="#191919" fill-rule="nonzero" d="M.92 32.015c-.262-.304-.415-.757-.415-1.337L.5 1.748C.5 1.134.672.66.965.357l16.37 15.807L.92 32.015zm.88.436L18 16.808l4.671 4.51L2.983 32.146c-.428.235-.831.331-1.182.305zm20.809-21.38l-4.61 4.451L1.897-.029h.026c.323.003.682.102 1.06.31L22.61 11.07zm.849.466l6.018 3.31c1.365.751 1.365 1.977 0 2.73l-5.956 3.276-4.855-4.688 4.793-4.628zm120.921 13.74V6.33h2.827v18.948h-2.827zm25.474-12.123h3.146l-7.777 17.87h-2.95l2.877-6.388-5.045-11.482h3.046l3.364 8.216h.098l3.24-8.216zm-15.699-.415c3.243 0 5.754 1.878 5.754 5.241v7.265h-2.731v-1.462h-.097c-.658 1-1.707 1.853-3.608 1.853-2.487 0-4.706-1.634-4.706-4.17 0-2.778 2.756-4.265 5.461-4.265 1.342 0 2.437.438 2.95.73v-.195c-.023-1.56-1.511-2.437-2.974-2.437-1.047 0-2.046.341-2.584 1.39l-2.51-1.049c.877-1.998 2.998-2.901 5.045-2.901zm-.342 10.386c1.635 0 3.146-1.243 3.365-3-.755-.364-1.342-.633-2.583-.633-1.39 0-2.998.562-2.998 2.023 0 1.146 1.291 1.61 2.216 1.61zm-17.21-16.798c3.135 0 6.218 2.271 6.218 5.886 0 3.617-3.083 5.886-6.218 5.886h-3.95v7.178h-2.827V6.327h6.777zm.075 9.134c2.112 0 3.313-1.78 3.313-3.248 0-1.498-1.2-3.247-3.313-3.247h-4.025v6.495h4.025zm-33.781-1.246v-1.05h2.685v11.574c0 4.762-2.807 6.716-6.13 6.716-3.125 0-5.006-2.1-5.712-3.809l2.466-1.026c.44 1.05 1.514 2.295 3.247 2.295 2.125 0 3.444-1.317 3.444-3.785v-.928h-.099c-.635.783-1.855 1.466-3.394 1.466-3.224 0-6.178-2.808-6.178-6.422 0-3.638 2.954-6.472 6.178-6.472 1.539 0 2.759.685 3.394 1.441h.099zm-3.249 8.913c1.93 0 3.444-1.636 3.444-3.882 0-2.272-1.514-3.932-3.444-3.932-1.953 0-3.589 1.66-3.589 3.932 0 2.246 1.636 3.882 3.59 3.882zm7.888 2.15V6.328h2.832v18.948h-2.832zm15.799-8.401l.292.732-8.618 3.565c.658 1.294 1.684 1.954 3.124 1.954 1.443 0 2.443-.708 3.175-1.783l2.198 1.466c-.708 1.05-2.418 2.857-5.373 2.857-3.662 0-6.397-2.833-6.397-6.446 0-3.835 2.759-6.448 6.08-6.448 3.345 0 4.982 2.663 5.519 4.103zm-8.792 2.15l5.765-2.394c-.319-.805-1.27-1.367-2.394-1.367-1.44 0-3.443 1.268-3.37 3.76zM54.66 14.752h9.207c.097.488.145 1.075.145 1.709 0 2.052-.56 4.59-2.37 6.398-1.756 1.83-4.004 2.808-6.982 2.808-5.519 0-10.158-4.494-10.158-10.011 0-5.519 4.64-10.013 10.158-10.013 3.053 0 5.226 1.197 6.862 2.76l-1.93 1.93c-1.172-1.1-2.758-1.956-4.932-1.956-4.029 0-7.179 3.25-7.179 7.279s3.15 7.277 7.179 7.277c2.613 0 4.102-1.05 5.055-2.004.782-.78 1.294-1.904 1.49-3.442h-6.545v-2.735zm16.793-1.98c3.565 0 6.47 2.712 6.47 6.449 0 3.712-2.905 6.446-6.47 6.446s-6.47-2.734-6.47-6.446c0-3.737 2.905-6.448 6.47-6.448zm0 10.355c1.953 0 3.637-1.611 3.637-3.906 0-2.32-1.684-3.908-3.637-3.908-1.954 0-3.64 1.587-3.64 3.908 0 2.295 1.686 3.906 3.64 3.906zm14.116-10.354c3.566 0 6.472 2.711 6.472 6.448 0 3.712-2.906 6.446-6.472 6.446-3.565 0-6.47-2.734-6.47-6.446 0-3.737 2.905-6.448 6.47-6.448zm0 10.354c1.953 0 3.637-1.611 3.637-3.906 0-2.32-1.684-3.908-3.637-3.908-1.954 0-3.638 1.587-3.638 3.908 0 2.295 1.684 3.906 3.638 3.906z"></path></svg></a>
+    </div>
+    <p>FOLLOW US ON</p>
+    <div class="redes-sociales__apps">
+        <a href=""><svg width="40" height="40" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"></path></svg></a>
+        <a href=""><svg width="40" height="40" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+        <a href=""><svg width="40" height="40" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a>
+</div>
+</section>
+<!--Info-4-->
+<section class="info--4">
+<div class="info--4__elemento">
+    <h3>Taxi</h3>
+    <ul class="info--4__elemento__lista lista-1">
+        <li><a href="">New York taxi</a></li>
+        <li><a href="">Chicago taxi </a></li>
+        <li><a href="">London taxi  </a></li>
+        <li><a href="">Paris taxi   </a></li>
+        <li><a href="">Miami taxi   </a></li>
+        <li><a href="">Boston taxi  </a></li>
+    </ul>
+    <div class="info--4__elemento__show-1">show more
+        <div class="info--4__elemento__show-1__btn__arriba invisible"><img src="img/chevron-up-solid.svg" alt=""></div>
+        <div class="info--4__elemento__show-1__btn__abajo" ><img src="img/chevron-up-solid.svg" alt=""></div>
+    </div>
+</div>
+<div class="info--4__elemento">
+    <h3>AIRPORT TRANSFER</h3>
+    <ul class="info--4__elemento__lista lista-2">
+       <li><a href="">Chicago airport transfer</a></li>
+       <li><a href="">Honolulu airport transfer</a></li>
+       <li><a href="">London airport transfer</a></li>
+       <li><a href="">Barcelona airport transfer</a></li>
+       <li><a href="">Roma airport transfer</a></li>
+       <li><a href="">New York airport transfer</a></li>
+       <li><a href="">JFK airport transfer</a></li>
+    </ul>
+    <div class="info--4__elemento__show-2">show more 
+        <div class="info--4__elemento__show-2__btn__arriba invisible"><img src="img/chevron-up-solid.svg" alt=""></div>
+        <div class="info--4__elemento__show-2__btn__abajo"> <img src="img/chevron-up-solid.svg" alt=""></div>
+    </div>
+
+</div>
+<div class="info--4__elemento">
+    <h3>CAR SERVICE</h3>
+    <ul class="info--4__elemento__lista lista-3">
+       <li><a href="">Atlanta car service</a></li>
+       <li><a href="">New York car service</a></li>
+       <li><a href="">Los Angeles car service</a></li>
+       <li><a href="">Chicago car service</a></li>
+       <li><a href="">Boston car service</a></li>
+       <li><a href="">Miami car service</a></li>
+    </ul>
+    <div class="info--4__elemento__show-3">show more
+        <div class="info--4__elemento__show-3__btn__arriba invisible"><img src="img/chevron-up-solid.svg" alt=""></div> 
+        <div class="info--4__elemento__show-3__btn__abajo"> <img src="img/chevron-up-solid.svg" alt=""></div> 
+    </div>
+</div>
+<!--Footer-->
+<footer>
+    <a href="">HELP</a>
+    <a href="">TERMS & CONDITIONS</a>
+    <a href="">BOOKING CONDITIONS</a>
+    <a href="">PRIVACY POLICY</a>
+    <a href="">COOKIE POLICY</a>
+    <a href="">IMPRINT</a>
+    <a href="">SIXT GROUP</a>
+    <a href="">CARRERS</a>
+</footer>
+</section>
+
+</body>
+</html>
+<script src="js/carusel.js"></script>
+<script src="js/menu_desplegable.js"></script>
+<script src="js/adicional.js"></script>

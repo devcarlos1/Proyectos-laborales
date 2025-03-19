@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*COLORES*/
+.ifanel-azul-claro{
+    color: #59d4ff;
+}
+.ifanel-blanco{
+    color: white;
+}
+.ifanel-negro-claro{
+    color: #444242;
+}
+.ifanel-marron-claro{
+    color: #b88566;
+}
+.ifanel-marron-masclaro{
+    color: #c98664;
+}
+/*FONDOS*/
+.ifanel-fondo-azul-claro{
+    background-color: #59d4ff;
+}
+/*FUENTES*/
+@font-face {
+    font-family: 'anthemiaregular';
+    src: url('../fuentes/Anthemia/anthemia-webfont.woff2') format('woff2'),
+         url('../fuentes/Anthemia/anthemia-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.ifanel-anthemia-regular{
+    font-family:'anthemiaregular';
+    font-weight: 400;
+}
+.ifanel-anthemia-bold{
+    font-family:'anthemiaregular';
+    font-weight: bold;
+}
+/*CODIGO POR ELEMENTO*/
+
+.ifanel-contenedor{
+    max-width: 1440px;
+    background-image: url(/imagenes/fondo/Fondo-pagina-agradecimiento.jpg);
+     background-repeat: no-repeat;
+     background-position: top;
+     background-size: contain;
+     background-color: transparent;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+}
+.ifanel-contenedor__izquierda{
+    width: 52%;
+    margin-bottom: 4%;
+    margin-top: 1%;
+    display: flex;
+flex-direction: column;
+justify-items: flex-start;
+justify-content: flex-start;
+gap: 1rem;
+}
+.ifanel-contenedor__izquierda__parrafo-1{
+    font-size: 2.5rem;
+    padding-left: 4%;
+    word-spacing: .5rem;
+    margin: 0 !important;
+}
+.ifanel-contenedor__izquierda__gracias{
+   font-size: 5.2rem;
+   background-image: url(/imagenes/svg/Barra\ Gracias.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   background-color: transparent;
+   display: block;
+   width: 19rem;
+   text-align: center;
+}
+.ifanel-contenedor__izquierda__parrafo-2{
+    background-image: url(/imagenes/svg/barra\ texto\ habitos\ alimenticios.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    width: 37rem;
+    word-spacing: .5rem;
+    margin: 7% 0 !important;
+    padding: .5rem 1rem 1rem 1rem;
+    line-height: 2.4rem;
+    margin-left: 4% !important;
+    font-size: 1.8rem;
+}
+.ifanel-contenedor__izquierda__parrafo-3{
+    font-size: 2.7rem;
+    word-spacing: .5rem;
+  margin: 0 !important;
+}
+.ifanel-contenedor__izquierda__mejorar{
+    background-image: url(/imagenes/svg/barra\ mejorara\ tu\ vida.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100% 100%;
+    background-color: transparent;
+    font-size: 2.4rem;
+    padding: .2em .4em;
+    margin-top: 3%;
+word-spacing: .8rem;
+}
+.ifanel-contenedor__izquierda__parrafo-3-contenedor{
+    padding-left: 3%;
+}
+.ifanel-contenedor__derecha{
+    width: 42%;
+    
+}
+@media (max-width:1200px){
+    html{
+        font-size: calc(1.4vw - .1vh);
+    }
+}
+

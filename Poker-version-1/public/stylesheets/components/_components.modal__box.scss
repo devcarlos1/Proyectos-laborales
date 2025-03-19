@@ -1,0 +1,671 @@
+#close:not(:checked) ~ #participe--login:checked ~ .c-modal__box {
+  display: none;
+}
+#close:checked ~ #participe--login:checked ~ .c-modal__box {
+  display: flex;
+}
+#close:not(:checked) ~ #participe--login:not(:checked) ~ .c-modal__box {
+  display: flex;
+}
+#close:checked ~ #participe--login:not(:checked) ~ .c-modal__box {
+  display: none;
+}
+#close:checked ~ .c-modal__box {
+  display: none;
+}
+#close:not(:checked) ~ .c-modal__box {
+  display: flex;
+}
+
+@for $i from 1 through 20 {
+  #close-#{$i}:checked ~ #btn-participe-#{$i}:checked ~ .btn-participe-#{$i} {
+    display: none !important;
+  }
+
+  #close-#{$i}:checked
+    ~ #btn-participe-#{$i}:not(:checked)
+    ~ .btn-participe-#{$i} {
+    display: flex;
+  }
+  #close-#{$i}:not(:checked)
+    ~ #btn-participe-#{$i}:checked
+    ~ .btn-participe-#{$i} {
+    display: flex;
+  }
+  #close-#{$i}:not(:checked)
+    ~ #btn-participe-#{$i}:not(:checked)
+    ~ .btn-participe-#{$i} {
+    display: none;
+  }
+}
+
+#btn-participe-error:checked
+  ~ #close__error:not(:checked)
+  ~ .btn-participe-error {
+  display: flex;
+}
+
+#btn-participe-error:not(:checked)
+  ~ #close__error:checked
+  ~ .btn-participe-error {
+  display: flex;
+}
+
+#btn-participe-error:checked ~ #close__error:checked ~ .btn-participe-error {
+  display: none;
+}
+
+#btn-participe-error:not(:checked)
+  ~ #close__error:not(:checked)
+  ~ .btn-participe-error {
+  display: none;
+}
+
+#close__error:checked ~ .c-modal__box {
+  display: none;
+}
+#close__message--send:checked ~ .c-modal__box__message {
+  display: none;
+}
+.c-modal__box {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $gray-7;
+  &__confirmation {
+    &-1 {
+      position: absolute;
+      width: 35%;
+      padding-bottom: 1%;
+      background-color: $gray__answer;
+      overflow-y: auto;
+
+      &__code {
+        width: 50%;
+        margin: 0 auto;
+        & img {
+          width: 100%;
+        }
+      }
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+        @include inuit-font-size(20px);
+        margin-bottom: 0.5rem;
+        background-color: $gray__brown;
+        color: $white;
+        &__btn__close {
+          color: $white;
+          padding: 1%;
+          cursor: pointer;
+          background-color: $red;
+        }
+      }
+      &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      &__form {
+        width: 100%;
+        margin-bottom: 3%;
+        &__error {
+          width: 55%;
+          margin: 0 auto 10px auto;
+          height: max-content;
+          padding-bottom: 1%;
+          background-color: $gray__answer;
+          border: 2px solid $red;
+          &__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+            @include inuit-font-size(18px);
+            margin-bottom: 0.5rem;
+            background-color: $red;
+            color: $white;
+            &__btn__close {
+              color: $white;
+              padding: 1%;
+              cursor: pointer;
+              background-color: $red-crimson;
+            }
+          }
+          &__message {
+            display: block;
+            padding: 0% 1%;
+            @include inuit-font-size(14px);
+          }
+        }
+        &__input {
+          display: block;
+          width: 98%;
+          padding: 0.5rem 0.3rem;
+          margin: 0.7rem auto;
+          outline: none;
+          border: 2px solid $gray__brown;
+          font-size: 1rem;
+        }
+        &__btn {
+          display: block;
+          padding: 0.5rem 2.8rem;
+          border-radius: 1.4rem;
+          cursor: pointer;
+        }
+      }
+      &__info {
+        margin: 0 1%;
+        text-align: justify;
+        @include inuit-font-size(13px);
+      }
+    }
+    &-2 {
+      position: absolute;
+      width: 50%;
+      padding-bottom: 1%;
+      background-color: $gray__answer;
+      overflow-y: auto;
+      &__paragraph {
+        margin-left: 0.5rem;
+        font-size: 1.2rem;
+      }
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 0.5rem 1rem;
+        background-color: $gray__brown;
+        color: $white;
+        @include inuit-font-size(30px);
+        margin-bottom: 0.5rem;
+      }
+      &__div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5%;
+      }
+      &__codeqr {
+        width: 35%;
+        margin: 0 auto;
+        &__qr {
+          width: 100%;
+          margin: 5% auto 0 auto;
+          &__img {
+            width: 100%;
+          }
+        }
+      }
+      &__form {
+        position: relative;
+        &__input {
+          display: block;
+          width: 98%;
+          padding: 0.5rem 0.3rem;
+          margin: 0.7rem auto;
+          outline: none;
+        }
+        &__input:not(:focus) ~ &__message {
+          display: none;
+        }
+        &__input:focus ~ &__message {
+          display: block;
+          width: max-content;
+          position: absolute;
+          top: -2rem;
+          left: 50%;
+          transform: translateX(-50%);
+          text-align: center;
+          background-color: $red;
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+          z-index: 10;
+          color: white;
+        }
+        &__input:focus ~ &__message::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: -0.25rem;
+          background-color: $red;
+          height: 0.5rem;
+          width: 0.5rem;
+          transform: translateX(-50%) rotate(45deg);
+          z-index: 10;
+        }
+      }
+
+      &__info {
+        margin: 2%;
+        text-align: justify;
+      }
+    }
+  }
+  &__participe {
+    position: absolute;
+    width: 35%;
+    margin: 0 auto 0 auto;
+    padding-bottom: 1%;
+    background-color: $gray__answer;
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      @include inuit-font-size(26px);
+      margin-bottom: 0.5rem;
+      background-color: $gray__brown;
+      color: $white;
+      &__btn__close {
+        color: $white;
+        padding: 1%;
+        cursor: pointer;
+        background-color: $red;
+      }
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 98%;
+      &__input {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 0.3rem;
+        margin: 0.7rem auto;
+        outline: none;
+        border: 2px solid $gray__brown;
+      }
+      &__btn {
+        display: block;
+        padding: 0.5rem 2.8rem;
+        border-radius: 1.4rem;
+        cursor: pointer;
+      }
+    }
+  }
+  &__error {
+    width: 55%;
+    margin: 136px auto 0 auto;
+    height: max-content;
+    padding-bottom: 1%;
+    background-color: $gray__answer;
+    border: 2px solid $red;
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      @include inuit-font-size(18px);
+      margin-bottom: 0.5rem;
+      background-color: $red;
+      color: $white;
+      &__btn__close {
+        color: $white;
+        padding: 1%;
+        cursor: pointer;
+        background-color: $red-crimson;
+      }
+    }
+    &__message {
+      display: block;
+      padding: 0% 1%;
+      @include inuit-font-size(14px);
+    }
+  }
+  &__message--send {
+    width: 35%;
+    margin: 136px auto 0 auto;
+    height: max-content;
+    padding-bottom: 1%;
+    background-color: $gray__answer;
+    border: 2px solid #00962b;
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      @include inuit-font-size(18px);
+      margin-bottom: 0.5rem;
+      background-color: #00962b;
+      color: $white;
+      &__btn__close {
+        color: $white;
+        padding: 1%;
+        cursor: pointer;
+        background-color: #004a15;
+      }
+    }
+    &__message {
+      display: block;
+      padding: 0% 1%;
+      @include inuit-font-size(14px);
+    }
+  }
+}
+
+//Media Queries
+.c-modal__box {
+  @include mq($until: 740px, $and: "(orientation:portrait)") {
+    position: fixed;
+  }
+  @include mq($until: desktop, $and: "(orientation: landscape)") {
+    background-color: $gray__answer;
+  }
+  @include mq($until: desktop, $and: " (min-height:480px)") {
+    background-color: $gray__answer;
+  }
+  @include mq($until: mobile, $and: "(min-height:480px)") {
+    background-color: $gray__answer;
+  }
+  @include mq($until: desktop, $and: " (min-height:480px)") {
+    background-color: $gray__answer;
+  }
+  @include mq($until: mobile, $and: "(min-height:480px)") {
+    background-color: $gray__answer;
+  }
+  @include mq($until: tablet, $and: " (min-height:480px)") {
+    background-color: $gray__answer;
+  }
+  @include mq($until: mobile, $and: "(min-height:480px)") {
+    background-color: $gray__answer;
+  }
+  @include mq($until: tablet, $and: "(max-height:480px)") {
+    background-color: $gray__answer;
+  }
+}
+.c-modal__box__confirmation-1 {
+  @include mq($from: desktop, $until: wide) {
+    width: 45% !important;
+  }
+  @include mq($until: desktop, $and: "(orientation: landscape)") {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+  @include mq($until: desktop, $and: " (min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+  @include mq($until: mobile, $and: "(min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+  @include mq($until: desktop, $and: " (min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+  @include mq($until: mobile, $and: "(min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+  @include mq($until: tablet, $and: " (min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+  @include mq($until: mobile, $and: "(min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+
+  @include mq($until: wide, $and: "(max-height:480px)") {
+    top: 0;
+    width: 100% !important;
+  }
+  @include mq($until: tablet, $and: "(max-height:480px)") {
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+}
+.c-modal__box__confirmation-2 {
+  @include mq($from: desktop, $until: wide) {
+    width: 45% !important;
+  }
+  @include mq($until: desktop, $and: "(orientation: landscape)") {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  @include mq($until: desktop, $and: " (min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  @include mq($until: mobile, $and: "(min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  @include mq($until: desktop, $and: " (min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  @include mq($until: mobile, $and: "(min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  @include mq($until: tablet, $and: " (min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  @include mq($until: mobile, $and: "(min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  @include mq($until: wide, $and: "(max-height:480px)") {
+    top: 0;
+    width: 100% !important;
+  }
+  @include mq($until: tablet, $and: "(max-height:480px)") {
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.c-modal__box__confirmation-1__header {
+  @include mq($until: 740px, $and: "(max-height:600px)") {
+    font-size: 1rem;
+  }
+  @include mq($until: 740px, $and: "(min-height:700px)") {
+    font-size: 1.2rem;
+  }
+  @include mq($until: 740px, $and: "(min-height:800px)") {
+    font-size: 1.35rem;
+  }
+}
+.c-modal__box__confirmation-1__header p {
+  @include mq($from: desktop, $until: wide) {
+    font-size: 1.2rem !important;
+  }
+}
+.c-modal__box__confirmation-1__form__input {
+  @include mq($until: 740px, $and: "(max-height:600px)") {
+    font-size: 0.6rem;
+  }
+  @include mq($until: 740px, $and: "(min-height:600px)") {
+    margin: 3% auto;
+    font-size: 0.8rem;
+  }
+  @include mq($until: 740px, $and: "(min-height:700px)") {
+    margin: 8% auto;
+    font-size: 0.9rem;
+  }
+  @include mq($until: 740px, $and: "(min-height:800px)") {
+    margin: 8% auto;
+    font-size: 1.2rem;
+  }
+}
+.c-modal__box__confirmation-1__form {
+  @include mq($until: 740px, $and: "(min-height:600px)") {
+    margin: 3% auto;
+  }
+  @include mq($until: 740px, $and: "(min-height:800px)") {
+    margin: 4.5% auto;
+  }
+}
+
+.c-modal__box__confirmation-1__content {
+  @include mq($until: 740px, $and: "(max-height:600px)") {
+    justify-content: flex-start;
+  }
+  @include mq($until: 740px, $and: "(min-height:600px)") {
+    justify-content: flex-start;
+  }
+}
+.c-modal__box__confirmation-1__form__btn {
+  @include mq($until: 740px, $and: "(max-height:600px)") {
+    font-size: 0.8rem;
+  }
+  @include mq($until: 740px, $and: "(min-height:600px)") {
+    font-size: 1.1rem;
+  }
+
+  @include mq($until: 740px, $and: "(min-height:800px)") {
+    font-size: 1.3rem;
+  }
+}
+.c-modal__box__error__header {
+  @include mq($until: 740px, $and: "(max-height:600px)") {
+    font-size: 1rem;
+  }
+}
+.c-modal__box__error__message {
+  @include mq($until: 740px, $and: "(max-height:600px)") {
+    font-size: 0.6rem;
+  }
+}
+
+.c-modal__box__confirmation-1__info {
+  @include mq($from: desktop, $until: wide) {
+    line-height: 1.2461538462;
+  }
+  @include mq($until: 740px, $and: "(max-height:600px)") {
+    font-size: 0.7rem;
+  }
+  @include mq($until: 740px, $and: "(min-height:600px)") {
+    font-size: 0.8rem;
+  }
+  @include mq($until: 740px, $and: "(min-height:800px)") {
+    font-size: 1rem;
+  }
+}
+.c-modal__box > .c-modal__box__error {
+  @include mq($until: tablet, $and: "(orientation: landscape)") {
+    position: absolute;
+    top: 0;
+    width: 50% !important;
+  }
+  @include mq($until: mobile, $and: "(orientation: landscape)") {
+    position: absolute;
+    top: 0;
+    width: 50% !important;
+  }
+}
+.c-modal__box__participe {
+  @include mq($until: desktop) {
+    width: 45%;
+  }
+  @include mq($until: desktop, $and: "(orientation: landscape)") {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  @include mq($until: desktop, $and: " (min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  @include mq($until: mobile, $and: "(min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  @include mq($until: desktop, $and: " (min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  @include mq($until: mobile, $and: "(min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  @include mq($until: tablet, $and: " (min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  @include mq($until: mobile, $and: "(min-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  @include mq($until: wide, $and: "(max-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+  }
+  @include mq($until: tablet, $and: "(max-height:480px)") {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.c-modal__box__participe__form {
+  @include mq($until: tablet, $and: "(max-height:600px)") {
+    font-size: 1.3rem;
+  }
+  @include mq($until: tablet, $and: "(min-height:600px)") {
+    font-size: 1.4rem;
+  }
+  @include mq($until: mobile, $and: "(max-height:600px)") {
+    font-size: 1.5rem;
+  }
+  @include mq($until: mobile, $and: "(min-height:600px)") {
+    font-size: 1.6rem;
+  }
+}

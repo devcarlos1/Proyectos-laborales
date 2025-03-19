@@ -1,0 +1,260 @@
+/*Global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Aspira';
+src: url(../fuentes/fuentes/Aspira_Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AspiraBlack';
+src: url(../fuentes/fuentes/Aspira_Black.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AspiraDemi';
+src: url(../fuentes/fuentes/Aspira_Demi.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AspiraLight';
+src: url(../fuentes/fuentes/Aspira_Light.otf) format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+body{
+    background-color: #010101;
+}
+:root{
+    --colorText: white
+}
+.invisible{
+    display: none !important;
+}
+ul{
+    list-style-type: none;
+
+}
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #07070c;
+
+}
+.header__logo, .header__nav{
+    flex-grow: 1;
+   padding: 2rem 0;
+}
+.header__logo{
+    padding-left: 4%;
+}
+
+.header__img{
+    width: 17rem;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__list{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+.header__element{
+    display: inline;
+    padding-bottom: .4rem;
+    margin-right: 4rem;
+}
+.header__element:nth-child(1){
+    border-bottom:2px solid  #009fff;
+
+}
+.header__link{
+    text-decoration: none;
+    color: var(--colorText);
+    font-size: 1.4rem;
+    font-family: 'Aspira';
+
+} 
+.header__nav--mobile{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: black ;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5% 5% 1% 5%;
+    z-index: 100000;
+}
+.header__exit--mobile{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    position: relative;
+    
+}
+.header__line{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: .2rem;
+    background-color: #009fff;
+    margin-bottom: 15%;
+    
+}
+.header__line:nth-child(1){
+transform: rotate(140deg);
+}
+.header__line:nth-child(2){
+    transform: rotate(220deg);
+}
+.header__list--mobile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header__element--mobile{
+    display: flex;
+justify-content: center; 
+align-items: center; 
+}
+.header__link--mobile{
+    color: var(--colorText);
+   text-decoration: none;
+   font-size: 1.4rem;
+       font-family: 'AspiraDemi';
+
+}
+.header__btn--mobile{
+    width: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.header__line--mobile{
+    width: 100%;
+    height: .2rem;
+    background-color: var(--colorText);
+    margin-bottom: 15%;
+}
+
+/*Art*/
+.art{
+    width: 60%;
+    margin:5% auto 0 auto;
+}
+.art__info{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    color: var(--colorText);
+}
+.art__info__title{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-family: 'AspiraBlack';
+
+}
+.art__info__paragraph{
+    font-family: 'Aspira';
+   line-height: 1.4rem;
+}
+.art__imgs__list{
+    width: 100%;
+}
+.art__imgs__list__element{
+    width: 100%;
+    margin: 2rem 0;
+}
+.art__imgs__list__element__img{
+    width: 100%;
+}
+
+
+.btns{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.btns__icon{
+    display: block;
+    height: 2rem;
+    width: 4rem;
+}
+.btns__icon__img, .btns__icon__img__preview{
+    width: 100%;
+    height: 100%;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(5deg) brightness(102%) contrast(102%);
+}
+.btns__icon__img__preview{
+    transform: rotate(180deg);
+}
+
+
+footer{
+    padding: 2% 0 7% 0;
+}
+.derechos{
+    color: var(--colorText);
+    text-align: center;
+    font-family: 'AspiraLight';
+
+}
+
+footer{
+    background-color: #050506
+    ;
+}
+@media (max-width:740px) {
+    header{
+        align-items: center;
+        padding: 0 1.5rem;
+    }
+    .header__logo__contain--img{
+        width: 10rem;
+        margin: 0;
+    }
+    .header__btn__menu--mobile{
+        display: block !important;
+    }
+    .header__nav{
+        display: none;
+    }
+    .art{
+        width: 80%;
+    }
+    .art__info{
+        width: 100%;
+    }
+    .art__info__title{
+        margin-bottom: 1.5rem;
+    }
+    .btns__icon{
+        width: 3rem;
+        height: 1.5rem;
+    }
+    footer{
+        padding: 7% 0;
+    }
+}
+
+@media (max-width:320px) {
+    .header__logo__contain--img{
+        width: 8rem;
+        margin: 0;
+    }
+}

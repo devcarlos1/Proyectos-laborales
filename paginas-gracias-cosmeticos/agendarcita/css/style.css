@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*COLORES*/
+.ifanel-azul-claro{
+    color: #59d4ff;
+}
+.ifanel-blanco{
+    color: white;
+}
+.ifanel-negro-claro{
+    color: #444242;
+}
+/*FONDOS*/
+.ifanel-fondo-azul-claro{
+    background-color: #59d4ff;
+}
+/*FUENTES*/
+@font-face {
+    font-family: 'anthemiaregular';
+    src: url('../fuentes/Anthemia/anthemia-webfont.woff2') format('woff2'),
+         url('../fuentes/Anthemia/anthemia-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.ifanel-anthemia-regular{
+    font-family:'anthemiaregular';
+    font-weight: 400;
+}
+.ifanel-anthemia-bold{
+    font-family:'anthemiaregular';
+    font-weight: bold;
+}
+
+/*CODIGO POR ELEMENTO*/
+.ifanel-seccion--agenda{
+    max-width: 1440px;
+    background-image: url(../imagenes/fondo/background-agendar-cita.jpg);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-position: center;
+   padding: 8% 0;
+
+}
+.ifanel-seccion--agenda__arriba{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1.4rem;
+  padding-left: 2%;
+  gap: 3%;
+}
+
+.ifanel-seccion--agenda__arriba__izquierda__titulo{
+  width: fit-content;
+    background-image: url(../imagenes/SVG/barra\ felicidades.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 4em;
+    padding: 0 3rem;
+}
+.ifanel-seccion--agenda__arriba__izquierda__parrafo{
+    font-size: 2.2em;
+    padding-left: 8%;
+    margin: 0 !important;
+    overflow: visible;
+    line-height: normal !important;
+}
+.ifanel-seccion--agenda__arriba__izquierda__parrafo__10trucos{
+    background-image: url(../imagenes/SVG/barra\ 10\ trucos.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 .5em;
+
+}
+.ifanel-seccion--agenda__arriba__izquierda{
+    width: 48%;
+}
+.ifanel-seccion--agenda__arriba__derecha{
+    width: 40%;
+height: 30rem;
+}
+.ifanel-seccion--agenda__arriba__derecha__img{
+    width: 100%;
+    height: 72%;
+}
+.ifanel-seccion--agenda__abajo{
+    text-align: center;
+    font-size: 2rem;
+}
+.ifanel-seccion--agenda__abajo__parrafo--1{
+    width: 80%;
+    margin: 0 auto;
+}
+.ifanel-seccion--agenda__abajo__parrafo--1__pre{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1em;
+line-height: normal;
+}
+.ifanel-seccion--agenda__abajo__parrafo--2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ifanel-seccion--agenda__abajo__parrafo--2::after{
+    content: "";
+    display: block;
+    background-image: url(../imagenes/SVG/flecha.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    width: 1rem;
+   height: 1rem;
+}
+.ifanel-seccion--agenda__abajo__boton{
+    margin-top: 1rem;
+    border: none;
+outline: none;
+width: 100%;
+background-image: url(../imagenes/SVG/boton\ agendar\ cita.svg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+font-size: 1.5rem;
+background-color: transparent;
+height: 5rem;
+}
+
+@media (max-width:1200px){
+    html{
+        font-size: 90%;
+    }
+}
+@media  (max-width: 1060px) {
+    html{
+        font-size: 82%;
+    }
+  }
+@media (max-width:965px){
+    html{
+        font-size: 74%;
+    }
+}
+@media  (max-width: 870px) {
+    html{
+        font-size: 66%;
+    }
+    .ifanel-seccion--agenda__arriba__derecha__img{
+        height:73%;
+    }
+}
+@media  (max-width: 775px) {
+    html{
+        font-size: 58%;
+    }
+}
+@media  (max-width: 680px) {
+    html{
+        font-size: 50%;
+    }
+
+}
+@media  (max-width: 590px) {
+    html{
+        font-size: 44%;
+    }
+}
+@media  (max-width: 520px) {
+    .ifanel-seccion--agenda__arriba{
+        font-size: 1.3rem;
+    }
+    .ifanel-seccion--agenda__abajo{
+        font-size: 2.2rem;
+        margin-top: 1rem;
+    }
+   .ifanel-seccion--agenda__arriba__derecha__img{
+    height: 76.4%;
+    }
+}
+@media (max-width:455px){
+  html{
+    font-size: 38%;
+  }
+  .ifanel-seccion--agenda__arriba__derecha__img{
+    height: 73.6%;
+}
+.ifanel-seccion--agenda__abajo{
+    font-size: 2rem;
+}
+}
+@media (max-width:400px){
+    html{
+      font-size: 33%;
+    }
+    
+  }
+  @media (max-width:350px){
+    html{
+      font-size: 28%;
+    }
+    
+  }
+  @media (max-width:310px){
+    .ifanel-seccion--agenda__arriba{
+        font-size: 1.2rem;
+       }
+  }
+  @media (max-width:270px){
+   .ifanel-seccion--agenda__arriba{
+    font-size: 1.1rem;
+   }
+   .ifanel-seccion--agenda__abajo{
+    font-size: 1.9rem;
+}
+   .ifanel-seccion--agenda__arriba__derecha__img{
+    height: 75.6%;
+}
+  }
+
+  @media (max-width:240px){
+    html{
+        font-size: 22%;
+      }
+     
+  }
+  @media (max-width:200px){
+    html{
+        font-size: 20%;
+      }
+     
+  }
+  @media (max-width:170px){
+    html{
+        font-size: 17%;
+      }
+      .ifanel-seccion--agenda__arriba__derecha__img{
+        height: 72.6%;
+    }
+  }
+
+  .ifanel-height84{
+    height: 84%;
+   }
+   .ifanel-height89{
+    height: 89%;
+ }
+ .ifanel-height856{
+   height: 85.6%;
+ }
+ .ifanel-height846{
+   height: 84.6;
+ }

@@ -1,0 +1,248 @@
+/*header styles*/
+.c-header__game {
+  background-color: rgb(59, 33, 20);
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+
+  &__vol {
+    cursor: pointer;
+    img {
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      filter: invert(100%) sepia(0%) saturate(7465%) hue-rotate(342deg)
+        brightness(97%) contrast(109%);
+    }
+  }
+  &__exit {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    width: max-content;
+    &__img {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 0.7rem;
+      vertical-align: bottom;
+      filter: invert(13%) sepia(81%) saturate(6448%) hue-rotate(3deg)
+        brightness(99%) contrast(119%);
+      transform: rotate(180deg);
+    }
+    &__word {
+      color: $exit-text;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.c-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.c-header-2 {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1% 0;
+
+  &__user {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &__img {
+      width: 3rem;
+    }
+    &__anonymous {
+      background: linear-gradient(
+        to right,
+        rgba(207, 0, 0, 1) 0%,
+        #970000 100%
+      );
+      color: white;
+      padding: 5px;
+    }
+    &__user {
+      display: flex;
+      box-shadow: 7.5px 7.5px 15px #bebebe, -7.5px -7.5px 15px #ffffff;
+      margin-right: 10px;
+      &__img {
+        width: 3rem;
+      }
+      &__img--div {
+        padding: 5px;
+        border-left-width: 2px;
+        border-left-style: solid;
+        border-left-color: gray;
+        border-top-width: 2px;
+        border-top-style: solid;
+        border-top-color: gray;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: gray;
+        border-right-width: 2px;
+        border-right-style: solid;
+        border-right-color: gray;
+      }
+      &__details {
+        padding: 10px;
+        background: linear-gradient(
+          to right,
+          rgba(207, 0, 0, 1) 0%,
+          #970000 100%
+        );
+
+        &__name {
+          width: max-content;
+          font-size: 1.25rem;
+          margin-bottom: 5px;
+          color: white;
+        }
+        &__amount {
+          display: flex;
+          width: max-content;
+          font-size: 1.25rem;
+          color: whitesmoke;
+          &__chip {
+            display: block;
+            margin-right: 0.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 0.3rem;
+      margin: 0.4rem auto 0 auto;
+      cursor: pointer;
+      &__img {
+        width: 1rem;
+        margin-right: 0.5rem;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(116deg)
+          brightness(102%) contrast(102%);
+      }
+    }
+  }
+}
+
+//Media Queries
+.c-header__game {
+  @include mq($from: wide, $and: "(min-height:560px)") {
+    height: 54px;
+  }
+  @include mq($from: desktop,  $and: "(max-height:560px)") {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    z-index: 200;
+  }
+  @include mq($from: tablet, $until: desktop) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    z-index: 200;
+  }
+  @include mq($from: mobile, $until: tablet) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    padding: 0.5rem 0.75rem;
+    z-index: 200;
+  }
+}
+.c-header__game__exit__img,
+.c-header__game__vol img {
+  @include mq($from: wide, $and: "(min-height:560px)") {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+  @include mq($from: tablet, $until: desktop) {
+    width: 2rem;
+    height: 2rem;
+  }
+  @include mq($from: mobile, $until: tablet) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  @include mq($from: mobile, $until: 500px) {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
+.c-header-2 {
+  @include mq($from: mobile, $until: tablet) {
+    flex-direction: column;
+  }
+}
+
+.c-header-2__user {
+  @include mq($from: mobile, $until: tablet) {
+    flex-direction: column;
+  }
+}
+.c-header-2__user__user__img {
+  @include mq($from: mobile, $until: tablet) {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+.c-header-2__user__user__details__name,
+.c-header-2__user__user__details__amount {
+  @include mq($from: mobile, $until: tablet) {
+    font-size: 1rem;
+  }
+}
+.c-header-2__user__button__img {
+  @include mq($from: mobile, $until: tablet) {
+    width: 0.8rem; 
+  }
+}
+.c-header-2__user__button {
+  @include mq($from: mobile, $until: tablet) {
+    font-size: 0.8rem;
+  }
+}
+
+.c-header__game__exit__word {
+  @include mq($from: wide, $and: "(min-height:560px)") {
+    font-size: 1.5rem;
+  }
+  @include mq($from: tablet, $until: desktop) {
+    display: none;
+  }
+  @include mq($from: mobile, $until: tablet) {
+    display: none;
+  }
+}
+.c-header-2__user__user__details__amount__chip {
+  @include mq($from: mobile, $until: tablet) {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+.c-header-2 {
+  @include mq($from: mobile, $until: tablet) {
+    justify-content: space-around;
+    gap: 8%;
+  }
+}

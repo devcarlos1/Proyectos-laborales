@@ -1,0 +1,166 @@
+@import url(' https://ifanel.com/userfiles/templates/whatsapp_nutricion/css/general-sans.css');
+
+
+@font-face {
+    font-family: 'Inter', sans-serif; 
+    src: url( https://ifanel.com/userfiles/templates/whatsapp_nutricion/recursos/Fuentes/INTER/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.ifanel-gris{
+    color: #878B87;
+}
+.ifanel_verde-oscuro{
+    color: #50A869;
+}
+.ifanel_verde-claro{
+    color: #DDEFE2;
+}
+.ifanel_verde-intermedio{
+    color: #8DE8A7 !important;
+}
+
+.ifanel-blanco{
+    color: #fff;
+}
+/*Fuentes*/
+/*General-Sans*/
+.ifanel-general-sans-bold{
+    font-family: 'GeneralSans-Bold';
+    font-weight: bold;
+}
+.ifanel-general-sans-medium{
+    font-family: 'GeneralSans-Medium';
+
+}
+/*Inter*/
+.ifanel-inter-medium{
+    font-family: 'Inter', sans-serif; 
+    font-weight: 500;
+}
+.ifanel-inter-bold{
+    font-family: 'Inter', sans-serif; 
+    font-weight: bold;
+}
+/*CODIGO POR ELEMENTO*/
+a{
+    cursor: pointer;
+}
+.ifanel-seccion-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4% 5% 4% 5%;
+}
+.ifanel-seccion-1__izq{
+    padding-bottom: 4%;
+}
+.ifanel-seccion-1__izq__titulo{
+    font-size: 4.5rem;
+}
+.ifanel-seccion-1__izq__parrafo{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.ifanel-seccion-1__der{
+width: 50%;
+align-self: flex-end;
+display: flex;
+align-items: flex-end;
+}
+.ifanel-seccion-1__der__img{
+    width: 100%;
+}
+.ifanel-seccion-2{
+    padding: 7% 0;
+    background-color: #50A869;
+}
+.ifanel-seccion-2__parrafo{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2.5rem ;
+    font-size: 2rem;
+}
+.ifanel-seccion-3{
+    padding: 7% 0;
+}
+.ifanel-seccion-3__parrafo-1{
+    font-size: 2.5rem;
+    text-align: center;
+    position: relative;
+}
+.ifanel-dedo-modificado{
+    position: absolute;
+    bottom: -.5rem;
+    transform: rotate(180deg);
+    font-size: 3rem;
+    color: #50A869;
+}
+.ifanel-seccion-3__boton{
+    width: 70%;
+    margin: 0 auto;
+}
+.ifanel-boton-whatsapp{
+    border: none;
+    outline: none;
+    display: block;
+    background-image: url( https://ifanel.com/userfiles/templates/whatsapp_nutricion/recursos/imagenes/btn_whatsapp.png);
+    background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+background-color: transparent;
+height: 8rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.ifanel-section--3__contador{
+    padding: .5rem 1rem;
+    background-color:#e2e2e2  ;
+    width: max-content;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    display: flex;
+    color: #878B87 !important;
+}
+.ifanel-seccion-4{
+    background-color: #e2e2e2;
+    padding: 6% 0;
+}
+.ifanel-seccion-4__parrafo-1{
+    font-size: 2rem;
+text-align: center; 
+margin-bottom: 5%;   
+}
+.ifanel-seccion-4__contenedor{
+    background-color: #fff;
+     padding: 5% 0;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+.ifanel-seccion-4__contenedor__parrafo{
+    font-size: 1.5rem;
+}
+@media (max-width:1200px){
+    html{
+      font-size: calc(1.3vw - .1vh);
+    }
+  }
+  @media (max-width:720px){
+    html{
+        font-size: calc(1.4vw - .1vh);
+      }
+    }
+    @media (max-width:520px){
+        html{
+            font-size: calc(1.5vw - .1vh);
+          } 
+        }

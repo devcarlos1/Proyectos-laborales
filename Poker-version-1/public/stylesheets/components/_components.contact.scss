@@ -1,0 +1,93 @@
+//Contact
+
+.c-contact {
+  width: 100%;
+  padding: 3% 0;
+  background-color: $gray__brown;
+  &__form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 3% 0;
+    background-color: $gray__2;
+
+    &__contenedor {
+      width: 80%;
+      margin: 0 auto;
+      & input {
+        width: 100%;
+        margin: 3% 0;
+        padding: 0.4rem 0.6rem;
+        @include inuit-font-size(20px);
+        background-color: #6c6969;
+        color: $white;
+      }
+      & input::placeholder,
+      & textarea::placeholder {
+        color: white;
+      }
+      & textarea {
+        outline: none;
+        border: none;
+        width: 100%;
+        margin: 3% 0;
+        padding: 0.4rem 0.6rem;
+        @include inuit-font-size(20px);
+        background-color: #6c6969;
+        color: $white;
+      }
+      &__codigo {
+        width: 80%;
+        margin: 0 auto 8% auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__img {
+          width: 50%;
+          height: 80%;
+        }
+        &__contenedor {
+          & input {
+            width: 100%;
+            margin: 3% 0;
+            padding: 0.4rem 0.6rem;
+            background-color: #6c6969;
+            color: $white;
+          }
+          & input::placeholder {
+            color: white;
+          }
+        }
+      }
+    }
+
+    &__button {
+      display: block;
+      width: max-content;
+      margin: 0 auto;
+      padding: 0.5rem 3rem;
+      font-weight: bold;
+      @include inuit-font-size(22px);
+      color: $white;
+      cursor: pointer;
+    }
+  }
+}
+//Media Queries
+.c-contact__form {
+  @include mq($until: tablet) {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.c-contact__form__contenedor__codigo {
+  @include mq($from: mobile, $until: tablet) {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.c-contact__form__contenedor__codigo__contenedor {
+  @include mq($from: mobile, $until: tablet) {
+    width: 100%;
+    align-self: flex-start;
+  }
+}

@@ -1,0 +1,123 @@
+//Tables
+
+.c-tables {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3%;
+  background-color: $gray__2;
+  &__table {
+    margin: 1rem 0;
+    flex-grow: 1;
+    text-align: center;
+    &__button {
+      display: block;
+      margin: 0.6rem auto 0 auto;
+      padding: 0.5rem 2.8rem;
+      border-radius: 1.4rem;
+      width: fit-content;
+      cursor: pointer;
+    }
+  }
+  &__id {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    width: 20rem;
+  }
+  &__info {
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    padding: 0.4rem;
+  }
+  &__name {
+    @include inuit-font-size(24px);
+  }
+  &__ciegas,
+  &__amount {
+    @include inuit-font-size(18px);
+  }
+  &__competitor {
+    @include inuit-font-size(18px);
+    margin-top: 0.3rem;
+    color: $white;
+  }
+  &__btn__competitor {
+    border: none;
+    outline: none;
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 0.6rem;
+    @include inuit-font-size(22px);
+    position: relative;
+    background-color: transparent;
+    & a,
+    & p {
+      position: relative;
+      cursor: pointer;
+    }
+    & .carlos {
+      display: none;
+    }
+    & input[type="checkbox"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 10000;
+      opacity: 0;
+      cursor: pointer;
+      &:checked {
+        display: none !important;
+
+        & ~ p {
+          display: none;
+        }
+        & + .carlos {
+          display: block;
+        }
+      }
+    }
+  }
+}
+//Media Queries
+.c-tables {
+  @include mq($from: mobile, $until: tablet) {
+    flex-direction: column !important;
+  }
+  &__img {
+    @include mq($from: mobile, $until: tablet) {
+      width: 80% !important;
+    }
+  }
+}
+.c-tables__name {
+  @include mq($from: mobile, $until: tablet) {
+    font-size: 1.3rem;
+  }
+}
+.c-tables__ciegas,
+.c-tables__amount {
+  @include mq($from: mobile, $until: tablet) {
+    font-size: 0.95rem;
+  }
+}
+.c-tables__competitor {
+  @include mq($from: mobile, $until: tablet) {
+    font-size: 0.95rem;
+  }
+}
+.c-tables__table__button {
+  @include mq($from: mobile, $until: tablet) {
+    font-size: 0.9rem;
+  }
+}

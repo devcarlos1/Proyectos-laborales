@@ -1,0 +1,530 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(../fuentes/Poppins/Poppins-Bold.ttf) format('ttf'),
+    url(../fuentes/Poppins/Poppins-SemiBold.ttf) format('ttf'),
+    url(../fuentes/Poppins/Poppins-Medium.ttf) format('ttf'),
+    url(../fuentes/Poppins/Poppins-Regular.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Fuentes*/
+.ifanel-poppins-bold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.ifanel-poppins-semibold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.ifanel-poppins-regular{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.ifanel-poppins-medium{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+/*General*/
+.ifanel-blanco{
+    color: #fff;
+}
+.ifanel-negro{
+    color: #261B19;
+}
+.ifanel-verde{
+    color: #00BD85;
+}
+.ifanel-naranja{
+    color: #FFD350;
+}
+.ifanel-azul-poco-oscuro {
+color: #008FBD !important;
+}
+.width-100{
+    width: 100%;
+    margin-bottom: 2%;
+}
+.font-size-1-2{
+    font-size: 1.2rem !important;
+}
+.font-size-1{
+  font-size: 1.3rem !important;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+
+.form{
+    width: 80%;
+    margin: 0 auto;
+}
+.visible{
+    display: flex;
+}
+.oculto{
+    display: none !important;
+}
+.card{
+    border: none !important;
+}
+/*Codigo por elemento*/
+
+.ifanel-contenedor-popup{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255,255,255, .7);
+    position: fixed;
+    z-index: 1000000000;
+    display: flex;
+}
+.ifanel-popup-img{
+    width: 100%;
+    margin-bottom: 6%;
+}
+.ifanel-popup{
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40%;
+    padding: 3% 4%;
+    background-image: url(../recursos/POP-UP/pop_up.svg);
+    background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+border-radius: 50px;
+}
+.ifanel-popup__titulo{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 6%;
+}
+.ifanel-popup__input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 2% 2% 3% 0;
+    border-bottom: 1px solid white;
+    margin-bottom: 7%;
+    font-size: 1.2rem;
+    outline: none;
+}
+.ifanel-popup-input:focus, .ifanel-popup-input:focus-visible{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+}
+
+.ifanel-popup-x{
+    position: absolute;
+    top:1%;
+    right: -3rem;
+    font-size: 3rem;
+    z-index: 1000;
+    color: #fb8500;
+    cursor: pointer;
+}
+
+.ifanel-seccion-1{
+    padding: 9.5% 0% 10% 10%;
+background-image: url(../recursos/imagenes/01_PRINCIPAL/IMG-principal.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.ifanel-seccion-1{
+    width: 100%;
+}
+.ifanel-seccion-1__titulo{
+    font-size: 3rem;
+  text-align: left;
+}
+.ifanel-seccion-1__parrafo{
+    font-size: 2rem;
+    text-align: left;
+margin-bottom: 1%;
+}
+.ifanel-boton{
+    padding: .5rem 1.5rem;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.ifanel-boton-2{
+    padding: .5rem 1.2rem;
+    background-color: #00BD85;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+}
+
+/*Seccion-2*/
+.ifanel-seccion-2{
+    padding: 8% 0;
+}
+.ifanel-seccion-2__titulo{
+font-size: 3rem;
+text-align: center;
+margin-bottom: 2%;
+}
+.ifanel-seccion-2__parrafo{
+    width: max-content;
+    text-align: center;
+    line-height: 2rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+/*Seccion-3*/
+.ifanel-seccion-3{
+    background-image: url(../recursos/imagenes/03_ESTRATEGIAS/FONDO_03.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+display: flex;
+justify-content:flex-start;
+align-items: center;
+}
+.ifanel-seccion-3__izquierda{
+    position: relative;
+width: 55%;
+display: flex;
+align-self: flex-end;
+}
+.ifanel-seccion-3__izquierda__hombre{
+position: relative;
+top: 0;
+left: -5rem;
+width: 100%;
+}
+.ifanel-seccion-3__izquierda__avion{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 10rem;
+}
+.ifanel-seccion-3__derecha{
+    padding: 10% 0;
+}
+.ifanel-seccion-3__derecha__titulo{
+    font-size: 3rem;
+}
+.ifanel-seccion-3__derecha__parrafo{
+ font-size: 1.5rem;
+    width: max-content;
+    margin: 5% 0;
+}
+/*Seccion-4*/
+.ifanel-seccion-4{
+    padding: 8% 0;
+    position: relative;
+}
+.ifanel-seccion-4__titulo{
+    font-size: 3rem;
+text-align: center;
+margin-bottom: 2%;
+}
+.ifanel-seccion-4__parrafo{
+    width: max-content;
+    text-align: center;
+    line-height: 2rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    margin-bottom: 7%;
+}
+.ifanel-seccion-4__img{
+    position: absolute;
+    bottom: -35%;
+    right: 0;
+    width: 60%;
+}
+/*Seccion-5*/
+.ifanel-seccion-5{
+    background-image: url(../recursos/imagenes/05_MODO_INCOGNITO/FONDO_AZUL.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    width: 100%;
+    padding-left: 6%;
+}
+.ifanel-seccion-5__izquierda{
+    position: relative;
+    z-index: 1000000;
+    padding: 8% 0 10% 0;
+}
+.ifanel-seccion-5__izquierda__parrafo{
+    font-size: 1.5rem;
+    width: max-content;
+    margin-bottom: 3% ;
+}
+.ifanel-seccion-5__izquierda__titulo{
+    font-size: 3rem;
+}
+.ifanel-seccion-5__derecha{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 65%;
+    background-image: url(../recursos/imagenes/05_MODO_INCOGNITO/IMG_05.png);
+    background-position: bottom;
+background-repeat: no-repeat;
+background-size: contain;
+height: 125.7%;
+z-index: 1000;
+}
+.ifanel-seccion-5__incognito{
+    position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding-top: 12%;
+  width: 15%;
+}
+/*Seccion-6*/
+.ifanel-seccion-6{
+    position: relative;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-right: 3%;
+}
+.ifanel-seccion-6__img{
+    position: absolute;
+    left: 0;
+    width: 54%;
+    background-image: url(../recursos/imagenes/06/Recurso_9.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1000;
+    height: 114%;
+    bottom: 0;
+}
+.ifanel-seccion-6__img__lineas{
+    position: absolute;
+    left: 20%;
+    top:12%;
+    height: 50%;
+}
+.ifanel-seccion-6__texto{
+    padding: 10% 0;
+}
+.ifanel-seccion-6__texto__parrafo{
+    width: max-content;
+    font-size: 1.5rem;
+    margin-bottom: 4%;
+}
+.ifanel-seccion-7{
+    background-image: url(../recursos/imagenes/07_FORMULARIO/fondo_07.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    align-items: center;
+}
+.ifanel-seccion-7__izquierda{
+    padding: 12% 0;
+}
+.ifanel-seccion-7__izquierda__titulo{
+    font-size: 3rem;
+}
+.ifanel-seccion-7__izquierda__parrafo{
+    font-size: 1.5rem;
+    width: max-content;
+
+}
+.ifanel-seccion-7__derecha{
+    width: 40%;
+    padding: 12% 5% 14% 5%;
+    background-image: url(../recursos/imagenes/07_FORMULARIO/FORMULARIO.svg);
+    background-size: 100% 100%;
+}
+.ifanel-seccion-7__derecha__input{
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    padding: 2% 2% 3% 0;
+    border-bottom: 1px solid white;
+    margin-bottom: 7%;
+    font-size: 1.2rem;
+}
+.ifanel-seccion-7__derecha__input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+}
+/*Seccion-8*/
+.ifanel-seccion-8{
+    padding: 10% 0;
+    position: relative;
+}
+.ifanel-seccion-8__titulo{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.ifanel-seccion-8__carrusel{
+    position: relative;
+    margin-bottom: 10%;
+}
+.ifanel-seccion-8__nubes{
+    position: absolute;
+    right: 0;
+     bottom: -.2rem;
+     width: 50%;
+}
+.ifanel-seccion-8__articulo__img{
+    width: 100%;
+    margin-bottom: 10%;
+}
+.ifanel-seccion-8__articulo__nombre{
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 2rem;
+}
+.ifanel-seccion-8__articulo__testimonio{
+font-size: 1.1rem;
+text-align: center;
+  width: max-content;
+  margin: 0 auto;
+}
+.ifanel-seccion-9{
+    width: 100%;
+   padding: 7% 0;
+   background-image: url(../recursos/imagenes/05_MODO_INCOGNITO/FONDO_AZUL.svg);
+   background-size: 100%;
+   background-repeat: no-repeat;
+   font-size: 1.2rem;
+}
+.ifanel-seccion-9__arriba{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 12%;
+    margin-bottom: 3%;
+}
+.ifanel-seccion-9__arriba_a{
+    width: max-content;
+}
+.ifanel-seccion-9__abajo{
+    width: 100%;
+    text-align: center;
+}
+@media (max-width:1200px){
+    html{
+     font-size: calc(1.3vw - .1vh);
+    }
+}
+@media (max-width:520px){
+    .ifanel-swiper-button-next, .ifanel-swiper-button-prev {
+        width: calc(var(--swiper-navigation-size) / 44 * 40) !important;
+    }
+    html{
+        font-size: calc(1.5vw - .1vh);
+       }
+       .ifanel-seccion-7__derecha__input{
+        font-size: 1.7rem;
+       }
+       .ifanel-swiper-button-next_img,.ifanel-swiper-button-prev_img{
+          width: 50%;
+       }
+       .ifanel-swiper-button-next, .ifanel-swiper-rtl .ifanel-swiper-button-prev{
+        right: 2px;
+       }
+       .ifanel-swiper-button-prev, .ifanel-swiper-rtl .ifanel-swiper-button-next{
+        left: 2px;
+       }
+       .ifanel-seccion-7{
+        background-image: url(../recursos/imagenes/07_FORMULARIO/fondo_07.svg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+gap: 0%;
+padding-left: 0;
+align-items: center;
+flex-direction: column;
+padding-bottom: 8%;
+       }
+       .ifanel-seccion-7__izquierda{
+        padding: 12% 0 6% 0;
+       }
+       .ifanel-seccion-7__izquierda__titulo{
+        font-size: 3.5rem;
+        margin-bottom: 5%;
+       }
+       .ifanel-seccion-7__izquierda__parrafo{
+        font-size: 2rem;
+       }
+
+       .ifanel-seccion-7__derecha{
+        width: 50%;
+       }
+       .ifanel-popup__input{
+        font-size: 1.7rem;
+       }
+       .ifanel-popup{
+        width: 60%;
+         border-radius: 30px;   
+    }
+    .ifanel-popup__titulo{
+        font-size: 2.4rem;
+    }
+    .ifanel-boton-2{
+        font-size: 1.7rem;
+    }
+    .ifanel-seccion-9{
+        font-size: 1.5rem;
+    }
+    .font-size-1-2{
+        font-size: 1.5rem !important;
+    }
+    .ifanel-seccion-6__img{
+        width: 50% !important;
+    }
+    .ifanel-seccion-6__img__lineas{
+        width: 45%;
+        left: 10%;
+    }
+}
+@media (max-width:320px){
+    .ifanel-seccion-6__img{
+        width: 45% !important;
+    }
+    .ifanel-seccion-6__img__lineas{
+        width: 40%;
+        left: 8%;
+    }
+    .ifanel-swiper-button-next, .ifanel-swiper-button-prev {
+        width: calc(var(--swiper-navigation-size) / 44 * 30) !important;
+    }
+}

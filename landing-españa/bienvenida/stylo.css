@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3C66B9;
+    padding: 0 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.header__castellano{
+   color: white;
+   text-decoration: underline;
+   text-decoration-color:white ;
+}
+.header__usuario{ 
+    display: flex;
+    flex-basis: content;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+
+}
+.header__usuario__izq{
+    color: white;
+    text-decoration: none;
+}
+.header__usuario__der{
+    text-align: center;
+    display: flex;
+}
+.header__usuario__der__link{
+    color: white;
+    text-decoration: none;
+}
+.header2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+.header2__empreya{
+    width: 25%;
+}
+.header2__empreya img{
+    width: 200px;
+}
+.header2__menu{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.header2__menu_elementos{
+    width: 22%;
+}
+.header2__menu_elementos img{
+    width: 100%;
+}
+.banner{
+    width: 100%;
+    display: flex;
+    padding: 5% 0;
+    align-items: center;
+    justify-content: center;
+  background-image: url(../recursos/afiliados.jpg) ;
+  background-position: bottom;
+  background-size: cover;
+}
+.banner__contenedor{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.banner__contenedor__titulo{
+    color: white;
+    text-align: center;
+    word-spacing: 1em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+}
+.banner__contenedor__parrafo{
+    color: white;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+}
+.banner__contenedor__imagen{
+ width: 100%;
+ height: 100%;
+}
+.programa{
+    width: 80%;
+    padding: 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 25px;
+}
+.programa__titulo{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.programa__lista{
+    width: 100%;
+    display: flex;
+    gap: 2%;
+}
+.programa__lista__elementos{
+    width: 25%;
+    padding: 2.5% 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    text-align: center;
+    list-style-type: none;
+}
+
+.programa__lista__elementos img{
+    width: 50%;
+    height: 35%;
+}
+.programa__lista__elementos__titulo{
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.programa__lista__elementos__porciento{
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+  margin-top: 5px;
+  
+}
+.impulsaya{
+    color: rgb(96, 135, 250);
+}
+.lanzaya{
+    color: rgb(71, 219, 8);
+}
+.aprenya{
+  color:rgb(254, 174, 26);
+}
+.blockchainya{
+    color: orangered;
+}
+.afiliado{
+    width: 80%;
+   padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:35px;
+    color: #3C66B9;
+    margin: 0 auto;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+.afiliado__titulo{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.afiliado__descripcion{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.arriba{
+    width: 18%;
+     align-self: flex-start;
+}
+.abajo{
+    width: 18%;
+     align-self: flex-end;
+}
+.afiliado__descripcion__elemento p{
+ margin-top: 10%;
+ font-size: .8em;
+ font-family: 'Jost', sans-serif;
+ font-weight: 300;
+}
+.afiliado__descripcion__elemento img{
+    width: 30%;
+}
+.preguntas{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15%;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+.preguntas__titulo{
+    text-align: center;
+    color: #7CB2EE;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.preguntas__lista{
+    width: 100%;
+    list-style-type: none;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.preguntas__lista__elemento__titulo{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+.preguntas__lista__elemento__titulo h3{
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    color: #7CB2EE;
+    flex-grow: 1;
+}
+.preguntas__lista__elemento__oculto{
+    display: none;
+}
+.preguntas__lista__elemento:hover  .preguntas__lista__elemento__oculto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 3% 0;
+    background-color: #3C66B9;
+    
+}
+.preguntas__lista__elemento:hover h3{
+    color:#3C66B9;
+    background-color: #7CB2EE;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    box-shadow:0px 0px;
+}
+.preguntas__lista__elemento__oculto h4{
+width: 80%; 
+text-align: left;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.preguntas__lista__elemento__oculto p{
+ width: 80%;
+ color: white;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 300;
+}
+.preguntas__lista__elemento__titulo{
+    display: flex;
+    justify-content: space-around;
+}
+.preguntas__lista__elemento__titulo h3{
+ flex-grow: 1;
+}
+
+
+@media (max-width:900px) {
+    .programa__lista__elementos__titulo{
+        font-size:.7em;
+    }   
+    .programa__lista__elementos__porciento{
+        font-size: .5em;
+    }
+}

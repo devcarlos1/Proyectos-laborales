@@ -1,0 +1,139 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+src: url(https://ifanel.com/userfiles/templates/gracias_viajes/recursos/fuentes/Poppins/Poppins-Bold.ttf) format('ttf'),
+    url( https://ifanel.com/userfiles/templates/gracias_viajes/recursos/fuentes/Poppins/Poppins-SemiBold.ttf) format('ttf'),
+    url( https://ifanel.com/userfiles/templates/gracias_viajes/recursos/fuentes/Poppins/Poppins-Medium.ttf) format('ttf'),
+    url( https://ifanel.com/userfiles/templates/gracias_viajes/recursos/fuentes/Poppins/Poppins-Regular.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Fuentes*/
+.ifanel-poppins-bold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.ifanel-poppins-semibold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.ifanel-poppins-regular{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.ifanel-poppins-medium{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+/*General*/
+.ifanel-blanco{
+    color: #fff;
+}
+.ifanel-negro{
+    color: #261B19;
+}
+.ifanel-verde{
+    color: #00BD85;
+}
+.ifanel-naranja{
+    color: #FFD350;
+}
+.ifanel-azul-poco-oscuro {
+color: #008FBD !important;
+}
+a{text-decoration: none;
+cursor: pointer;
+display: block;
+width: max-content;
+margin: 0 auto !important;}
+button{
+    cursor: pointer;
+}
+.ifanel-seccion-1{
+    position: relative;
+    padding: 10% 0;
+    padding-left: 10%;
+    background-image: url(https://ifanel.com/userfiles/templates/gracias_viajes/recursos/imagenes/fondo.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ifanel-seccion-1__izq__titulo{
+font-size: 3rem;
+margin-bottom: 3%;
+}
+.ifanel-seccion-1__izq__parrafo-1{
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+.ifanel-seccion-1__izq__parrafo-2{
+    font-size: 2.5rem;
+}
+.ifanel-seccion-1__der{
+  width: 52%;
+  position: absolute;
+  display: flex;
+flex-direction: column;
+justify-content: flex-end;
+  right: 0%;
+bottom: 0%;
+height: 100%;
+}
+.ifanel-seccion-1__der__mujer{
+    position: absolute;
+    right: 0%;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+}.ifanel-seccion-1__der__linea{
+    position: absolute;
+    right: 0%;
+    width: 92%;
+    z-index: 2000;
+    bottom: 50%;
+}
+.ifanel-seccion-1__der__avion{
+    position: absolute;
+    width: 14.2%;
+    left: 64%;
+    bottom: 76%;
+    z-index: 1000;
+    
+}
+.ifanel-seccion-1__nube-1{
+    position: absolute;
+    width: 30%;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    z-index: 100000;
+}
+.ifanel-seccion-1__nube-2{
+    position: absolute;
+    width: 30%;
+    display: flex;
+    right: 0%;
+    bottom: 0%;
+    z-index: 100000;
+}
+@media (max-width:1200px){
+    html{
+      font-size: calc(1.3vw - .1vh);
+    }
+  }
+  @media (max-width:720px){
+    html{
+        font-size: calc(1.4vw - .1vh);
+      }
+    }
+    @media (max-width:520px){
+        html{
+            font-size: calc(1.5vw - .1vh);
+          } 
+        }

@@ -1,0 +1,146 @@
+/*Btn Contain*/
+
+.c-btns__player {
+  position: relative;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  flex-grow: 1;
+  align-items: end;
+  justify-content: center;
+  gap: 35px;
+  width: 100%;
+  height: 10%;
+  &__reference {
+    display: flex;
+    gap: 35px;
+  }
+}
+
+/*Btn styles*/
+
+.c-btn__bet,
+.c-call,
+.c-fold,
+.c-check {
+  display: block;
+  color: $btn-text;
+  background-color: $btn-background;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.c-bet-reference {
+  display: block;
+  width: 12rem;
+  background-color: $reference-bet-background;
+  border: 4px solid $border-reference-bet;
+  font-size: 18px;
+  padding: 4px 6px;
+}
+
+//Media Queries
+.c-btn__bet,
+.c-call,
+.c-fold,
+.c-check,
+.c-bet-reference {
+  @include mq($from: wide, $and: "(min-height:560px)") {
+    font-size: 1.4rem;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(min-height:600px)") {
+    font-size: 20px;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(min-height:650px)") {
+    font-size: 20px;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:470px)") {
+    font-size: 1rem;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:420px)") {
+    font-size: 0.9rem;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:350px)") {
+    font-size: 0.8rem;
+  }
+
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:470px)") {
+    font-size: 1rem;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:420px)") {
+    font-size: 0.9rem;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:350px)") {
+    font-size: 0.8rem;
+  }
+
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:510px)") {
+    font-size: 1rem;
+  }
+  @include mq($from: mobile, $until: 680px, $and: "(max-height:510px)") {
+    font-size: 0.85rem;
+  }
+
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:420px)") {
+    font-size: 0.9rem;
+  }
+  @include mq($from: mobile, $until: 490px, $and: "(max-height:420px)") {
+    font-size: 0.65rem;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:350px)") {
+    font-size: 0.8rem;
+  }
+  @include mq($from: mobile, $until: 400px, $and: "(max-height:350px)") {
+    font-size: 0.7rem;
+  }
+}
+.c-bet-reference {
+  @include mq($from: mobile, $until: 680px, $and: "(max-height:510px)") {
+    width: 9.5rem;
+  }
+  @include mq($from: mobile, $until: 550px, $and: "(max-height:510px)") {
+    width: 7.5rem;
+  }
+  @include mq($from: mobile, $until: 490px, $and: "(max-height:420px)") {
+    width: 5.5rem;
+  }
+  @include mq($from: mobile, $until: 400px, $and: "(max-height:350px)") {
+    width: 4.5rem;
+  }
+}
+.c-btns__player {
+  @include mq($from: wide, $and: "(max-height:600px)") {
+    margin-top: 7%;
+  }
+  @include mq($from: wide, $and: "(min-height:560px)") {
+    margin-top: 5.5%;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:560px)") {
+    height: 10%;
+  }
+  
+  @include mq($from: desktop, $until: wide, $and: "(min-height:560px)") {
+    margin-top: 2%;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(min-height:600px)") {
+    margin-top: 5%;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(min-height:650px)") {
+    margin-top: 6%;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(min-height:750px)") {
+    margin-top: 5.5%;
+  }
+
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:510px)") {
+    gap: 17.5px;
+  }
+
+  &__reference {
+    @include mq($from: mobile, $until: tablet, $and: "(max-height:510px)") {
+      gap: 17.5px;
+    }
+  }
+}

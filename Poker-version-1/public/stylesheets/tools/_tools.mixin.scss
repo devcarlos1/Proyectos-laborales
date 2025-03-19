@@ -1,0 +1,47 @@
+//TIMER
+@mixin style-timer($width, $height) {
+  border: 2px solid $border-timer !important;
+  border-radius: 6px !important;
+  width: $width;
+  height: $height;
+}
+
+/*mixin-player-temporizador-espera*/
+@mixin time($duration, $delay) {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  animation: timer-animation calc($duration - ($duration * 0.1 )) linear $delay,  red2 calc($duration * 0.1) linear calc($duration - ($duration * 0.1 ));
+}
+
+/*Timer animation*/
+@keyframes timer-animation {
+  from {
+    width: 100%;
+    background-color: $content-animation-timer;
+  }
+  to {
+    width: 10%;
+    background-color: $content-animation-timer;
+
+  }
+}
+@keyframes red2 {
+  from {
+    width: 10%;
+    background-color: $red;
+  }
+  to {
+    width: 0%;
+  }
+}
+/*Win Player animation*/
+@keyframes win-player {
+  from {
+    box-shadow: 0px 0px 0px 0px #fff;
+    
+  }
+  to {
+    box-shadow: 0px 0px 10px 3px #fff;
+  }
+}

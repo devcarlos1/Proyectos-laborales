@@ -1,0 +1,95 @@
+//Poker table
+.c-poker__table {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 10px solid $border-table;
+  background-color: $background-table;
+  z-index: 1;
+  width: 88%;
+  height: 75%;
+  border-radius: 180px;
+
+  img {
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+  }
+}
+//Media Queries
+
+.c-poker__table {
+  @include mq($from: desktop, $until: wide, $and: "(max-height:510px)") {
+    width: 88%;
+    height: 67%;
+  }
+  @include mq($from: tablet, $until: desktop) {
+    height: 70%;
+    width: 87%;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(min-height:40em)") {
+    height: 54%;
+    width: 87%;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(min-height:820px)") {
+    height: 45%;
+    width: 87%;
+  }
+  @include mq($from: 850px, $until: 950px, $and: "(min-height:700px)") {
+    height: 54%;
+    width: 87%;
+  }
+  @include mq($from: 850px, $until: 950px, $and: "(min-height:800px)") {
+    height: 52%;
+    width: 87%;
+  }
+  @include mq($from: 850px, $until: 950px, $and: "(min-height:900px)") {
+    height: 50%;
+    width: 87%;
+  }
+  @include mq($from: 800px, $until: 850px, $and: "(min-height:700px)") {
+    height: 56%;
+    width: 87%;
+  }
+  @include mq($from: 750px, $until: 800px, $and: "(min-height:600px)") {
+    height: 60%;
+    width: 87%;
+  }
+  @include mq($from: 700px, $until: 750px, $and: "(min-height:600px)") {
+    height: 62%;
+    width: 87%;
+  }
+  @include mq($from: 650px, $until: 700px, $and: "(min-height:600px)") {
+    height: 62%;
+    width: 87%;
+  }
+  @include mq($from: 550px, $until: 650px, $and: "(min-height:500px)") {
+    height: 62%;
+    width: 87%;
+  }
+
+  @include mq($from: mobile, $until: tablet) {
+    width: 90%;
+    height: 63%;
+  }
+  @include mq($from: mobile, $until: 500px) {
+    width: 85%;
+    height: 67%;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:380px)") {
+    width: 84%;
+    height: 70%;
+  }
+  @include mq($from: mobile, $until: 480px, $and: "(max-height:380px)") {
+    width: 84%;
+    height: 70%;
+  }
+}

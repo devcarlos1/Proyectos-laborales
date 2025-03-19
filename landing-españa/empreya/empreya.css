@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3C66B9;
+    padding: 0 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.header__castellano{
+   color: white;
+   text-decoration: underline;
+   text-decoration-color:white ;
+}
+.header__usuario{ 
+    display: flex;
+    flex-basis: content;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+
+}
+.header__usuario__izq{
+    color: white;
+    text-decoration: none;
+}
+.header__usuario__der{
+    text-align: center;
+    display: flex;
+}
+.header__usuario__der__link{
+    color: white;
+    text-decoration: none;
+}
+.header2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+.header2__empreya{
+    width: 25%;
+}
+.header2__empreya img{
+    width: 200px;
+}
+.header2__menu{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.header2__menu_elementos{
+    width: 22%;
+}
+.header2__menu_elementos img{
+    width: 100%;
+}
+.linea{
+    width: 62%;
+    height: 2.5px;
+    background-color: #3C66B9;
+    margin: 0 auto;
+}
+.empreya{
+    margin: 0 auto;
+    width: 85%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+.empreya__quees{
+    max-width: 25%;
+    flex-grow: 1;
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+    color: #3c66b9;
+}
+.empreya__quees img{
+width: 100%;
+}
+.empreya__esquema{
+    width: 70%;
+}
+.empreya__esquema img{
+    width: 100%;
+}
+.emprendimiento{
+    width: 100%;
+    padding: 4% 0;
+    background-image:url(../recursos/afiliados.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.emprendimiento__titulo{
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.empredimiento__descripcion{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    gap: 8%;
+}
+.emprendimiento__descripcion__elemento{
+   flex-grow: 1;
+   text-align: center;
+   
+}
+.emprendimiento__descripcion__elemento img{
+    width: 30%;
+}
+.emprendimiento__descripcion__elemento__parrafo1{
+   text-align: right;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 1.7em;
+}
+.emprendimiento__descripcion__elemento__parrafo2{
+    text-align: center;
+    color: rgb(224, 223, 223);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.emprendimiento__descripcion__elemento__parrafo2--blanco{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.emprendedor{
+    width:85%;
+    margin: 0 auto;
+    padding: 2.5% 0;
+}
+.emprendedor__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #3C66B9;
+}
+.emprendedor__descripcion{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5%;
+    margin-top: 55px;
+}
+.emprendedor__descripcion__elemento{
+    width: 25%;
+    text-align: center;
+}
+.emprendedor__descripcion__elemento img{
+    width: 40%;
+    height: 70px;
+    margin-bottom: 25px;
+}
+.emprendedor__descripcion__elemento p{
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+}
+.nace{
+    width: 100%;
+}
+.nace__espacio{
+    width: 100%;
+    height: 70px;
+}
+.nace__contenedor{
+    width: 100%;
+    position: relative;
+}
+.nace__contenedor__titulo{
+    position:absolute;
+    top: -10%;
+    right: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #3C66B9;
+}
+.nace__contenedor__descripcion{
+    background-color: rgb(243, 240, 240);
+    height: 100%;
+    padding: 3% 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: .5%;
+}
+.nace__contenedor__descripcion__elemento{
+    flex-basis: 25%;
+    flex-grow: 1;
+    text-align: center;
+}
+.nace__contenedor__descripcion__elemento img{
+    width: 25%;
+    height: 100px;
+}
+.nace__contenedor__descripcion__elemento p{
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    color: #7CB2EE;
+}
+.club{
+    width: 100%;
+    margin: 0 auto;
+    padding:5% 0;
+}
+.club__encabezado{
+    width: 80%;
+    margin: 0 auto;
+}
+.club__encabezado__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+       text-align: center;
+       color: #3C66B9;
+ }
+ .club__encabezado__parrafo{
+    margin: 1% 0;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+       text-align: center;
+       color: #3C66B9;
+ }
+
+ .club__descripcion__espacio{
+    height: 100px;
+    width: 100%;
+ }
+ .club__descripcion__contenedor{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3%;
+    background-color: #3C66B9;
+    position: relative; 
+ }
+ .club__descripcion__contenedor__elemento{
+    flex-basis: 25%;
+    height: inherit;
+   padding: 2% 0;
+    position: relative;
+    top: -25%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+ }
+ .club__descripcion__contenedor__elemento img{
+    width: 50%;
+  
+ }
+.club__descripcion__contenedor__elemento h3{
+    font-family: 'Montserrat', sans-serif;
+}
+.club__descripcion__contenedor__elemento p{
+    font-family: 'Jost', sans-serif;
+}
+.club1{
+    color: #a8d1ff;
+}
+.club2{
+    color: #7cb2ee;
+}
+.club3{
+    color: #5389f6;
+}
+
+
+/*pagina de nicolas
+.promoBox.promoCheckmarks ul > li:first-child{
+    font-size:0px;
+    }
+    .promoBox.promoCheckmarks ul > li:first-child::after{
+    content:"Paga cómodamente con carlos";
+      font-size:16px !important;
+    }
+    .promoBox.promoCheckmarks ul > li:nth-child(2){
+      font-size:0px;
+    }
+    .promoBox.promoCheckmarks ul > li:nth-child(2)::after{
+      content:"Entrega gratuita en Colombia";
+      font-size:16px;
+    }
+    .promoBox.promoCheckmarks ul > li:nth-child(3){
+      font-size:0px;
+    }
+    .promoBox.promoCheckmarks ul > li:nth-child(3)::after{
+      content:"Pedido antes de las 23:00 = procesado el mismo día.";
+      font-size:16px;
+    }
+    /*

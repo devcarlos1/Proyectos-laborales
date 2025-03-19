@@ -1,0 +1,622 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*COLORES*/
+.ifanel-azul-claro{
+    color: #59d4ff;
+}
+.ifanel-blanco{
+    color: white;
+}
+.ifanel-negro-claro{
+    color: #444242;
+}
+.ifanel-marron-claro{
+    color: #b88566;
+}
+.ifanel-marron-masclaro{
+    color: #c98664;
+}
+/*FONDOS*/
+.ifanel-fondo-azul-claro{
+    background-color: #59d4ff;
+}
+/*FUENTES*/
+@font-face {
+    font-family: 'anthemiaregular';
+    src: url('../webfontkit-20220829-232703/anthemia-webfont.woff2') format('woff2'),
+         url('../webfontkit-20220829-232703/anthemia-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.ifanel-monserrat-regular{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.ifanel-monserrat-bold{
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.ifanel-anthemia-regular{
+    font-family:'anthemiaregular';
+    font-weight: 400;
+}
+.ifanel-anthemia-bold{
+    font-family:'anthemiaregular';
+    font-weight: bold;
+}
+
+/*CODIGO POR ELEMENTO*/
+.ifanel-section--1{
+    max-width: 1440px;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+}
+.ifanel-section--1__izquierda{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.ifanel-section--1__izquierda__titulo-1{
+    text-align: right;
+    font-size: 6rem;
+}
+.ifanel-section--1__izquierda__titulo-2{
+    text-align: center;
+   font-size: 3.3rem;
+   text-align: end;
+   padding-right: 3em;
+}
+.ifanel-section--1__izquierda__titulo-3{ 
+    font-size: 3.3rem;
+    text-align: end;
+padding-right: 1.2em; 
+}
+.ifanel-section--1__izquierda__boton{
+    width: max-content;
+    align-self: flex-start;
+   margin-top: 1.2rem;
+  border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url(svg/seccion-1/recuadro\ CTA.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3% 5%;
+    font-size: 1.3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ifanel-section--1__izquierda__boton::after{ 
+        content: "";
+        position: relative;
+        top: 0;
+        right: 3%;
+        background-image: url(svg/seccion-1/flecha.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 1rem;
+        display: block;
+    width: 1.5rem;
+    height: 1rem;
+}
+.ifanel-section--1__derecha{
+    width: 50%;
+    position: relative;
+}
+.ifanel-section--1__derecha__img{
+    position: relative;
+    width:100%;
+    top: 0px;
+    left: -1rem;
+        z-index: 10;
+        vertical-align: bottom;
+}
+.ifanel-section--2{
+    max-width: 1440px;
+    background-image: url(svg/seccion-2/Fondo-Conoce-estos-trucos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8% 0;
+}
+.ifanel-section--2__informacion{
+   width: 46%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.ifanel-section--2__informacion__p{
+    font-size: 3rem;
+    text-align: center;
+}
+.ifanel-section--2__informacion__boton{
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    margin-left:23% ;
+   width: max-content;
+    background-color: transparent;
+    background-image: url(svg/seccion-2/barra\ CTA.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+.ifanel-section--2__informacion__boton::after{
+   content: "";
+   margin-left: 5%;
+   width: 1.5rem !important;
+        background-image: url(svg/seccion-2/Flecha.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 15px;
+        display: block;
+    width: 1.5rem;
+    height: 1rem;
+}
+.ifanel-section--3{
+    max-width: 1440px;
+    background-image: url(svg/seccion-3/LP--Formulario-fondo.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7% 1% 6.2% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    position: relative;
+}
+.ifanel-section--3__img{
+    position: absolute;
+top: .3rem;
+left: 32%;
+width: 50%;
+height: calc(101% - .5rem);
+}
+.ifanel-section--3__izquierda{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    z-index: 100;
+}
+.ifanel-section--3__izquierda__h2{
+    width: 75%;
+    font-size: 4rem;
+    margin-bottom: 2.4rem;
+}
+.ifanel-section--3__izquierda__p{
+    word-spacing: 10px;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    width: 75%;
+}
+.ifanel-section--3__derecha{
+    width: 35%;
+    background-image: url(svg/seccion-3/recuadro\ formulario\ .svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 0;
+    position: relative;
+    z-index: 100;
+}
+.ifanel-section--3__derecha__pre{
+    text-align: left;
+    font-size: 2rem;
+    width: fit-content;
+    margin:6% 0 0 15%;
+    line-height: 3rem;
+    height: fit-content;
+}
+.ifanel-section--3__derecha__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding-left: 15%;
+}
+.ifanel-section--3__derecha__form__input{
+    outline: none;
+    border: none;
+    border-bottom:.1rem solid  #444242;
+    background-color: transparent;
+    padding: .8rem 0px ;
+    width:65%;
+    margin: 0 0 1.6rem 0;
+}
+.ifanel-section--3__derecha__form__input::placeholder{
+    color: #444242;
+    font-size: 1.1rem;
+    letter-spacing: .45rem;
+}
+.ifanel-section--3__derecha__form__button{
+    background-image: url(svg/seccion-3/boton\ enviar.svg);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size:contain;
+    width:  fit-content;
+    height: 2rem;
+    padding: 0 10% 0 2%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    letter-spacing: .25rem;
+}
+.ifanel-section--3__derecha__form__button::after{
+   content: "";
+   background-image: url(svg/seccion-3/flecha.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: .8rem;
+    display: block;
+width: 1.3rem;
+height: .8rem;
+}
+.ifanel-section--4{
+    max-width: 1440px;
+    background-image: url(svg/seccion-4/Fondo-Pasos-rutina.jpg) ;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:5%;
+}
+.ifanel-section--4__titulos{
+     width: 50%;
+     margin: 0 auto;
+     text-align: center;
+     padding: 1.5rem 0;
+}
+.ifanel-section--4__titulos__h2{
+    font-size: 4.3rem;
+    margin-bottom: 1rem;
+}
+.ifanel-section--4__titulos__parrafo-1{
+    font-size: 1.2rem;
+    margin-bottom:1.5rem ;
+}
+.ifanel-section--4__titulos__parrafo-2{
+    font-size: 2.3rem;
+}
+.ifanel-section--4__pasos{
+    width: 100%;
+}
+.ifanel-section--4__pasos__img--izq{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+.ifanel-section--4__pasos__img--izq__izquierda{
+    position: relative;
+    width: 30%;
+}
+.ifanel-section--4__pasos__img--izq__izquierda__img{
+    position: relative;
+    top: -2rem;
+    width: 100%;
+}
+.ifanel-section--4__pasos__img--izq__derecha{
+    width: 38%;
+}
+.ifanel-section--4__pasos__img--izq__derecha__h2{
+    font-size: 9rem;
+}
+.ifanel-section--4__pasos__img--izq__derecha__p{
+    font-size: 2.3rem;
+}
+.ifanel-section--4__pasos__img--der{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 20%;
+}
+.ifanel-section--4__pasos__img--der__izquierda{
+    width: 35%;
+    text-align: right;
+    margin-top: 7%;
+}
+.ifanel-section--4__pasos__img--der__izquierda__h2{
+    font-size: 7rem;
+}
+.ifanel-section--4__pasos__img--der__izquierda__p{
+    font-size: 2.3rem;
+}
+.ifanel-section--4__pasos__img--der__derecha{ 
+    width: 30%;
+    text-align: end;
+    position: relative;
+}
+.ifanel-section--4__pasos__img--der__derecha__img{
+    position: relative;
+    width: 100%;
+    vertical-align: bottom;
+    height: 25rem;
+}
+.ifanel-section--5{
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(svg/seccion-5/Fondo-LP\ \(2\).jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13% 0;
+}
+.ifanel-section--5__izquierda{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.ifanel-section--5__izquierda__p{
+    width: 90%;
+    font-size: 2.5rem;
+}
+.ifanel-section--5__derecha{
+    width: 40%;
+    background-image: url(svg/seccion-5/barra\ formulario.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 15% 0 5% 5%;
+}
+.ifanel-section--5__derecha__form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ifanel-section--5__derecha__form__input, .ifanel-section--5__derecha__form__textarea{
+    padding: .7rem 0;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #444242;
+}
+.ifanel-section--5__derecha__form__input::placeholder, .ifanel-section--5__derecha__form__textarea::placeholder{
+    color: #444242;
+    font-size: 1.1rem;
+    letter-spacing: .45rem;
+}
+.ifanel-section--5__derecha__form__button{
+    width: max-content;
+    border: none;
+    outline: none;
+    background-image: url(svg/seccion-5/boton\ enviar.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    letter-spacing: .45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ifanel-section--5__derecha__form__button::after{
+    content: "";
+    background-image: url(svg/seccion-5/flecha.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    display: block;
+width: 1.5rem;
+height: 1rem;
+}
+.ifanel-section--6{
+    max-width: 1440px;
+    background-image: url(svg/seccion-6/LP-Opinion-fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+    gap: 3rem;
+}
+.ifanel-section--6__titulo{
+    font-size: 3.5rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.ifanel-section--6__titulo__pre{
+    width: 100%;
+}
+.ifanel-section--6__opiniones{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 3%;
+    gap:2%;
+    font-size: 2rem;
+}
+.ifanel-section--6__opiniones__articulo{
+    flex: 1;
+    text-align: center;
+}
+.ifanel-section--6__opiniones__articulo__img{
+    width: 100%;
+}
+.ifanel-section--6__opiniones__articulo__h3{
+    width: 60%;
+    margin: 15% auto 0 auto;
+    font-size: 1.5rem;
+}
+.ifanel-section--6__opiniones__articulo__p{
+    width: fit-content;
+    font-size: 1rem;
+    width: 65%;
+    margin: 3% auto 0 auto;
+}
+.ifanel-section--6__opiniones__articulo__p__ultimo{
+    width: 79%;
+}
+.ifanel-section--7{
+    padding: 5% 0;
+    background-color: #eeeded99;
+}
+.ifanel-section--7__contenido{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.ifanel-section--7__contenido__elementos{
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+}
+.ifanel-section--7__derechos{
+    margin-top: 2rem;
+    text-align: center;
+}
+@media (max-width:1100px){
+    html{
+        font-size: 85%;
+    }
+}
+@media  (max-width: 950px) {
+    html{
+        font-size: 75%;
+    }
+}
+@media  (max-width: 850px) {
+    html{
+        font-size: 70%;
+    }
+}
+@media  (max-width: 750px) {
+    html{
+        font-size: 60%;
+    }
+}
+@media  (max-width: 650px) {
+    html{
+        font-size: 50%;
+    }
+    .ifanel-section--2__informacion__boton{
+        margin-left: 6%;
+    }
+    .ifanel-section--3{
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .ifanel-section--3__img{
+    display: none;
+    }
+    .ifanel-section--3__izquierda{
+        width: 80%;
+    }
+    .ifanel-section--3__izquierda__h2{
+        font-size: 4.2rem;
+    }
+    .ifanel-section--3__izquierda__p{
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+    }
+    .ifanel-section--3__derecha{
+        width: 60%;
+    }
+    .ifanel-section--3__derecha__pre{
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+    .ifanel-section--5{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .ifanel-section--5__izquierda{
+        width: 50%;
+    }
+    .ifanel-section--5__derecha{
+        width: 50%;
+        background-size:cover ;
+    }
+    .ifanel-section--6{
+        padding-bottom: 15%;
+    }
+
+    .ifanel-section--6__opiniones{
+        width: 70%;
+        flex-direction: column;
+        margin-top: 6%;
+    }
+    .ifanel-section--6__opiniones__articulo__h3{
+        font-size: 3.2rem;
+    }
+    .ifanel-section--6__opiniones__articulo__p{
+    font-size:1.5rem ;
+    }
+    .ifanel-section--7{
+        font-size: 1.3rem;
+    }
+}
+@media  (max-width: 550px) {
+    html{
+        font-size: 40%;
+    }
+}
+@media  (max-width: 450px) {
+    html{
+        font-size: 35%;
+    }
+}
+@media  (max-width: 370px) {
+    html{
+        font-size:28%;
+    }
+}
+@media  (max-width: 300px) {
+    html{
+        font-size:22%;
+    }
+}
+@media  (max-width: 230px) {
+    html{
+        font-size:18%;
+    }
+}
+
+
+
+
+

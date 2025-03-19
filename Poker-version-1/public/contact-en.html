@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      name=""
+      id="close__error"
+      class="u-hidden-visually"
+    /> 
+    <div class="c-modal__box">
+      <div class="c-modal__box__error">
+        <div class="c-modal__box__error__header">
+          <p class=" ">Error</p>
+          <label
+            for="close__error"
+            class="c-modal__box__error__header__btn__close"
+            >X</label
+          >
+        </div>
+        <div class="c-modal__box__error__message">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
+            vehicula justo, in pellentesque leo. Orci varius natoque penatibus
+            et magnis dis parturient montes, nascetur ridiculus mus. In urna
+            risus, elementum sit amet efficitur vitae, tincidunt nec lorem
+          </p>
+        </div>
+      </div>
+    </div>
+    <input
+      type="checkbox"
+      name=""
+      id="close__message--send"
+      class="u-hidden-visually"
+    />
+    <div class="c-modal__box c-modal__box__message">
+      <div class="c-modal__box__message--send">
+        <div class="c-modal__box__message--send__header">
+          <p class="">Message</p>
+          <label
+            for="close__message--send"
+            class="c-modal__box__message--send__header__btn__close"
+            >X</label
+          >
+        </div>
+        <div class="c-modal__box__message--send__message">
+          <p>
+            Your message has been sent.
+          </p>
+        </div>
+      </div>
+    </div>
+    <header class="c-header">
+      <a href="index-en.html" class="o-media">
+        <img
+          src="img/logos_and_icons-games/logo_poker.png"
+          alt=""
+          class="o-media__logo"
+        />
+      </a>
+    </header>
+    <nav class="c-navegation">
+      <ul class="c-navegation__lista">
+        <li><a href="#">App</a></li>
+        <li><a href="contact-en.html">Rent a private service</a></li>
+        <li>
+          <a href="table-en.html#contain__questions"
+            >Frequently Asked Questions</a
+          >
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="c-contact">
+      <form action="" class="c-contact__form">
+        <div class="c-contact__form__contenedor">
+          <input
+            type="text"
+            name=""
+            id="nombre"
+            class="c-contact__form__contenedor__input"
+            placeholder="Name"
+          />
+        </div>
+        <div class="c-contact__form__contenedor">
+          <input
+            type="email"
+            name=""
+            id="email"
+            class="c-contact__form__contenedor__input"
+            placeholder="Email"
+          />
+        </div>
+        <div class="c-contact__form__contenedor">
+          <textarea
+            name=""
+            id="mensaje"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <div class="c-contact__form__contenedor__codigo">
+          <div class="c-contact__form__contenedor__codigo__contenedor">
+            <input type="text" name="" id="codigo" placeholder="Write Code" />
+          </div>
+          <img
+            src="img/captcha/captcha.jpg"
+            alt=""
+            class="c-contact__form__contenedor__codigo__img"
+          />
+        </div>
+        <button class="c-contact__form__button c-btn--primary">Send</button>
+      </form>
+    </div>
+  </body>
+</html>

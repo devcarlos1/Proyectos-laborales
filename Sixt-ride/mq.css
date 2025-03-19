@@ -1,0 +1,206 @@
+:root{
+    --color-1: #f4a127 ;
+    --color-2:#e5771e;
+    --color-3:#ffecb4;
+    --color-4:#5a3d2c;
+    --color-5:#75c8ae;
+}
+@media (max-width:1000px){
+    .header__nav--mobile{
+        display: block;
+    }
+    .header__nav--desktop{
+        display: none;
+    }
+    .header__izq{
+        gap: 1.4rem;
+    }
+    .header__btn__logo__img > svg{
+        width: 8rem;
+    }
+    html{
+        font-size: calc(1.7vw - .1vh);
+       }
+       .carusel--2__carusel{
+        display: flex;
+        align-items: center;
+       }
+
+       .carusel--2__informacion > .carusel--2__informacion__elementos:nth-child(3){
+position: absolute;
+left: 200%;
+    }
+    .formulario--usuario{
+        width: 40%;
+       }
+       .info--4__elemento__lista li {
+        width: 33.33%;
+    }
+}
+
+
+@media (max-width:850px){
+    html{
+        font-size: calc(2.2vw - .1vh);
+       }
+       .formulario--mundo{
+        width: 80%;
+        height: 80%;
+
+ }
+ .formulario--usuario{
+    width: 100%;
+    height: 80%;
+   }
+       .header__btn__logo__img > svg{
+        width: 6rem;
+    }
+    .formulario{
+        flex-direction: column;
+    }
+    .formulario__elemento__buscador__img{
+        display: none;
+    }
+    .formulario__elemento{
+        width: 100%;
+        margin: .8rem auto;
+    }
+    .formulario__icon{
+        margin: 0 auto;
+    }
+    .formulario__btn{
+        margin-top: .4rem;
+        width: 100%;
+        padding: 2% 2%;
+    }
+    div.formulario__elemento__destino{
+        width: 100%;
+        margin: .8rem auto;
+    
+    }
+
+    .info--2{
+        padding: 6% 8%;
+    }
+    .info--2__titulos span{
+        display: block;
+   margin: 2rem 0;
+    }
+
+}
+@media (max-width:800px){
+    .info--4__elemento__lista li {
+        width: 50%;
+    }
+    .info--4__elemento__lista li:nth-child(n + 5) {
+        display: none;
+    }
+    .info--4__elemento__show-1,.info--4__elemento__show-2, .info--4__elemento__show-3 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   color:var(--color-2);
+   font-weight: 700;
+   line-height: 1.2;
+   font-size: 0.875rem;
+   width: fit-content;
+   cursor: pointer;
+    }
+.info--4__elemento__show-1__btn__arriba,.info--4__elemento__show-1__btn__abajo
+,.info--4__elemento__show-2__btn__arriba, .info--4__elemento__show-2__btn__abajo
+,.info--4__elemento__show-3__btn__arriba, .info--4__elemento__show-3__btn__abajo{
+    width: 0.875rem;
+    height: 0.875rem;
+}
+.info--4__elemento__show-1__btn__arriba  > img
+,.info--4__elemento__show-2__btn__arriba > img
+,.info--4__elemento__show-3__btn__arriba > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: invert(50%) sepia(61%) saturate(1110%) hue-rotate(351deg) brightness(95%) contrast(89%);
+
+}
+ .info--4__elemento__show-1__btn__abajo > img
+, .info--4__elemento__show-2__btn__abajo > img
+, .info--4__elemento__show-3__btn__abajo > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+    filter: invert(50%) sepia(61%) saturate(1110%) hue-rotate(351deg) brightness(95%) contrast(89%);
+}
+}
+@media (max-width:700px){
+    .info--1{
+        flex-direction: column;
+    }
+    .info--1__izq{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .info--1__der{
+        width: 100%;
+    }
+    .info--3{
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    .info--3__izq{
+        width: 100%;
+    }
+    .info--3__der{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width:750px){
+    html{
+        font-size: calc(2.4vw - .1vh);
+       }
+
+.header__btn__menu--mobile{
+    display: block;
+}
+.header__btn__menu--desktop{
+    display: none;
+}
+.carusel--1{
+height: 50vh;
+}
+
+}
+@media (max-width:650px){
+    html{
+        font-size: calc(2.8vw - .1vh);
+       }
+       .header__btn__logo__img > svg{
+        width: 4rem;
+    }
+    .redes-sociales__tiendas{
+        flex-direction: column;
+        margin: 15% 0;
+    }
+    .redes-sociales__tiendas a{
+        width: 90%;
+     }
+    .header__der__usuario p{
+        display: none;
+    }
+    .carusel--2__informacion > .carusel--2__informacion__elementos:nth-child(2){
+        position: absolute;
+      left: 200%;
+             }
+}
+@media (max-width:450px){
+    html{
+        font-size: calc(3.2vw - .1vh);
+       }
+}
+@media (max-width:350px){
+    html{
+        font-size: calc(3.4vw - .1vh);
+       }
+}

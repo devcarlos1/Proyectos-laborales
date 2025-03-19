@@ -1,0 +1,134 @@
+/* ==========================================================================
+   #TIMER
+   ========================================================================== */
+
+//Timer
+
+@for $i from 0 through 120 {
+  .c-time-#{$i} {
+    display: block;
+    @include time(#{$i}s, 0s);
+  }
+}
+.c-players-top-1__time,
+.c-players-top-2__time,
+.c-players-bottom-3__time,
+.c-players-bottom-4__time,
+.c-players-bottom-5__time,
+.c-players-top-6__time {
+  position: relative;
+  @include style-timer(75px, 15px);
+}
+
+.c-players-top-1__time::before,
+.c-players-top-2__time::before,
+.c-players-top-6__time::before,
+.c-players-bottom-4__time::before,
+.c-players-bottom-5__time::before,
+.c-players-bottom-3__time::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/logos_and_icons-games/clock-solid.png");
+  background-size: cover;
+  position: absolute;
+  top: -5px;
+  left: -35%;
+  filter: invert(83%) sepia(99%) saturate(0%) hue-rotate(304deg)
+    brightness(110%) contrast(101%);
+  @include mq($from: tablet, $until: desktop) {
+    top: -2.5px;
+    height: 15.5px;
+    width: 15.5px;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(min-height:40em)") {
+    top: -2.5px;
+    height: 16px;
+    width: 16px;
+  }
+  @include mq($from: mobile, $until: tablet) {
+    top: -3px;
+    height: 13px;
+    width: 13px;
+  }
+  @include mq($from: mobile, $until: 500px) {
+    top: -2.5px;
+    height: 11.5px;
+    width: 11.5px;
+  }
+}
+
+.c-players-top-1__time,
+.c-players-top-2__time,
+.c-players-top-6__time,
+.c-players-bottom-4__time,
+.c-players-bottom-5__time,
+.c-players-bottom-3__time {
+  @include mq($from: tablet, $until: desktop) {
+    height: 13px;
+    width: 60px !important;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(min-height:40em)") {
+    height: 15px;
+  }
+  @include mq($from: mobile, $until: tablet) {
+    height: 11px;
+    width: 50px !important;
+  }
+  @include mq($from: mobile, $until: 500px) {
+    height: 9.5px;
+    width: 40px !important;
+  }
+}
+
+//Media Queries
+.c-players-top-1__time,
+.c-players-top-2__time,
+.c-players-bottom-3__time,
+.c-players-bottom-4__time,
+.c-players-bottom-5__time,
+.c-players-top-6__time {
+  @include mq($from: desktop, $until: wide, $and: "(max-height:510px)") {
+    @include style-timer(65px, 12px);
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:420px)") {
+    @include style-timer(50px, 10px);
+  }
+
+  @include mq($from: desktop, $until: wide, $and: "(max-height:350px)") {
+    @include style-timer(50px, 10px);
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:380px)") {
+    @include style-timer(50px, 10px);
+  }
+}
+.c-players-top-1__time::before,
+.c-players-top-2__time::before,
+.c-players-top-6__time::before,
+.c-players-bottom-4__time::before,
+.c-players-bottom-5__time::before,
+.c-players-bottom-3__time::before {
+  @include mq($from: desktop, $until: wide, $and: "(max-height:510px)") {
+    width: 15px;
+    height: 15px;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:420px)") {
+    top: -3px;
+    left: -35%;
+    width: 13px;
+    height: 13px;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:350px)") {
+    top: -3px;
+    left: -35%;
+    width: 12px;
+    height: 12px;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:380px)") {
+    top: -3px;
+    left: -35%;
+    width: 13px;
+    height: 13px;
+  }
+}

@@ -1,0 +1,53 @@
+.c-navegation {
+  width: 100%;
+  padding: 0.35rem 0;
+  background-color: $black-6;
+  &__lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 3%;
+    @include inuit-font-size(20px);
+    li > a {
+      color: $white;
+    }
+  }
+}
+
+.c-navegation--mobile {
+  display: none;
+}
+
+//Media Queries
+.c-navegation__lista {
+  @include mq($from: mobile, $until: tablet) {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  li > a {
+    @include mq($from: mobile, $until: tablet) {
+      font-size: 1.2rem;
+    }
+  }
+}
+.c-navegation--desktop {
+  @include mq($from: mobile, $until: tablet) {
+    display: none;
+  }
+}
+.c-navegation--mobile {
+  @include mq($from: mobile, $until: tablet) {
+    display: block;
+  }
+}
+.c-navegation--desktop {
+  @include mq($until: mobile) {
+    display: none;
+  }
+}
+.c-navegation--mobile {
+  @include mq($until: mobile) {
+    display: block;
+  }
+}

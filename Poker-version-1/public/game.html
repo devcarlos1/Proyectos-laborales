@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/game.css" />
+    <title>poker game</title>
+  </head>
+  <body>
+    <header class="c-header__game">
+      <form action="">
+        <button type="submit" class="c-header__game__vol">
+          <img
+            src="./img/logos_and_icons-games/volume_off.png"
+            class="c-header__game__vol_on"
+            alt=""
+          />
+        </button>
+        <button type="submit" class="c-header__game__vol" style="display: none">
+          <img
+            src="./img/logos_and_icons-games/volume_up.png"
+            class="c-header__game__vol_on"
+            alt=""
+          />
+        </button>
+      </form>
+      <form action="">
+        <button type="submit" class="c-header__game__exit">
+          <img
+            src="img/logos_and_icons-games/circle-arrow-left-solid.png"
+            alt=""
+            class="c-header__game__exit__img"
+          />
+          <span class="c-header__game__exit__word">Quit the table</span>
+        </button>
+      </form>
+    </header>
+
+    <div class="o-media__background__img__game o-block__contain--game">
+      <!--Error Portrait-->
+      <div class="c-error-portrait">
+        <div class="c-error-portrait__img">
+          <img
+            src="img/logos_and_icons-games/iphone-landscape.png"
+            alt="img-responsive"
+          />
+        </div>
+        <p class="c-error-portrait__paragraph">
+          Please use landscape mode in order to play
+        </p>
+      </div>
+      <div class="o-block__game">
+        <div class="o-block__table--game">
+          <div class="c-poker__table">
+            <img src="./img/logos_and_icons-games/logo_poker.png" alt="" />
+          </div>
+          <!--show cards, name, timer and amount of money of the player-->
+          <div class="c-players-top">
+            <div class="c-players-top-6">
+              <div class="c-players-top-6__cards-and-data">
+                <div class="c-players-top-6__cards-and-data__info">
+                  <div class="c-players-top-6__cards-and-data__info__cards">
+                    <img
+                      src="img/cards/heart__5.png"
+                      alt=""
+                      data-letter-number="5"
+                      class="c-card-player c-card-player--win"
+                      style="display: none"
+                      data-symbol="heart"
+                      data-flush="red"
+                    />
+                    <img
+                      src="img/cards/clover_2.png"
+                      alt=""
+                      data-letter-number="2"
+                      class="c-card-player c-card-player--win"
+                      style="display: none"
+                      data-symbol="clover"
+                      data-flush="black"
+                    />
+                    <img
+                      src="img/cards/poker__back-view.jpeg"
+                      alt=""
+                      class="c-card-player c-card-player--win"
+                    />
+                    <img
+                      src="img/cards/poker__back-view.jpeg"
+                      alt=""
+                      class="c-card-player c-card-player--win"
+                    />
+                  </div>
+                  <div
+                    class="c-players-top-6__cards-and-data__info__cards--anonymous"
+                    style="display: none"
+                  >
+                    <img
+                      src="img/logos_and_icons-games/anonymous.png"
+                      alt=""
+                      class="c-card-anonymous-player"
+                    />
+                  </div>
+                  <output data-value-player-6="23" class="c-value__bet-player-6"
+                    >23</output
+                  >
+                  <p class="c-name__player-6">Concord</p>
+                </div>
+                <div class="c-players-top-6__time" player="6">
+                  <!--Timer for player-->
+                  <div class="c-time-120" id="time-6" player="6"></div>
+                </div>
+              </div>
+              <div class="c-players-top-6__dealer-and-chips">
+                <span class="c-players-top-6__dealer-and-chips__dealer">D</span>
+                <div class="c-players-top-6__dealer-and-chips__amount">
+                  <img
+                    src="./img/logos_and_icons-games/casino-chips.png"
+                    alt=""
+                    class="c-players-top-6__dealer-and-chips__chips o-media__icon"
+                  />
+                  <span class="c-players-top-6__dealer-and-chips__chips__value"
+                    >230000</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="c-players-top-1">
+              <div class="c-players-top-1__cards-and-data">
+                <div class="c-players-top-1__cards-and-data__info">
+                  <div class="c-players-top-1__cards-and-data__info__cards">
+                    <img
+                      src="img/cards/poker__heart-6.png"
+                      alt=""
+                      data-letter-number="6"
+                      class="c-card-player c-card-player--win"
+                      style="display: none"
+                      data-symbol="heart"
+                      data-flush="red"
+                    />
+                    <img
+                      src="img/cards/poker__diamond-9.png"
+                      alt=""
+                      data-letter-number="9"
+                      class="c-card-player c-card-player--win"
+                      style="display: none"
+                      data-symbol="diamond"
+                      data-flush="red"
+                    />
+                    <img
+                      src="img/cards/poker__back-view.jpeg"
+                      alt=""
+                      class="c-card-player c-card-player--win" 
+                    />
+                    <img
+                      src="img/cards/poker__back-view.jpeg"
+                      alt=""
+                      class="c-card-player c-card-player--win"
+                    />
+                  </div>
+                  <div
+                    class="c-players-top-1__cards-and-data__info__cards--anonymous"
+                    style="display: none"
+                  >
+                    <img
+                      src="img/logos_and_icons-games/anonymous.png"
+                      alt=""
+                      class="c-card-anonymous-player"
+                    />
+                  </div>
+                  <output data-value-player-1="12" class="c-value__bet-player-1"
+                    >12</output
+                  >
+                  <p class="c-name__player-1">User</p>
+                </div>
+
+                <div class="c-players-top-1__time" player="1">
+                  <!--Timer for player-->
+                  <div class="c-time-120" id="time-1" player="1"></div>
+                </div>
+              </div>
+              <div class="c-players-top-1__dealer-and-chips">
+                <span class="c-players-top-1__dealer-and-chips__dealer">D</span>
+                <div class="c-players-top-1__dealer-and-chips__amount">
+                  <img
+                    src="./img/logos_and_icons-games/casino-chips.png"
+                    alt=""
+                    class="c-players-top-1__dealer-and-chips__chips o-media__icon"
+                  />
+                  <span class="c-players-top-1__dealer-and-chips__chips__value"
+                    >230000</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="c-players-top-2">
+              <div class="c-players-top-2__cards-and-data">
+                <div class="c-players-top-2__cards-and-data__info">
+                  <div class="c-players-top-2__cards-and-data__info__cards">
+                    <img
+                      src="img/cards/heart__5.png"
+                      alt=""
+                      data-letter-number="5"
+                      class="c-card-player c-card-player--win"
+                      style="display: none"
+                      data-symbol="heart"
+                      data-flush="red"
+                    />
+                    <img
+                      src="img/cards/clover_2.png"
+                      alt=""
+                      data-letter-number="2"
+                      class="c-card-player c-card-player--win"
+                      style="display: none"
+                      data-symbol="clover"
+                      data-flush="black"
+                    />
+                    <img
+                      src="img/cards/poker__back-view.jpeg"
+                      alt=""
+                      class="c-card-player c-card-player--win"
+                    />
+                    <img
+                      src="img/cards/poker__back-view.jpeg"
+                      alt=""
+                      class="c-card-player c-card-player--win"
+                    />
+                  </div>
+                  <div
+                    class="c-players-top-2__cards-and-data__info__cards--anonymous"
+                    style="display: none"
+                  >
+                    <img
+                      src="img/logos_and_icons-games/anonymous.png"
+                      alt=""
+                      class="c-card-anonymous-player"
+                    />
+                  </div>
+                  <output data-value-player-2="23" class="c-value__bet-player-2"
+                    >23</output
+                  >
+                  <p class="c-name__player-2">Concord</p>
+                </div>
+                <div class="c-players-top-2__time" player="2">
+                  <!--Timer for player-->
+                  <div class="c-time-120" id="time-2" player="2"></div>
+                </div>
+              </div>
+              <div class="c-players-top-2__dealer-and-chips">
+                <span class="c-players-top-2__dealer-and-chips__dealer">D</span>
+                <div class="c-players-top-2__dealer-and-chips__amount">
+                  <img
+                    src="./img/logos_and_icons-games/casino-chips.png"
+                    alt=""
+                    class="c-players-top-2__dealer-and-chips__chips o-media__icon"
+                  />
+                  <span class="c-players-top-2__dealer-and-chips__chips__value"
+                    >230000</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-table--middle">
+            <!--Poker Hand-->
+            <div class="c-table--middle__hand">
+              <p class="c-table--middle__hand-straight-flush">Straight Flush</p>
+            </div>
+            <!--Cards community-->
+            <div class="c-table--middle__cards-community">
+              <img
+                src="img/cards/poker__heart-6.png"
+                data-letter-number="6"
+                data-symbol="heart"
+                data-flush="red"
+                class="c-table--middle__card__community c-card-1"
+              />
+              <img
+                src="img/cards/poker__diamond-9.png"
+                data-letter-number="9"
+                data-symbol="diamond"
+                data-flush="red"
+                class="c-table--middle__card__community c-card-2"
+              />
+              <img
+                src="img/cards/diamond_j.png"
+                data-letter-number="j"
+                data-symbol="diamond"
+                data-flush="red"
+                alt=""
+                class="c-table--middle__card__community c-card-3"
+              />
+              <img
+                src="img/cards/clover_2.png"
+                data-letter-number="2"
+                data-symbol="clover"
+                data-flush="black"
+                alt=""
+                class="c-table--middle__card__community c-card-4"
+              />
+              <img
+                src="img/cards/clover_2.png"
+                data-letter-number="2"
+                data-symbol="clover"
+                data-flush="black"
+                alt=""
+                class="c-table--middle__card__community c-card-5"
+              />
+            </div>
+            <!--Pot-->
+            <div class="c-table--middle__Pot">
+              <span class="c-table--middle__Pot__title">Pot: </span>
+              <div class="c-table--middle__Pot__coin">
+                <span class="c-table--middle__Pot__coin-value">
+                  1000 mXMR
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!--show cards, name, timer and amount of money of the player-->
+          <div class="c-players-bottom">
+            <div class="c-players-bottom-3">
+              <div class="c-players-bottom-3__cards-and-data">
+                <div class="c-players-bottom-3__cards-and-data__info">
+                  <div class="c-players-bottom-3__cards-and-data__info__cards">
+                    <img
+                      src="img/cards/poker__heart-6.png"
+                      alt=""
+                      data-letter-number="6"
+                      class="c-card-player c-card-player--win"
+                      style="display: none"
+                      data-symbol="heart"
+                      data-flush="red"
+                    />
+                    <img
+                      src="img/cards/poker__diamond-9.png"
+                      alt=""
+                      data-letter-number="9"
+                      class="c-card-player c-card-player--win"
+                      style="display: none"
+                      data-symbol="diamond"
+                      data-flush="red"
+                    />
+                    <img
+                      src="img/cards/poker__back-view.jpeg"
+                      alt=""
+                      class="c-card-player c-card-player--win"
+                    />
+                    <img
+                      src="img/cards/poker__back-view.jpeg"
+                      alt=""
+                      class="c-card-player c-card-player--win"
+                    />
+                  </div>
+                  <div
+                    class="c-players-bottom-3__cards-and-data__info__cards--anonymous"
+                    style="display: none"
+                  >
+                    <img
+                      src="img/logos_and_icons-games/anonymous.png"
+                      alt=""
+                      class="c-card-anonymous-player"
+                    />
+                  </div>
+                  <output data-value-player-3="12" class="c-value__bet-player-3"
+                    >12</output
+                  >
+                  <p class="c-name__player-3">User</p>
+                </div>
+                <div class="c-players-bottom-3__time" player="3">
+                  <!--Timer for player-->
+                  <div class="c-time-120" id="time-3" player="3"></div>
+                </div>
+              </div>
+              <div class="c-players-bottom-3__dealer-and-chips">
+                <span class="c-players-bottom-3__dealer-and-chips__dealer"
+                  >D</span
+                >
+                <div class="c-players-bottom-3__dealer-and-chips__amount">
+                  <img
+                    src="./img/logos_and_icons-games/casino-chips.png"
+                    alt=""
+                    class="c-players-bottom-3__dealer-and-chips__chips o-media__icon"
+                  />
+                  <span
+                    class="c-players-bottom-3__dealer-and-chips__chips__value"
+                    >230000</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="c-players-bottom-4">
+              <div class="c-players-bottom-4__cards-and-data">
+                <div class="c-players-bottom-4__cards-and-data__info">
+                  <div class="c-players-bottom-4__cards-and-data__info__cards">
+                    <img
+                      src="img/cards/heart__5.png"
+                      alt=""
+                      data-letter-number="5"
+                      class="c-card-player c-card-player--win"
+                      style="display: none"
+                      data-symbol="heart"
+                      data-flush="red"
+                    />
+                    <img
+                      src="img/cards/clover_2.png"
+                      alt=""
+                      data-letter-number="2"
+                      class="c-card-player c-card-player--win"
+                      style="display: none"
+                      data-symbol="clover"
+                      data-flush="black"
+                    />
+                    <img
+                      src="img/cards/poker__back-view.jpeg"
+                      alt=""
+                      class="c-card-player c-card-player--win"
+                    />
+                    <img
+                      src="img/cards/poker__back-view.jpeg"
+                      alt=""
+                      class="c-card-player c-card-player--win"
+                    />
+                  </div>
+                  <div
+                    class="c-players-bottom-4__cards-and-data__info__cards--anonymous"
+                    style="display: none"
+                  >
+                    <img
+                      src="img/logos_and_icons-games/anonymous.png"
+                      alt=""
+                      class="c-card-anonymous-player"
+                    />
+                  </div>
+                  <output data-value-player-4="23" class="c-value__bet-player-4"
+                    >23</output
+                  >
+                  <p class="c-name__player-4">Concord</p>
+                </div>
+                <div class="c-players-bottom-4__time" player="4">
+                  <!--Timer for player-->
+                  <div class="c-time-120" id="time-4" player="4"></div>
+                </div>
+              </div>
+              <div class="c-players-bottom-4__dealer-and-chips">
+                <span class="c-players-bottom-4__dealer-and-chips__dealer"
+                  >D</span
+                >
+                <div class="c-players-bottom-4__dealer-and-chips__amount">
+                  <img
+                    src="./img/logos_and_icons-games/casino-chips.png"
+                    alt=""
+                    class="c-players-bottom-4__dealer-and-chips__chips o-media__icon"
+                  />
+                  <span
+                    class="c-players-bottom-4__dealer-and-chips__chips__value"
+                    >230000</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="c-players-bottom-5">
+              <div class="c-players-bottom-5__cards-and-data">
+                <div class="c-players-bottom-5__cards-and-data__info">
+                  <div class="c-players-bottom-5__cards-and-data__info__cards">
+                    <img
+                      src="img/cards/heart__5.png"
+                      alt=""
+                      data-letter-number="5"
+                      class="c-card-player c-card-player--win"
+                      style="display: none"
+                      data-symbol="heart"
+                      data-flush="red"
+                    />
+                    <img
+                      src="img/cards/clover_2.png"
+                      alt=""
+                      data-letter-number="2"
+                      class="c-card-player c-card-player--win"
+                      style="display: none"
+                      data-symbol="clover"
+                      data-flush="black"
+                    />
+                    <img
+                      src="img/cards/poker__back-view.jpeg"
+                      alt=""
+                      class="c-card-player c-card-player--win"
+                    />
+                    <img
+                      src="img/cards/poker__back-view.jpeg"
+                      alt=""
+                      class="c-card-player c-card-player--win"
+                    />
+                  </div>
+                  <div
+                    class="c-players-bottom-5__cards-and-data__info__cards--anonymous"
+                    style="display: none"
+                  >
+                    <img
+                      src="img/logos_and_icons-games/anonymous.png"
+                      alt=""
+                      class="c-card-anonymous-player"
+                    />
+                  </div>
+                  <output data-value-player-5="23" class="c-value__bet-player-5"
+                    >23</output
+                  >
+                  <p class="c-name__player-5">Concord</p>
+                </div>
+
+                <div class="c-players-bottom-5__time" player="5">
+                  <!--Timer for player-->
+                  <div class="c-time-120" id="time-5" player="5"></div>
+                </div>
+              </div>
+              <div class="c-players-bottom-5__dealer-and-chips">
+                <span class="c-players-bottom-5__dealer-and-chips__dealer"
+                  >D</span
+                >
+                <div class="c-players-bottom-5__dealer-and-chips__amount">
+                  <img
+                    src="./img/logos_and_icons-games/casino-chips.png"
+                    alt=""
+                    class="c-players-bottom-5__dealer-and-chips__chips o-media__icon"
+                  />
+                  <span
+                    class="c-players-bottom-5__dealer-and-chips__chips__value"
+                    >230000</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Btns player-->
+        <div class="c-btns__player">
+          <!--Btn of check -->
+          <form action="">
+            <button class="c-check c-btn--primary">CHECK</button>
+          </form>
+          <!--Bet reference-->
+          <form action="" class="c-btns__player__reference">
+            <input type="number" class="c-bet-reference" />
+            <!--Btn of bet -->
+            <button class="c-btn__bet c-btn--primary">BET</button>
+          </form>
+          <!--CALL-->
+          <form action="">
+            <button class="c-call c-btn--primary">CALL</button>
+          </form>
+          <!--Btn of fold -->
+          <form action="">
+            <button class="c-fold c-btn--primary">FOLD</button>
+          </form>
+        </div>
+      </div>
+      <!--Chat-->
+      <input type="checkbox" name="" id="btn__chat" class="u-hidden-visually" />
+      <div class="c-chat">
+        <label class="c-chat__header" for="btn__chat">
+          <div class="c-chat__img__title">
+            <img src="img/logos_and_icons-games/icon__msg.png" alt="" />
+            <p>CHAT</p>
+          </div>
+          <p class="c-chat__hide">- HIDE</p>
+        </label>
+        <div class="c-chat__header--desktop">
+          <div class="c-chat__header--desktop__img__title">
+            <img src="img/logos_and_icons-games/icon__msg.png" alt="" />
+            <p>CHAT</p>
+          </div>
+        </div>
+        <div class="c-chat__contain__messages">
+          <div class="c-chat__contain__messages__message">
+            <p><span>Carlos: </span> Hi guys!</p>
+          </div>
+          <div class="c-chat__contain__messages__message">
+            <p><span>david231: </span> i wanna your slave - maneskin</p>
+          </div>
+          <div class="c-chat__contain__messages__message">
+            <p><span>david231: </span> i wanna your slave - maneskin</p>
+          </div>
+
+          <div class="c-chat__contain__messages__message">
+            <p><span>lawyer: </span> bad call...</p>
+          </div>
+          <div class="c-chat__contain__messages__message">
+            <p><span>lawyer: </span> bad call...</p>
+          </div>
+          <div class="c-chat__contain__messages__message">
+            <p><span>lawyer: </span> bad call...</p>
+          </div>
+          <div class="c-chat__contain__messages__message">
+            <p><span>lawyer: </span> bad call...</p>
+          </div>
+          <div class="c-chat__contain__messages__message">
+            <p><span>lawyer: </span> bad call...</p>
+          </div>
+          <div class="c-chat__contain__messages__message">
+            <p><span>lawyer: </span> bad call...</p>
+          </div>
+          <div class="c-chat__contain__messages__message">
+            <p><span>lawyer: </span> bad call...</p>
+          </div>
+          <div class="c-chat__contain__messages__message">
+            <p><span>lawyer: </span> bad call...</p>
+          </div>
+          <div class="c-chat__contain__messages__message">
+            <p><span>lawyer: </span> bad call...</p>
+          </div>
+          <div class="c-chat__contain__messages__message">
+            <p><span>lawyer: </span> bad call...</p>
+          </div>
+          <div class="c-chat__contain__messages__message">
+            <p><span>lawyer: </span> bad call...</p>
+          </div>
+          <div class="c-chat__contain__messages__message">
+            <p><span>lawyer: </span> bad call...</p>
+          </div>
+        </div>
+        <form class="c-chat__contain">
+          <div class="c-chat__write">
+            <input type="text" class="c-chat__write__input" />
+            <input type="submit" value=">" class="c-chat__write__button" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

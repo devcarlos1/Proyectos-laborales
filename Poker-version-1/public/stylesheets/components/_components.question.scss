@@ -1,0 +1,80 @@
+@for $i from 1 through 20 {
+  #question-#{$i}:checked
+    ~ .c-questions__question
+    .c-questions__question__answer-#{$i} {
+    display: block;
+  }
+  #question-#{$i}:not(:checked)
+    ~ .c-questions__question
+    .c-questions__question__answer-#{$i} {
+    display: none;
+  }
+  #question-#{$i}:checked
+    ~ .c-questions__question
+    .c-questions__question__question
+    label[for="question-#{$i}"] {
+    transform: rotate(180deg);
+  }
+  #question-#{$i}:not(:checked)
+    ~ .c-questions__question
+    .c-questions__question__question
+    label[for="question-#{$i}"] {
+    transform: rotate(0deg);
+  }
+}
+
+.c-questions {
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  &__title {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__question {
+    margin: 0.5rem auto;
+    width: 60%;
+
+    &__answer {
+      display: none;
+      padding: 1rem 0;
+      &__list {
+        display: none;
+        padding: 1rem 1.5rem;
+      }
+    }
+    &__question {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      padding: 0.5rem 1rem;
+      background-color: $gray__brown;
+      & label {
+        margin-left: 5px;
+      }
+      &__icon {
+        width: 1.5rem;
+        vertical-align: middle;
+      }
+    }
+    &:hover &__icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+//Media Queries
+.c-questions {
+  @include mq($until: tablet) {
+    width: 100%;
+  }
+}
+.c-questions__title {
+  font-size: 0.8rem;
+}
+.c-questions__question__question__icon {
+  width: 1.2rem;
+}

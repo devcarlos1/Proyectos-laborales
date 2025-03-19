@@ -1,0 +1,31 @@
+///* ========================================================================
+//   #GLOBAL
+//   ======================================================================== */
+
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+// Standardise some UI treatments.
+
+$global-radius: 3px !default;
+$global-transition: all 300ms ease-in-out !default;
+
+$nplayer: 6; //This variable determines the styles and number of players in the game.
+
+//Player cards
+$cards-width: 4.5rem; // This variable determines the width of the cards of the players in the game.
+
+$cards-height: 5rem; //This variable determines the height of the cards of the players in the game.
+//Community cards
+$cards-community-width: 4.5rem; //This variable determines the width of the community cards in the game.
+
+$cards-community-height: 5rem; //This variable determines the height of the community cards in the game.
+//Id and amount of the players
+$id-amount-player-width: 7.3rem;
+
+//Chat
+$chat-width: 25%; //This variable determines the width of the chat.
+
+$chat-btn-send-menssage: 2.5rem; //This variable determines the width of the send message button.
+
+$chat-content-height: 40vh; //This variable determines the height of the chat content.

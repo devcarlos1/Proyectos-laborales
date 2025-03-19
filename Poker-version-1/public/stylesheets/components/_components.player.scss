@@ -1,0 +1,1039 @@
+/* ==========================================================================
+   #PLAYERS
+   ========================================================================== */
+
+.c-players-top {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 4%;
+  margin: 0 auto;
+  &-1 {
+    align-self: flex-start;
+    width: 33%;
+    height: auto;
+    position: relative;
+    right: 5%;
+    &__cards-and-data {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 4px;
+
+      &__info {
+        &__cards {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+        }
+        &__cards--anonymous {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+        }
+      }
+    }
+    &__dealer-and-chips {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.1rem;
+      float: right;
+      flex-wrap: wrap;
+      margin: 0.2rem 0 0 auto;
+      &__dealer {
+        color: $white;
+        padding: 0.4rem 0.6rem;
+        border-radius: 50%;
+        background-color: #14532f;
+        font-weight: 900;
+        font-size: 0.9rem;
+      }
+      &__chips {
+        vertical-align: bottom;
+
+        filter: invert(38%) sepia(97%) saturate(7315%) hue-rotate(356deg)
+          brightness(92%) contrast(126%);
+        &__value {
+          vertical-align: middle;
+          font-size: 0.9rem;
+          color: $white;
+          width: min-content;
+        }
+      }
+      &__amount {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+    }
+  }
+
+  &-2 {
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 33%;
+    height: min-content;
+    align-self: center;
+    &__cards-and-data {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 4px;
+      &__info {
+        &__cards {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+        }
+        &__cards--anonymous {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+        }
+      }
+    }
+
+    &__dealer-and-chips {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: 0.1rem;
+      width: 6rem;
+      flex-wrap: wrap;
+      &__amount {
+        margin-right: 3px;
+      }
+      &__dealer {
+        color: $white;
+        padding: 0.4rem 0.6rem;
+        border-radius: 50%;
+        background-color: #14532f;
+        font-weight: 900;
+        font-size: 0.9rem;
+      }
+      &__chips {
+        vertical-align: bottom;
+        filter: invert(38%) sepia(97%) saturate(7315%) hue-rotate(356deg)
+          brightness(92%) contrast(126%);
+
+        &__value {
+          vertical-align: middle;
+          font-size: 0.9rem;
+          color: $white;
+        }
+      }
+      & div {
+        text-align: end;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+    }
+  }
+  &-6 {
+    position: relative;
+    top: 50px;
+    width: 33%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    &__cards-and-data {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 4px;
+      &__info {
+        &__cards {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+        }
+        &__cards--anonymous {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+        }
+      }
+    }
+    &__dealer-and-chips {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.1rem;
+      width: 6rem;
+      flex-wrap: wrap;
+      &__amount {
+        margin-left: 3px;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+      &__dealer {
+        color: $white;
+        padding: 0.4rem 0.6rem;
+        border-radius: 50%;
+        background-color: #14532f;
+        font-weight: 900;
+        font-size: 0.9rem;
+      }
+      &__chips {
+        vertical-align: bottom;
+        filter: invert(38%) sepia(97%) saturate(7315%) hue-rotate(356deg)
+          brightness(92%) contrast(126%);
+
+        &__value {
+          vertical-align: middle;
+          font-size: 0.9rem;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+.c-players-bottom {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: center;
+  gap: 4%;
+  margin: 0 auto;
+  &-3 {
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 33%;
+    height: min-content;
+    align-self: flex-start;
+
+    &__cards-and-data {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 4px;
+      &__info {
+        &__cards {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+        }
+        &__cards--anonymous {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+        }
+      }
+    }
+    &__dealer-and-chips {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: 0.1rem;
+      width: 6rem;
+      flex-wrap: wrap;
+      &__amount {
+        margin-right: 3px;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+      &__dealer {
+        color: $white;
+        padding: 0.4rem 0.6rem;
+        border-radius: 50%;
+        background-color: #14532f;
+        font-weight: 900;
+        font-size: 0.9rem;
+      }
+      &__chips {
+        vertical-align: bottom;
+        filter: invert(38%) sepia(97%) saturate(7315%) hue-rotate(356deg)
+          brightness(92%) contrast(126%);
+        &__value {
+          vertical-align: middle;
+          font-size: 0.9rem;
+          color: $white;
+        }
+      }
+      & div {
+        text-align: end;
+      }
+    }
+  }
+  &-4 {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 33%;
+    height: auto;
+    position: relative;
+    right: 5%;
+    &__cards-and-data {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 4px;
+      &__info {
+        &__cards {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+        }
+        &__cards--anonymous {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+        }
+      }
+    }
+    &__dealer-and-chips {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.1rem;
+      flex-wrap: wrap;
+      margin: 0 0 0.2rem auto;
+      &__amount {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+      &__dealer {
+        color: $white;
+        padding: 0.4rem 0.6rem;
+        border-radius: 50%;
+        background-color: #14532f;
+        font-weight: 900;
+        font-size: 0.9rem;
+      }
+      &__chips {
+        vertical-align: bottom;
+        filter: invert(38%) sepia(97%) saturate(7315%) hue-rotate(356deg)
+          brightness(92%) contrast(126%);
+        &__value {
+          vertical-align: middle;
+          font-size: 0.9rem;
+          color: $white;
+        }
+      }
+    }
+  }
+  &-5 {
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 33%;
+    height: min-content;
+    align-self: flex-start;
+    &__cards-and-data {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 4px;
+      &__info {
+        &__cards {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+        }
+        &__cards--anonymous {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+        }
+      }
+    }
+    &__dealer-and-chips {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.1rem;
+      width: 6rem;
+      flex-wrap: wrap;
+      &__amount {
+        margin-left: 3px;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+      &__dealer {
+        color: $white;
+        padding: 0.4rem 0.6rem;
+        border-radius: 50%;
+        background-color: #14532f;
+        font-weight: 900;
+        font-size: 0.9rem;
+      }
+      &__chips {
+        vertical-align: bottom;
+        filter: invert(38%) sepia(97%) saturate(7315%) hue-rotate(356deg)
+          brightness(92%) contrast(126%);
+        &__value {
+          vertical-align: middle;
+          font-size: 0.9rem;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+/*Card styles*/
+.c-card-player {
+  width: 2.45rem;
+  height: 54.34px;
+  border: 1px solid black;
+  background: $white;
+}
+.c-card-player--win {
+  animation: win-player 5s ease;
+}
+.c-card-anonymous-player {
+  width: 54.34px;
+  height: 54.34px;
+  border: 1px solid black;
+  background: $white;
+}
+
+//identificadores del jugador
+@for $i from 1 through 6 {
+  .c-value__bet-player-#{$i},
+  .c-name__player-#{$i} {
+    display: block;
+    text-align: center;
+    border: 1px solid white;
+    color: $player-money-text;
+    background-color: $player-money-background;
+    font-size: 0.9rem;
+    width: 9rem;
+    margin: 0 auto;
+  }
+}
+
+//Media Queries
+.c-card-player {
+  @include mq($from: wide, $and: "(min-height:560px)") {
+    width: 3.5rem;
+    height: 77px;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:520px)") {
+    width: 2.1rem;
+    height: 46.5px;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:470px)") {
+    width: 1.9rem;
+    height: 42px;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:420px)") {
+    width: 1.85rem;
+    height: 41px;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:380px)") {
+    width: 1.6rem;
+    height: 35px;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:350px)") {
+    width: 1.45rem;
+    height: 32px;
+  }
+
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:510px)") {
+    width: 2.2rem;
+    height: 49px;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:470px)") {
+    width: 2.3rem;
+    height: 51px;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:420px)") {
+    width: 2rem;
+    height: 44.2px;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:380px)") {
+    width: 2rem;
+    height: 44.2px;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:360px)") {
+    width: 1.7rem;
+    height: 37.5px;
+  }
+
+  //
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:510px)") {
+    width: 2.3rem;
+    height: 51px;
+  }
+  @include mq($from: mobile, $until: 680px, $and: "(max-height:510px)") {
+    width: 2.4rem;
+    height: 54.34px;
+  }
+  @include mq($from: mobile, $until: 590px, $and: "(max-height:510px)") {
+    width: 2.25rem;
+    height: 50px;
+  }
+  @include mq($from: mobile, $until: 550px, $and: "(max-height:510px)") {
+    width: 2.05rem;
+    height: 45.38px;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:470px)") {
+    width: 2.15rem;
+    height: 47.6px;
+  }
+  @include mq($from: mobile, $until: 610px, $and: "(max-height:470px)") {
+    width: 2.1rem;
+    height: 46.5px;
+  }
+  @include mq($from: mobile, $until: 550px, $and: "(max-height:470px)") {
+    width: 2.1rem;
+    height: 46.5px;
+  }
+  @include mq($from: mobile, $until: 510px, $and: "(max-height:470px)") {
+    width: 1.95rem;
+    height: 43px;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:420px)") {
+    width: 1.9rem;
+    height: 41px;
+  }
+  @include mq($from: mobile, $until: 550px, $and: "(max-height:420px)") {
+    width: 1.85rem;
+    height: 40px;
+  }
+  @include mq($from: mobile, $until: 490px, $and: "(max-height:420px)") {
+    width: 1.75rem;
+    height: 38.7px;
+  }
+  @include mq($from: mobile, $until: 435px, $and: "(max-height:420px)") {
+    width: 1.7rem;
+    height: 37.5px;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:380px)") {
+    width: 1.8rem;
+    height: 40px;
+  }
+  @include mq($from: mobile, $until: 600px, $and: "(max-height:380px)") {
+    width: 2rem;
+    height: 44.2px;
+  }
+  @include mq($from: mobile, $until: 550px, $and: "(max-height:380px)") {
+    width: 1.8rem;
+    height: 40px;
+  }
+  @include mq($from: mobile, $until: 480px, $and: "(max-height:380px)") {
+    width: 1.65rem;
+    height: 36.42px;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:350px)") {
+    width: 1.75rem;
+    height: 38.7px;
+  }
+  @include mq($from: mobile, $until: 420px, $and: "(max-height:350px)") {
+    width: 1.65rem;
+    height: 36.42px;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:320px)") {
+    width: 1.7rem;
+    height: 37.5px;
+  }
+  @include mq($from: mobile, $until: 400px, $and: "(max-height:320px)") {
+    width: 1.55rem;
+    height: 34.2px;
+  }
+}
+.c-card-anonymous-player {
+  @include mq($from: wide, $and: "(min-height:560px)") {
+    width: 77px;
+    height: 77px;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:520px)") {
+    width: 46.5px;
+    height: 46.5px;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:470px)") {
+    width: 42px;
+    height: 42px;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:420px)") {
+    width: 41px;
+    height: 41px;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:380px)") {
+    width: 35px;
+    height: 35px;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:350px)") {
+    width: 32px;
+    height: 32px;
+  }
+
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:510px)") {
+    width: 49px;
+    height: 49px;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:470px)") {
+    width: 51px;
+    height: 51px;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:420px)") {
+    width: 44.2px;
+    height: 44.2px;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:380px)") {
+    width: 44.2px;
+    height: 44.2px;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:360px)") {
+    width: 37.5px;
+    height: 37.5px;
+  }
+
+  //
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:510px)") {
+    width: 51px;
+    height: 51px;
+  }
+  @include mq($from: mobile, $until: 680px, $and: "(max-height:510px)") {
+    width: 54.34px;
+    height: 54.34px;
+  }
+  @include mq($from: mobile, $until: 590px, $and: "(max-height:510px)") {
+    width: 50px;
+    height: 50px;
+  }
+  @include mq($from: mobile, $until: 550px, $and: "(max-height:510px)") {
+    width: 45.38px;
+    height: 45.38px;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:470px)") {
+    width: 47.6px;
+    height: 47.6px;
+  }
+  @include mq($from: mobile, $until: 610px, $and: "(max-height:470px)") {
+    width: 46.5px;
+    height: 46.5px;
+  }
+  @include mq($from: mobile, $until: 550px, $and: "(max-height:470px)") {
+    width: 46.5px;
+    height: 46.5px;
+  }
+  @include mq($from: mobile, $until: 510px, $and: "(max-height:470px)") {
+    width: 43px;
+    height: 43px;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:420px)") {
+    width: 41px;
+    height: 41px;
+  }
+  @include mq($from: mobile, $until: 550px, $and: "(max-height:420px)") {
+    width: 40px;
+    height: 40px;
+  }
+  @include mq($from: mobile, $until: 490px, $and: "(max-height:420px)") {
+    width: 38.7px;
+    height: 38.7px;
+  }
+  @include mq($from: mobile, $until: 435px, $and: "(max-height:420px)") {
+    width: 37.5px;
+    height: 37.5px;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:380px)") {
+    width: 40px;
+    height: 40px;
+  }
+  @include mq($from: mobile, $until: 600px, $and: "(max-height:380px)") {
+    width: 44.2px;
+    height: 44.2px;
+  }
+  @include mq($from: mobile, $until: 550px, $and: "(max-height:380px)") {
+    width: 40px;
+    height: 40px;
+  }
+  @include mq($from: mobile, $until: 480px, $and: "(max-height:380px)") {
+    width: 36.42px;
+    height: 36.42px;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:350px)") {
+    width: 38.7px;
+    height: 38.7px;
+  }
+  @include mq($from: mobile, $until: 420px, $and: "(max-height:350px)") {
+    width: 36.42px;
+    height: 36.42px;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:320px)") {
+    width: 37.5px;
+    height: 37.5px;
+  }
+  @include mq($from: mobile, $until: 400px, $and: "(max-height:320px)") {
+    width: 34.2px;
+    height: 34.2px;
+  }
+}
+
+@for $i from 1 through 6 {
+  .c-value__bet-player-#{$i},
+  .c-name__player-#{$i} {
+    @include mq($from: wide, $and: "(min-height:560px)") {
+      font-size: 1.2rem;
+    }
+    @include mq($from: desktop, $until: wide, $and: "(max-height:510px)") {
+      width: 7rem;
+      font-size: 0.8rem;
+    }
+    @include mq($from: desktop, $until: wide, $and: "(max-height:470px)") {
+      width: 7rem;
+      font-size: 0.8rem;
+    }
+    @include mq($from: desktop, $until: wide, $and: "(max-height:420px)") {
+      width: 7rem;
+      font-size: 0.7rem;
+    }
+    @include mq($from: desktop, $until: wide, $and: "(max-height:380px)") {
+      width: 6rem;
+      font-size: 0.6rem;
+    }
+
+    @include mq($from: desktop, $until: wide, $and: "(max-height:350px)") {
+      width: 5.5rem;
+    }
+
+    @include mq($from: tablet, $until: desktop, $and: "(max-height:510px)") {
+      width: 8rem;
+      font-size: 0.9rem;
+    }
+    @include mq($from: tablet, $until: desktop, $and: "(max-height:470px)") {
+      width: 7rem;
+      font-size: 0.8rem;
+    }
+    @include mq($from: tablet, $until: desktop, $and: "(max-height:420px)") {
+      width: 6rem;
+      font-size: 0.7rem;
+    }
+    @include mq($from: tablet, $until: desktop, $and: "(max-height:380px)") {
+      width: 6rem;
+      font-size: 0.6rem;
+    }
+
+    @include mq($from: tablet, $until: desktop, $and: "(max-height:350px)") {
+      width: 5.5rem;
+    }
+
+    //
+    @include mq($from: mobile, $until: tablet, $and: "(max-height:510px)") {
+      width: 7.2rem;
+      font-size: 0.8rem;
+    }
+    @include mq($from: mobile, $until: 680px, $and: "(max-height:510px)") {
+      width: 6.6rem;
+      font-size: 0.8rem;
+    }
+    @include mq($from: mobile, $until: 590px, $and: "(max-height:510px)") {
+      width: 5.8rem;
+      font-size: 0.75rem;
+    }
+    @include mq($from: mobile, $until: 550px, $and: "(max-height:510px)") {
+      width: 5.2rem;
+      font-size: 0.75rem;
+    }
+    @include mq($from: mobile, $until: tablet, $and: "(max-height:470px)") {
+      width: 6.5rem;
+      font-size: 0.8rem;
+    }
+    @include mq($from: mobile, $until: 610px, $and: "(max-height:470px)") {
+      width: 6rem;
+      font-size: 0.7rem;
+    }
+    @include mq($from: mobile, $until: 550px, $and: "(max-height:470px)") {
+      width: 5.2rem;
+      font-size: 0.75rem;
+    }
+    @include mq($from: mobile, $until: 510px, $and: "(max-height:470px)") {
+      width: 4.5rem;
+      font-size: 0.7rem;
+    }
+    @include mq($from: mobile, $until: tablet, $and: "(max-height:420px)") {
+      width: 6rem;
+      font-size: 0.7rem;
+    }
+    @include mq($from: mobile, $until: 550px, $and: "(max-height:420px)") {
+      width: 5.2rem;
+      font-size: 0.6rem;
+    }
+    @include mq($from: mobile, $until: 490px, $and: "(max-height:420px)") {
+      width: 4rem;
+      font-size: 0.6rem;
+    }
+    @include mq($from: mobile, $until: 435px, $and: "(max-height:420px)") {
+      width: 3.5rem;
+      font-size: 0.6rem;
+    }
+    @include mq($from: mobile, $until: tablet, $and: "(max-height:390px)") {
+      width: 5.5rem;
+      font-size: 0.6rem;
+    }
+    @include mq($from: mobile, $until: 600px, $and: "(max-height:380px)") {
+      width: 5rem;
+      font-size: 0.6rem;
+    }
+    @include mq($from: mobile, $until: 550px, $and: "(max-height:380px)") {
+      width: 4.5rem;
+      font-size: 0.6rem;
+    }
+    @include mq($from: mobile, $until: 480px, $and: "(max-height:380px)") {
+      width: 4rem;
+      font-size: 0.55rem;
+    }
+    @include mq($from: mobile, $until: tablet, $and: "(max-height:350px)") {
+      width: 5rem;
+    }
+    @include mq($from: mobile, $until: 550px, $and: "(max-height:350px)") {
+      width: 4.5rem;
+      font-size: 0.6rem;
+    }
+    @include mq($from: mobile, $until: 420px, $and: "(max-height:350px)") {
+      width: 4rem;
+      font-size: 0.55rem;
+    }
+  }
+}
+
+.c-players-top-1__cards-and-data__info__cards,
+.c-players-top-2__cards-and-data__info__cards,
+.c-players-top-6__cards-and-data__info__cards,
+.c-players-bottom-3__cards-and-data__info__cards,
+.c-players-bottom-4__cards-and-data__info__cards,
+.c-players-bottom-5__cards-and-data__info__cards {
+  @include mq($from: desktop, $until: wide, $and: "(max-height:410px)") {
+    gap: 4px;
+  }
+  @include mq($from: mobile, $until: 590px) {
+    gap: 2px;
+  }
+}
+
+.c-players-top-1__dealer-and-chips,
+.c-players-bottom-4__dealer-and-chips {
+  @include mq($from: tablet, $until: desktop) {
+    width: 100%;
+  }
+  @include mq($from: mobile, $until: tablet) {
+    width: 100%;
+  }
+}
+.c-players-bottom-4 {
+  @include mq($from: desktop, $and: "(min-height:560px)") {
+    position: relative;
+    top: 5px;
+  }
+  @include mq($from: desktop, $and: "(min-height:610px)") {
+    position: relative;
+    top: 24px;
+  }
+  @include mq($from: desktop, $and: "(max-height:610px)") {
+    position: relative;
+    top: 6px;
+  }
+  @include mq($from: desktop, $and: "(max-height:530px)") {
+    position: relative;
+    top: 0;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(min-height:44em)") {
+    align-self: center;
+  }
+}
+.c-players-top-1 {
+  @include mq($from: desktop, $and: "(min-height:560px)") {
+    position: relative;
+    top: -5px;
+  }
+  @include mq($from: desktop, $and: "(min-height:610px)") {
+    position: relative;
+    top: -24px;
+  }
+  @include mq($from: desktop, $and: "(max-height:610px)") {
+    position: relative;
+    top: -6px;
+  }
+  @include mq($from: desktop, $and: "(max-height:530px)") {
+    position: relative;
+    top: 0;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(min-height:44em)") {
+    align-self: center;
+  }
+}
+.c-players-top-6,
+.c-players-top-2 {
+  @include mq($from: desktop, $until: wide, $and: "(max-height:510px)") {
+    align-items: end;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(min-height:44em)") {
+    align-self: flex-end;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:510px)") {
+    align-self: flex-end;
+  }
+}
+.c-players-top-6,
+.c-players-top-2,
+.c-players-top-1,
+.c-players-bottom-3,
+.c-players-bottom-4,
+.c-players-bottom-5 {
+  @include mq($from: mobile, $until: 590px, $and: "(max-height:510px)") {
+    width: 31%;
+  }
+  @include mq($from: mobile, $until: 490px, $and: "(max-height:420px)") {
+    width: 29%;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:380px)") {
+    width: 31%;
+  }
+  @include mq($from: mobile, $until: 600px, $and: "(max-height:380px)") {
+    width: 30%;
+  }
+  @include mq($from: mobile, $until: 550px, $and: "(max-height:380px)") {
+    width: 28.5%;
+  }
+  @include mq($from: mobile, $until: 420px, $and: "(max-height:350px)") {
+    width: 28%;
+  }
+}
+.c-players-top {
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:510px)") {
+    top: 15px;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:430px)") {
+    top: 0px;
+  }
+}
+.c-players-top,
+.c-players-bottom {
+  @include mq($from: tablet, $until: desktop, $and: "(min-height:40em)") {
+    width: 100%;
+  }
+  @include mq($from: mobile, $until: 500px) {
+    width: 100%;
+  }
+  @include mq($from: mobile, $until: 590px, $and: "(max-height:510px)") {
+    gap: 0px;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:390px)") {
+    gap: 2.5%;
+  }
+  @include mq($from: mobile, $until: 550px, $and: "(max-height:350px)") {
+    gap: 2%;
+  }
+}
+
+.c-players-top-2__dealer-and-chips__dealer,
+.c-players-top-1__dealer-and-chips__dealer,
+.c-players-top-6__dealer-and-chips__dealer,
+.c-players-bottom-3__dealer-and-chips__dealer,
+.c-players-bottom-4__dealer-and-chips__dealer,
+.c-players-bottom-5__dealer-and-chips__dealer {
+  @include mq($from: wide, $and: "(min-height:560px)") {
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:470px)") {
+    font-size: 0.75rem;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:420px)") {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:380px)") {
+    padding: 0.25rem 0.4rem;
+    font-size: 0.55rem;
+  }
+
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:470px)") {
+    font-size: 0.75rem;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:420px)") {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
+  }
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:380px)") {
+    padding: 0.25rem 0.4rem;
+    font-size: 0.55rem;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:510px)") {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7rem;
+  }
+  @include mq($from: mobile, $until: 680px, $and: "(max-height:510px)") {
+    font-size: 0.7rem;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:420px)") {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
+  }
+  @include mq($from: mobile, $until: 490px, $and: "(max-height:420px)") {
+    font-size: 0.6rem;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:390px)") {
+    padding: 0.25rem 0.4rem;
+    font-size: 0.7rem;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:350px)") {
+    padding: 0.2rem 0.35rem;
+    font-size: 0.6rem;
+  }
+
+  @include mq($from: mobile, $until: tablet) {
+    margin: 0;
+  }
+}
+.c-players-bottom-3__dealer-and-chips__chips__value,
+.c-players-top-2__dealer-and-chips__chips__value,
+.c-players-bottom-4__dealer-and-chips__chips__value,
+.c-players-bottom-5__dealer-and-chips__chips__value,
+.c-players-top-1__dealer-and-chips__chips__value,
+.c-players-top-6__dealer-and-chips__chips__value {
+  @include mq($from: wide, $and: "(min-height:560px)") {
+    font-size: 1.1rem;
+  }
+  @include mq($from: desktop, $until: wide, $and: "(max-height:470px)") {
+    font-size: 0.85rem;
+  }
+
+  @include mq($from: tablet, $until: desktop, $and: "(max-height:470px)") {
+    font-size: 0.85rem;
+  }
+  @include mq($from: mobile, $until: tablet, $and: "(max-height:470px)") {
+    font-size: 0.85rem;
+  }
+  @include mq($from: mobile, $until: 470px, $and: "(max-height:420px)") {
+    font-size: 0.75rem;
+  }
+}
+
+@for $i from 1 through 6 {
+  .c-players-top-#{$i}__dealer-and-chips__chips {
+    @include mq($from: mobile, $until: 600px) {
+      display: none;
+    }
+  }
+  .c-players-bottom-#{$i}__dealer-and-chips__chips {
+    @include mq($from: mobile, $until: 600px) {
+      display: none;
+    }
+  }
+}

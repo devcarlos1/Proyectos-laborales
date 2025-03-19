@@ -1,0 +1,139 @@
+/* ==========================================================================
+   #BLOCK
+   ========================================================================== */
+
+/**
+ * Stacked image-with-text object. A simple abstraction to cover a very commonly
+ * occurring design pattern.
+ */
+
+.o-block {
+  display: block;
+  text-align: center;
+  &__w-80 {
+    width: 80%;
+  }
+  &__table--game {
+    height: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include mq($from: desktop, $until: wide, $and: "(min-height:700px)") {
+      height: 70%;
+    }
+  }
+  &__contain--game {
+    height: calc(100vh - 42px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(59, 33, 20);
+    @include mq($from: wide, $and: "(min-height:560px)") {
+      height: calc(100vh - 54px);
+    }
+    @include mq($from: tablet, $until: desktop) {
+      height: 100vh;
+    }
+    @include mq($from: mobile, $until: tablet) {
+      height: 100vh;
+    }
+  }
+  &__game {
+    position: relative;
+    width: max-content;
+    height: 100%;
+    margin: auto;
+    @include mq($from: wide, $and: "(min-height:560px)") {
+      height: max-content;
+    }
+    @include mq($from: desktop, $until: wide, $and: "(min-height:560px)") {
+      height: max-content;
+    }
+    @include mq($from: tablet, $until: desktop, $and: "(min-height:560px)") {
+      height: max-content;
+    }
+    @include mq($from: tablet, $until: desktop, $and: "(min-height:40em)") {
+      margin-left: 3.5rem;
+    }
+    @include mq($from: tablet, $until: desktop) {
+      width: max-content;
+      height: 100%;
+      margin: 0 auto;
+    }
+
+    @include mq($from: tablet, $until: 850px) {
+      width: max-content;
+      height: 100%;
+      margin: 0 auto;
+    }
+    @include mq($from: mobile, $until: tablet) {
+      width: max-content;
+      height: 100%;
+      margin: 0 auto;
+    }
+    @include mq($from: mobile, $until: 435px, $and: "(max-height:420px)") {
+      width: 100%;
+    }
+  }
+}
+
+.o-block__img {
+  margin-bottom: $inuit-global-spacing-unit;
+
+  /* Size variants
+       ====================================================================== */
+
+  .o-block--flush > & {
+    margin-bottom: 0;
+  }
+
+  .o-block--tiny > & {
+    margin-bottom: $inuit-global-spacing-unit-tiny;
+  }
+
+  .o-block--small > & {
+    margin-bottom: $inuit-global-spacing-unit-small;
+  }
+
+  .o-block--large > & {
+    margin-bottom: $inuit-global-spacing-unit-large;
+  }
+
+  .o-block--huge > & {
+    margin-bottom: $inuit-global-spacing-unit-huge;
+  }
+}
+
+.o-block__body {
+  display: block;
+}
+
+/* Alignment variants
+   ========================================================================== */
+
+.o-block--right {
+  text-align: right;
+}
+
+.o-block--left {
+  text-align: left;
+}
+.o-block--center {
+  text-align: center;
+}
+
+//Media Queries
+
+.o-block {
+  &__table--game {
+    @include mq($from: desktop, $until: wide, $and: "(max-height:560px)") {
+      height: 90%;
+    }
+  }
+  &__contain--game {
+    @include mq($from: desktop, $until: wide, $and: "(max-height:560px)") {
+      height: 100vh;
+    }
+  }
+}

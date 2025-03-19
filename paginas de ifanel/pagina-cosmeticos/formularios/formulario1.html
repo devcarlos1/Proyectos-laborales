@@ -1,0 +1,108 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<style>
+    /*COLORES*/
+.ifanel-azul-claro{
+    color: #59d4ff;
+}
+.ifanel-blanco{
+    color: white;
+}
+.ifanel-negro-claro{
+    color: #444242;
+}
+.ifanel-marron-claro{
+    color: #b88566;
+}
+.ifanel-marron-masclaro{
+    color: #c98664;
+}
+/*FONDOS*/
+.ifanel-fondo-azul-claro{
+    background-color: #59d4ff;
+}
+/*FUENTES*/
+@font-face {
+    font-family: 'anthemiaregular';
+    src: url('../fuentes/webfontkit-20220829-232703/anthemia-webfont.woff2')format('woff2'),
+         url('../fuentes/webfontkit-20220829-232703/anthemia-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.ifanel-monserrat-regular{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.ifanel-monserrat-bold{
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.ifanel-anthemia-regular{
+    font-family:'anthemiaregular';
+    font-weight: 400;
+}
+.ifanel-anthemia-bold{
+    font-family:'anthemiaregular';
+    font-weight: bold;
+}
+
+/*CODIGO POR ELEMENTO*/
+.ifanel-section--3__derecha__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding-left: 15%;
+}
+.ifanel-section--3__derecha__form__input{
+    outline: none;
+    border: none;
+    border-bottom:.1rem solid  #444242;
+    background-color: transparent;
+    padding: .8rem 0px ;
+    width:65%;
+    margin: 0 0 1.6rem 0;
+}
+.ifanel-section--3__derecha__form__input::placeholder{
+    color: #444242;
+    font-size: 1.1rem;
+    letter-spacing: .45rem;
+}
+.ifanel-section--3__derecha__form__button{
+    background-image: url(../imagenes/svg/seccion-3/flecha.svg);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size:contain;
+    width:  fit-content;
+    height: 2rem;
+    padding: 0 10% 0 2%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    letter-spacing: .25rem;
+}
+.ifanel-section--3__derecha__form__button::after{
+   content: "";
+   background-image: url(../imagenes/svg/seccion-3/flecha.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: .8rem;
+    display: block;
+width: 1.3rem;
+height: .8rem;
+}
+</style>
+<body>
+  <form class="ifanel-section--3__derecha__form">
+               <input type="email" name="email" id="" placeholder="EMAIL" class="ifanel-section--3__derecha__form__input ifanel-monserrat-regular">
+                <button type="submit" class="ifanel-section--3__derecha__form__button ifanel-monserrat-regular ifanel-negro-claro">ENVIAR</button>
+            </form>
+</body>

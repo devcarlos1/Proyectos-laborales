@@ -1,0 +1,3663 @@
+@charset "UTF-8";
+/* ==========================================================================
+   #BOX-SIZING
+   ========================================================================== */
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ==========================================================================
+   #RESET
+   ========================================================================== */
+/**
+ * A very simple reset that sits on top of Normalize.css.
+ */
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Remove trailing margins from nested lists.
+ */
+li > ol,
+li > ul {
+  margin-bottom: 0;
+}
+
+/**
+ * Remove default table spacing.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+ *    on fieldsets.
+ */
+fieldset {
+  min-width: 0; /* [1] */
+  border: 0;
+}
+
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   #ELEMENTS
+   ========================================================================== */
+body {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+/* ==========================================================================
+   #MEDIA
+   ========================================================================== */
+/**
+ * Place any image- and text-like content side-by-side, as per:
+ * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ */
+.o-media {
+  display: block;
+  width: max-content;
+}
+.o-media:after {
+  content: "" !important;
+  display: block !important;
+  clear: both !important;
+}
+.o-media__logo {
+  padding: 1rem 0;
+  width: 20rem;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .o-media__logo {
+    width: 10.5rem;
+  }
+}
+.o-media__icon {
+  width: 1.5rem;
+}
+@media (min-width: 61.25em) and (max-width: 89.99em) and (max-height:420px) {
+  .o-media__icon {
+    width: 1.2rem;
+  }
+}
+@media (min-width: 46.25em) and (max-width: 61.24em) and (max-height:420px) {
+  .o-media__icon {
+    width: 1.2rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .o-media__icon {
+    width: 1rem;
+  }
+}
+.o-media__icon__plataform {
+  width: 2.5rem;
+}
+
+.o-media__img {
+  float: left;
+  margin-right: 24px;
+}
+.o-media__img > img {
+  display: block;
+}
+
+.o-media__body {
+  overflow: hidden;
+  display: block;
+}
+.o-media__body,
+.o-media__body > :last-child {
+  margin-bottom: 0;
+}
+
+.o-media__background__img__game {
+  background-image: url("../img/background-game/madera_wallpaper.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Size variants
+   ========================================================================== */
+/**
+ * Modify the amount of space between our image and our text. We also have
+ * reversible options for all available sizes.
+ */
+.o-media--flush > .o-media__img {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.o-media--tiny > .o-media__img {
+  margin-right: 6px;
+}
+.o-media--tiny.o-media--reverse > .o-media__img {
+  margin-right: 0;
+  margin-left: 6px;
+}
+
+.o-media--small > .o-media__img {
+  margin-right: 12px;
+}
+.o-media--small.o-media--reverse > .o-media__img {
+  margin-right: 0;
+  margin-left: 12px;
+}
+
+.o-media--large > .o-media__img {
+  margin-right: 48px;
+}
+.o-media--large.o-media--reverse > .o-media__img {
+  margin-right: 0;
+  margin-left: 48px;
+}
+
+.o-media--huge > .o-media__img {
+  margin-right: 96px;
+}
+.o-media--huge.o-media--reverse > .o-media__img {
+  margin-right: 0;
+  margin-left: 96px;
+}
+
+/* Reversed media objects
+   ========================================================================== */
+.o-media--reverse > .o-media__img {
+  float: right;
+  margin-right: 0;
+  margin-left: 24px;
+}
+
+/* ==========================================================================
+   #LAYOUT
+   ========================================================================== */
+/**
+ * Grid-like layout system.
+ *
+ * The layout object provides us with a column-style layout system. This file
+ * contains the basic structural elements, but classes should be complemented
+ * with width utilities, for example:
+ *
+ *   <div class="o-layout">
+ *     <div class="o-layout__item  u-1/2">
+ *     </div>
+ *     <div class="o-layout__item  u-1/2">
+ *     </div>
+ *   </div>
+ *
+ * The above will create a two-column structure in which each column will
+ * fluidly fill half of the width of the parent. We can have more complex
+ * systems:
+ *
+ *   <div class="o-layout">
+ *     <div class="o-layout__item  u-1/1  u-1/3@medium">
+ *     </div>
+ *     <div class="o-layout__item  u-1/2  u-1/3@medium">
+ *     </div>
+ *     <div class="o-layout__item  u-1/2  u-1/3@medium">
+ *     </div>
+ *   </div>
+ *
+ * The above will create a system in which the first item will be 100% width
+ * until we enter our medium breakpoint, when it will become 33.333% width. The
+ * second and third items will be 50% of their parent, until they also become
+ * 33.333% width at the medium breakpoint.
+ *
+ * We can also manipulate entire layout systems by adding a series of modifiers
+ * to the `.o-layout` block. For example:
+ *
+ *   <div class="o-layout  o-layout--reverse">
+ *
+ * This will reverse the displayed order of the system so that it runs in the
+ * opposite order to our source, effectively flipping the system over.
+ *
+ *   <div class="o-layout  o-layout--[right|center]">
+ *
+ * This will cause the system to fill up from either the centre or the right
+ * hand side. Default behaviour is to fill up the layout system from the left.
+ *
+ * There are plenty more options available to us: explore them below.
+ */
+/* Default/mandatory classes
+   ========================================================================== */
+/**
+ * 1. Allows us to use the layout object on any type of element.
+ * 2. We need to defensively reset any box-model properties.
+ * 3. Use the negative margin trick for multi-row grids:
+ *    http://csswizardry.com/2011/08/building-better-grid-systems/
+ */
+.o-layout {
+  display: block; /* [1] */
+  margin: 0; /* [2] */
+  padding: 0; /* [2] */
+  list-style: none; /* [1] */
+  margin-left: -24px; /* [3] */
+  font-size: 0;
+}
+
+/**
+ * 1. Required in order to combine fluid widths with fixed gutters.
+ * 2. Allows us to manipulate grids vertically, with text-level properties,
+ *    etc.
+ * 3. Default item alignment is with the tops of each other, like most
+ *    traditional grid/layout systems.
+ * 4. By default, all layout items are full-width (mobile first).
+ * 5. Gutters provided by left padding:
+ *    http://csswizardry.com/2011/08/building-better-grid-systems/
+ * 6. Fallback for old IEs not supporting `rem` values.
+ */
+.o-layout__item {
+  box-sizing: border-box; /* [1] */
+  display: inline-block; /* [2] */
+  vertical-align: top; /* [3] */
+  width: 100%; /* [4] */
+  padding-left: 24px; /* [5] */
+  font-size: 16px; /* [6] */
+  font-size: 1rem;
+}
+
+/* Gutter size modifiers
+   ========================================================================== */
+.o-layout--flush {
+  margin-left: 0;
+}
+.o-layout--flush > .o-layout__item {
+  padding-left: 0;
+}
+
+.o-layout--tiny {
+  margin-left: -6px;
+}
+.o-layout--tiny > .o-layout__item {
+  padding-left: 6px;
+}
+
+.o-layout--small {
+  margin-left: -12px;
+}
+.o-layout--small > .o-layout__item {
+  padding-left: 12px;
+}
+
+.o-layout--large {
+  margin-left: -48px;
+}
+.o-layout--large > .o-layout__item {
+  padding-left: 48px;
+}
+
+.o-layout--huge {
+  margin-left: -96px;
+}
+.o-layout--huge > .o-layout__item {
+  padding-left: 96px;
+}
+
+/* Vertical alignment modifiers
+   ========================================================================== */
+/**
+ * Align all grid items to the middles of each other.
+ */
+.o-layout--middle > .o-layout__item {
+  vertical-align: middle;
+}
+
+/**
+ * Align all grid items to the bottoms of each other.
+ */
+.o-layout--bottom > .o-layout__item {
+  vertical-align: bottom;
+}
+
+/**
+ * Stretch all grid items of each row to have an equal-height.
+ * Please be aware that this modifier class doesn’t take any effect in IE9 and
+ * below and other older browsers due to the lack of `display: flex` support.
+ */
+.o-layout--stretch {
+  display: flex;
+  flex-wrap: wrap;
+}
+.o-layout--stretch > .o-layout__item {
+  display: flex;
+}
+.o-layout--stretch.o-layout--center {
+  justify-content: center;
+}
+.o-layout--stretch.o-layout--right {
+  justify-content: flex-end;
+}
+.o-layout--stretch.o-layout--left {
+  justify-content: flex-start;
+}
+
+/* Fill order modifiers
+   ========================================================================== */
+/**
+ * Fill up the layout system from the centre.
+ */
+.o-layout--center {
+  text-align: center;
+}
+.o-layout--center > .o-layout__item {
+  text-align: left;
+}
+
+/**
+ * Fill up the layout system from the right-hand side.
+ */
+.o-layout--right {
+  text-align: right;
+}
+.o-layout--right > .o-layout__item {
+  text-align: left;
+}
+
+/**
+ * Fill up the layout system from the left-hand side. This will likely only be
+ * needed when using in conjunction with `.o-layout--reverse`.
+ */
+.o-layout--left {
+  text-align: left;
+}
+.o-layout--left > .o-layout__item {
+  text-align: left;
+}
+
+/**
+ * Reverse the rendered order of the grid system.
+ */
+.o-layout--reverse {
+  direction: rtl;
+}
+.o-layout--reverse > .o-layout__item {
+  direction: ltr;
+}
+
+/* Auto-widths modifier
+   ========================================================================== */
+/**
+ * Cause layout items to take up a non-explicit amount of width.
+ */
+.o-layout--auto > .o-layout__item {
+  width: auto;
+}
+
+.o-margin-tp-0-lf-auto {
+  margin: 0 auto;
+}
+
+.o-padding__tb-3rem {
+  padding: 3rem 0;
+}
+
+.o-padding__tb-1rem {
+  padding: 1rem 0;
+}
+
+/* ==========================================================================
+   #BLOCK
+   ========================================================================== */
+/**
+ * Stacked image-with-text object. A simple abstraction to cover a very commonly
+ * occurring design pattern.
+ */
+.o-block {
+  display: block;
+  text-align: center;
+}
+.o-block__w-80 {
+  width: 80%;
+}
+.o-block__table--game {
+  height: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 61.25em) and (max-width: 89.99em) and (min-height:700px) {
+  .o-block__table--game {
+    height: 70%;
+  }
+}
+.o-block__contain--game {
+  height: calc(100vh - 42px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(59, 33, 20);
+}
+@media (min-width: 90em) and (min-height:560px) {
+  .o-block__contain--game {
+    height: calc(100vh - 54px);
+  }
+}
+@media (min-width: 46.25em) and (max-width: 61.24em) {
+  .o-block__contain--game {
+    height: 100vh;
+  }
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .o-block__contain--game {
+    height: 100vh;
+  }
+}
+.o-block__game {
+  position: relative;
+  width: max-content;
+  height: 100%;
+  margin-left: 4.5rem;
+}
+@media (min-width: 90em) and (min-height:560px) {
+  .o-block__game {
+    height: max-content;
+  }
+}
+@media (min-width: 61.25em) and (max-width: 89.99em) and (min-height:560px) {
+  .o-block__game {
+    height: max-content;
+  }
+}
+@media (min-width: 46.25em) and (max-width: 61.24em) and (min-height:560px) {
+  .o-block__game {
+    height: max-content;
+  }
+}
+@media (min-width: 46.25em) and (max-width: 61.24em) and (min-height:40em) {
+  .o-block__game {
+    margin-left: 3.5rem;
+  }
+}
+@media (min-width: 46.25em) and (max-width: 61.24em) {
+  .o-block__game {
+    width: max-content;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 46.25em) and (max-width: 53.125em) {
+  .o-block__game {
+    width: max-content;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .o-block__game {
+    width: max-content;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 20em) and (max-width: 27.1875em) and (max-height:420px) {
+  .o-block__game {
+    width: 100%;
+  }
+}
+
+.o-block__img {
+  margin-bottom: 24px;
+  /* Size variants
+       ====================================================================== */
+}
+.o-block--flush > .o-block__img {
+  margin-bottom: 0;
+}
+.o-block--tiny > .o-block__img {
+  margin-bottom: 6px;
+}
+.o-block--small > .o-block__img {
+  margin-bottom: 12px;
+}
+.o-block--large > .o-block__img {
+  margin-bottom: 48px;
+}
+.o-block--huge > .o-block__img {
+  margin-bottom: 96px;
+}
+
+.o-block__body {
+  display: block;
+}
+
+/* Alignment variants
+   ========================================================================== */
+.o-block--right {
+  text-align: right;
+}
+
+.o-block--left {
+  text-align: left;
+}
+
+.o-block--center {
+  text-align: center;
+}
+
+@media (min-width: 61.25em) and (max-width: 89.99em) and (max-height:560px) {
+  .o-block__table--game {
+    height: 90%;
+  }
+}
+@media (min-width: 61.25em) and (max-width: 89.99em) and (max-height:560px) {
+  .o-block__contain--game {
+    height: 100vh;
+  }
+}
+
+/*header styles*/
+.c-header__game {
+  background-color: rgb(59, 33, 20);
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+}
+.c-header__game__vol {
+  cursor: pointer;
+}
+.c-header__game__vol img {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: invert(100%) sepia(0%) saturate(7465%) hue-rotate(342deg) brightness(97%) contrast(109%);
+}
+.c-header__game__exit {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  width: max-content;
+}
+.c-header__game__exit__img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.7rem;
+  vertical-align: bottom;
+  filter: invert(13%) sepia(81%) saturate(6448%) hue-rotate(3deg) brightness(99%) contrast(119%);
+  transform: rotate(180deg);
+}
+.c-header__game__exit__word {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.c-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.c-header-2 {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1% 0;
+}
+.c-header-2__user {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.c-header-2__user__img {
+  width: 3rem;
+}
+.c-header-2__user__anonymous {
+  background: linear-gradient(to right, rgb(207, 0, 0) 0%, #970000 100%);
+  color: white;
+  padding: 5px;
+}
+.c-header-2__user__user {
+  display: flex;
+  box-shadow: 7.5px 7.5px 15px #bebebe, -7.5px -7.5px 15px #ffffff;
+  margin-right: 10px;
+}
+.c-header-2__user__user__img {
+  width: 3rem;
+}
+.c-header-2__user__user__img--div {
+  padding: 5px;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: gray;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: gray;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: gray;
+}
+.c-header-2__user__user__details {
+  padding: 10px;
+  background: linear-gradient(to right, rgb(207, 0, 0) 0%, #970000 100%);
+}
+.c-header-2__user__user__details__name {
+  width: max-content;
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+  color: white;
+}
+.c-header-2__user__user__details__amount {
+  display: flex;
+  width: max-content;
+  font-size: 1.25rem;
+  color: whitesmoke;
+}
+.c-header-2__user__user__details__amount__chip {
+  display: block;
+  margin-right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.c-header-2__user__button {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0.3rem;
+  margin: 0.4rem auto 0 auto;
+  cursor: pointer;
+}
+.c-header-2__user__button__img {
+  width: 1rem;
+  margin-right: 0.5rem;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(116deg) brightness(102%) contrast(102%);
+}
+
+@media (min-width: 90em) and (min-height:560px) {
+  .c-header__game {
+    height: 54px;
+  }
+}
+@media (min-width: 61.25em) and (max-height:560px) {
+  .c-header__game {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    z-index: 200;
+  }
+}
+@media (min-width: 46.25em) and (max-width: 61.24em) {
+  .c-header__game {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    z-index: 200;
+  }
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-header__game {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    padding: 0.5rem 0.75rem;
+    z-index: 200;
+  }
+}
+
+@media (min-width: 90em) and (min-height:560px) {
+  .c-header__game__exit__img,
+  .c-header__game__vol img {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+}
+@media (min-width: 46.25em) and (max-width: 61.24em) {
+  .c-header__game__exit__img,
+  .c-header__game__vol img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-header__game__exit__img,
+  .c-header__game__vol img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 31.25em) {
+  .c-header__game__exit__img,
+  .c-header__game__vol img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-header-2 {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-header-2__user {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-header-2__user__user__img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-header-2__user__user__details__name,
+  .c-header-2__user__user__details__amount {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-header-2__user__button__img {
+    width: 0.8rem;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-header-2__user__button {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 90em) and (min-height:560px) {
+  .c-header__game__exit__word {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 46.25em) and (max-width: 61.24em) {
+  .c-header__game__exit__word {
+    display: none;
+  }
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-header__game__exit__word {
+    display: none;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-header-2__user__user__details__amount__chip {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-header-2 {
+    justify-content: space-around;
+    gap: 8%;
+  }
+}
+
+.c-play {
+  background-color: #4f2e18;
+  background-image: url(../img/background-game/madera_wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.c-play__paragraph {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.1666666667;
+  margin: 0.8rem 0;
+  color: white;
+}
+.c-play__devices {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+.c-play__devices__tablet {
+  border: 10px solid black;
+  border-radius: 12px;
+  width: 16rem;
+  height: 10rem;
+}
+.c-play__devices__tablet img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.c-play__devices__laptop {
+  width: 520px;
+  height: 320px;
+}
+.c-play__devices__laptop__monitor {
+  position: relative;
+  width: 480px;
+  height: 320px;
+  margin: 0 auto;
+  border: 10px solid black;
+  border-radius: 12px;
+}
+.c-play__devices__laptop__monitor iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.c-play__devices__laptop__monitor img {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.c-play__devices__laptop__monitor__table {
+  color: white;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.c-play__devices__laptop__keyboard {
+  height: 5%;
+  width: 100%;
+  background-color: gray;
+  border-radius: 12px;
+}
+.c-play__devices__mobile {
+  border: 10px solid black;
+  border-radius: 12px;
+  width: 13rem;
+  height: 7rem;
+}
+.c-play__devices__mobile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.c-play__img {
+  display: block;
+  width: 80%;
+}
+.c-play__lista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 3%;
+}
+.c-play__lista__android {
+  filter: invert(75%) sepia(14%) saturate(3776%) hue-rotate(92deg) brightness(100%) contrast(70%);
+}
+.c-play__lista__apple {
+  filter: invert(35%) sepia(11%) saturate(12%) hue-rotate(45deg) brightness(100%) contrast(84%);
+}
+.c-play__lista__windows {
+  filter: invert(41%) sepia(86%) saturate(901%) hue-rotate(166deg) brightness(99%) contrast(107%);
+}
+.c-play__lista__linux {
+  filter: invert(0%) sepia(1%) saturate(4%) hue-rotate(320deg) brightness(97%) contrast(104%);
+}
+.c-play__button {
+  display: block;
+  border-radius: 1.4rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.3636363636;
+}
+.c-play__button > a {
+  color: white;
+}
+
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-play__devices {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-play__devices__laptop {
+    display: none;
+  }
+}
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-play__devices__tablet {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+/**
+ * This is an example component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ */
+.c-btn {
+  display: inline-block; /* [1] */
+  vertical-align: middle; /* [2] */
+  font: inherit; /* [3] */
+  text-align: center; /* [4] */
+  margin: 0; /* [4] */
+  cursor: pointer; /* [5] */
+  padding: 12px 24px;
+  transition: all 300ms ease-in-out;
+  border-radius: 3px;
+}
+
+/* Style variants
+   ========================================================================== */
+.c-btn--primary {
+  background-color: #960000;
+}
+.c-btn--primary, .c-btn--primary:hover, .c-btn--primary:active, .c-btn--primary:focus {
+  text-decoration: none; /* [4] */
+  color: #fff;
+}
+.c-btn--primary:hover, .c-btn--primary:focus {
+  background-color: #be3939;
+}
+
+.c-btn--secondary {
+  background-color: #2f4054;
+}
+.c-btn--secondary, .c-btn--secondary:hover, .c-btn--secondary:active, .c-btn--secondary:focus {
+  text-decoration: none;
+  color: #fff;
+}
+.c-btn--secondary:hover, .c-btn--secondary:focus {
+  background-color: #1d2733;
+}
+
+.c-btn--tertiary {
+  background-color: #fff;
+  color: #4a8ec2;
+}
+.c-btn--tertiary, .c-btn--tertiary:hover, .c-btn--tertiary:active, .c-btn--tertiary:focus {
+  text-decoration: none;
+  color: #4a8ec2;
+}
+.c-btn--tertiary:hover, .c-btn--tertiary:focus {
+  color: #3774a2;
+}
+
+/* Size variants
+   ========================================================================== */
+.c-btn--small {
+  padding: 6px 12px;
+}
+
+.c-btn--large {
+  padding: 24px 48px;
+}
+
+/* Ghost buttons
+   ========================================================================== */
+/**
+ * Ghost buttons have see-through backgrounds and are bordered.
+ */
+.c-btn--ghost {
+  border: 2px solid currentColor;
+  padding: 10px 22px;
+}
+.c-btn--ghost, .c-btn--ghost:hover, .c-btn--ghost:active, .c-btn--ghost:focus {
+  background: none;
+}
+.c-btn--ghost.c-btn--small {
+  padding: 4px 10px;
+}
+.c-btn--ghost.c-btn--large {
+  padding: 22px 46px;
+}
+.c-btn--ghost.c-btn--primary {
+  color: #4a8ec2;
+}
+.c-btn--ghost.c-btn--primary:hover, .c-btn--ghost.c-btn--primary:focus {
+  color: #3774a2;
+}
+.c-btn--ghost.c-btn--secondary {
+  color: #2f4054;
+}
+.c-btn--ghost.c-btn--secondary:hover, .c-btn--ghost.c-btn--secondary:focus {
+  color: #1d2733;
+}
+.c-btn--ghost.c-btn--tertiary {
+  color: #fff;
+}
+.c-btn--ghost.c-btn--tertiary:hover, .c-btn--ghost.c-btn--tertiary:focus {
+  color: #fff;
+}
+
+#question-1:checked ~ .c-questions__question .c-questions__question__answer-1 {
+  display: block;
+}
+
+#question-1:not(:checked) ~ .c-questions__question .c-questions__question__answer-1 {
+  display: none;
+}
+
+#question-1:checked ~ .c-questions__question .c-questions__question__question label[for=question-1] {
+  transform: rotate(180deg);
+}
+
+#question-1:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-1] {
+  transform: rotate(0deg);
+}
+
+#question-2:checked ~ .c-questions__question .c-questions__question__answer-2 {
+  display: block;
+}
+
+#question-2:not(:checked) ~ .c-questions__question .c-questions__question__answer-2 {
+  display: none;
+}
+
+#question-2:checked ~ .c-questions__question .c-questions__question__question label[for=question-2] {
+  transform: rotate(180deg);
+}
+
+#question-2:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-2] {
+  transform: rotate(0deg);
+}
+
+#question-3:checked ~ .c-questions__question .c-questions__question__answer-3 {
+  display: block;
+}
+
+#question-3:not(:checked) ~ .c-questions__question .c-questions__question__answer-3 {
+  display: none;
+}
+
+#question-3:checked ~ .c-questions__question .c-questions__question__question label[for=question-3] {
+  transform: rotate(180deg);
+}
+
+#question-3:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-3] {
+  transform: rotate(0deg);
+}
+
+#question-4:checked ~ .c-questions__question .c-questions__question__answer-4 {
+  display: block;
+}
+
+#question-4:not(:checked) ~ .c-questions__question .c-questions__question__answer-4 {
+  display: none;
+}
+
+#question-4:checked ~ .c-questions__question .c-questions__question__question label[for=question-4] {
+  transform: rotate(180deg);
+}
+
+#question-4:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-4] {
+  transform: rotate(0deg);
+}
+
+#question-5:checked ~ .c-questions__question .c-questions__question__answer-5 {
+  display: block;
+}
+
+#question-5:not(:checked) ~ .c-questions__question .c-questions__question__answer-5 {
+  display: none;
+}
+
+#question-5:checked ~ .c-questions__question .c-questions__question__question label[for=question-5] {
+  transform: rotate(180deg);
+}
+
+#question-5:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-5] {
+  transform: rotate(0deg);
+}
+
+#question-6:checked ~ .c-questions__question .c-questions__question__answer-6 {
+  display: block;
+}
+
+#question-6:not(:checked) ~ .c-questions__question .c-questions__question__answer-6 {
+  display: none;
+}
+
+#question-6:checked ~ .c-questions__question .c-questions__question__question label[for=question-6] {
+  transform: rotate(180deg);
+}
+
+#question-6:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-6] {
+  transform: rotate(0deg);
+}
+
+#question-7:checked ~ .c-questions__question .c-questions__question__answer-7 {
+  display: block;
+}
+
+#question-7:not(:checked) ~ .c-questions__question .c-questions__question__answer-7 {
+  display: none;
+}
+
+#question-7:checked ~ .c-questions__question .c-questions__question__question label[for=question-7] {
+  transform: rotate(180deg);
+}
+
+#question-7:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-7] {
+  transform: rotate(0deg);
+}
+
+#question-8:checked ~ .c-questions__question .c-questions__question__answer-8 {
+  display: block;
+}
+
+#question-8:not(:checked) ~ .c-questions__question .c-questions__question__answer-8 {
+  display: none;
+}
+
+#question-8:checked ~ .c-questions__question .c-questions__question__question label[for=question-8] {
+  transform: rotate(180deg);
+}
+
+#question-8:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-8] {
+  transform: rotate(0deg);
+}
+
+#question-9:checked ~ .c-questions__question .c-questions__question__answer-9 {
+  display: block;
+}
+
+#question-9:not(:checked) ~ .c-questions__question .c-questions__question__answer-9 {
+  display: none;
+}
+
+#question-9:checked ~ .c-questions__question .c-questions__question__question label[for=question-9] {
+  transform: rotate(180deg);
+}
+
+#question-9:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-9] {
+  transform: rotate(0deg);
+}
+
+#question-10:checked ~ .c-questions__question .c-questions__question__answer-10 {
+  display: block;
+}
+
+#question-10:not(:checked) ~ .c-questions__question .c-questions__question__answer-10 {
+  display: none;
+}
+
+#question-10:checked ~ .c-questions__question .c-questions__question__question label[for=question-10] {
+  transform: rotate(180deg);
+}
+
+#question-10:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-10] {
+  transform: rotate(0deg);
+}
+
+#question-11:checked ~ .c-questions__question .c-questions__question__answer-11 {
+  display: block;
+}
+
+#question-11:not(:checked) ~ .c-questions__question .c-questions__question__answer-11 {
+  display: none;
+}
+
+#question-11:checked ~ .c-questions__question .c-questions__question__question label[for=question-11] {
+  transform: rotate(180deg);
+}
+
+#question-11:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-11] {
+  transform: rotate(0deg);
+}
+
+#question-12:checked ~ .c-questions__question .c-questions__question__answer-12 {
+  display: block;
+}
+
+#question-12:not(:checked) ~ .c-questions__question .c-questions__question__answer-12 {
+  display: none;
+}
+
+#question-12:checked ~ .c-questions__question .c-questions__question__question label[for=question-12] {
+  transform: rotate(180deg);
+}
+
+#question-12:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-12] {
+  transform: rotate(0deg);
+}
+
+#question-13:checked ~ .c-questions__question .c-questions__question__answer-13 {
+  display: block;
+}
+
+#question-13:not(:checked) ~ .c-questions__question .c-questions__question__answer-13 {
+  display: none;
+}
+
+#question-13:checked ~ .c-questions__question .c-questions__question__question label[for=question-13] {
+  transform: rotate(180deg);
+}
+
+#question-13:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-13] {
+  transform: rotate(0deg);
+}
+
+#question-14:checked ~ .c-questions__question .c-questions__question__answer-14 {
+  display: block;
+}
+
+#question-14:not(:checked) ~ .c-questions__question .c-questions__question__answer-14 {
+  display: none;
+}
+
+#question-14:checked ~ .c-questions__question .c-questions__question__question label[for=question-14] {
+  transform: rotate(180deg);
+}
+
+#question-14:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-14] {
+  transform: rotate(0deg);
+}
+
+#question-15:checked ~ .c-questions__question .c-questions__question__answer-15 {
+  display: block;
+}
+
+#question-15:not(:checked) ~ .c-questions__question .c-questions__question__answer-15 {
+  display: none;
+}
+
+#question-15:checked ~ .c-questions__question .c-questions__question__question label[for=question-15] {
+  transform: rotate(180deg);
+}
+
+#question-15:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-15] {
+  transform: rotate(0deg);
+}
+
+#question-16:checked ~ .c-questions__question .c-questions__question__answer-16 {
+  display: block;
+}
+
+#question-16:not(:checked) ~ .c-questions__question .c-questions__question__answer-16 {
+  display: none;
+}
+
+#question-16:checked ~ .c-questions__question .c-questions__question__question label[for=question-16] {
+  transform: rotate(180deg);
+}
+
+#question-16:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-16] {
+  transform: rotate(0deg);
+}
+
+#question-17:checked ~ .c-questions__question .c-questions__question__answer-17 {
+  display: block;
+}
+
+#question-17:not(:checked) ~ .c-questions__question .c-questions__question__answer-17 {
+  display: none;
+}
+
+#question-17:checked ~ .c-questions__question .c-questions__question__question label[for=question-17] {
+  transform: rotate(180deg);
+}
+
+#question-17:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-17] {
+  transform: rotate(0deg);
+}
+
+#question-18:checked ~ .c-questions__question .c-questions__question__answer-18 {
+  display: block;
+}
+
+#question-18:not(:checked) ~ .c-questions__question .c-questions__question__answer-18 {
+  display: none;
+}
+
+#question-18:checked ~ .c-questions__question .c-questions__question__question label[for=question-18] {
+  transform: rotate(180deg);
+}
+
+#question-18:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-18] {
+  transform: rotate(0deg);
+}
+
+#question-19:checked ~ .c-questions__question .c-questions__question__answer-19 {
+  display: block;
+}
+
+#question-19:not(:checked) ~ .c-questions__question .c-questions__question__answer-19 {
+  display: none;
+}
+
+#question-19:checked ~ .c-questions__question .c-questions__question__question label[for=question-19] {
+  transform: rotate(180deg);
+}
+
+#question-19:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-19] {
+  transform: rotate(0deg);
+}
+
+#question-20:checked ~ .c-questions__question .c-questions__question__answer-20 {
+  display: block;
+}
+
+#question-20:not(:checked) ~ .c-questions__question .c-questions__question__answer-20 {
+  display: none;
+}
+
+#question-20:checked ~ .c-questions__question .c-questions__question__question label[for=question-20] {
+  transform: rotate(180deg);
+}
+
+#question-20:not(:checked) ~ .c-questions__question .c-questions__question__question label[for=question-20] {
+  transform: rotate(0deg);
+}
+
+.c-questions {
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+.c-questions__title {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-questions__question {
+  margin: 0.5rem auto;
+  width: 60%;
+}
+.c-questions__question__answer {
+  display: none;
+  padding: 1rem 0;
+}
+.c-questions__question__answer__list {
+  display: none;
+  padding: 1rem 1.5rem;
+}
+.c-questions__question__question {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0.5rem 1rem;
+  background-color: #d6ccc2;
+}
+.c-questions__question__question label {
+  margin-left: 5px;
+}
+.c-questions__question__question__icon {
+  width: 1.5rem;
+  vertical-align: middle;
+}
+.c-questions__question:hover .c-questions__question__icon {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 46.24em) {
+  .c-questions {
+    width: 100%;
+  }
+}
+
+.c-questions__title {
+  font-size: 0.8rem;
+}
+
+.c-questions__question__question__icon {
+  width: 1.2rem;
+}
+
+.c-contact {
+  width: 100%;
+  padding: 3% 0;
+  background-color: #d6ccc2;
+}
+.c-contact__form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 3% 0;
+  background-color: #9b9898;
+}
+.c-contact__form__contenedor {
+  width: 80%;
+  margin: 0 auto;
+}
+.c-contact__form__contenedor input {
+  width: 100%;
+  margin: 3% 0;
+  padding: 0.4rem 0.6rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  background-color: #6c6969;
+  color: white;
+}
+.c-contact__form__contenedor input::placeholder, .c-contact__form__contenedor textarea::placeholder {
+  color: white;
+}
+.c-contact__form__contenedor textarea {
+  outline: none;
+  border: none;
+  width: 100%;
+  margin: 3% 0;
+  padding: 0.4rem 0.6rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  background-color: #6c6969;
+  color: white;
+}
+.c-contact__form__contenedor__codigo {
+  width: 80%;
+  margin: 0 auto 8% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-contact__form__contenedor__codigo__img {
+  width: 50%;
+  height: 80%;
+}
+.c-contact__form__contenedor__codigo__contenedor input {
+  width: 100%;
+  margin: 3% 0;
+  padding: 0.4rem 0.6rem;
+  background-color: #6c6969;
+  color: white;
+}
+.c-contact__form__contenedor__codigo__contenedor input::placeholder {
+  color: white;
+}
+.c-contact__form__button {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0.5rem 3rem;
+  font-weight: bold;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.3636363636;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 46.24em) {
+  .c-contact__form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-contact__form__contenedor__codigo {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-contact__form__contenedor__codigo__contenedor {
+    width: 100%;
+    align-self: flex-start;
+  }
+}
+
+#close:not(:checked) ~ #participe--login:checked ~ .c-modal__box {
+  display: none;
+}
+
+#close:checked ~ #participe--login:checked ~ .c-modal__box {
+  display: flex;
+}
+
+#close:not(:checked) ~ #participe--login:not(:checked) ~ .c-modal__box {
+  display: flex;
+}
+
+#close:checked ~ #participe--login:not(:checked) ~ .c-modal__box {
+  display: none;
+}
+
+#close:checked ~ .c-modal__box {
+  display: none;
+}
+
+#close:not(:checked) ~ .c-modal__box {
+  display: flex;
+}
+
+#close-1:checked ~ #btn-participe-1:checked ~ .btn-participe-1 {
+  display: none !important;
+}
+
+#close-1:checked ~ #btn-participe-1:not(:checked) ~ .btn-participe-1 {
+  display: flex;
+}
+
+#close-1:not(:checked) ~ #btn-participe-1:checked ~ .btn-participe-1 {
+  display: flex;
+}
+
+#close-1:not(:checked) ~ #btn-participe-1:not(:checked) ~ .btn-participe-1 {
+  display: none;
+}
+
+#close-2:checked ~ #btn-participe-2:checked ~ .btn-participe-2 {
+  display: none !important;
+}
+
+#close-2:checked ~ #btn-participe-2:not(:checked) ~ .btn-participe-2 {
+  display: flex;
+}
+
+#close-2:not(:checked) ~ #btn-participe-2:checked ~ .btn-participe-2 {
+  display: flex;
+}
+
+#close-2:not(:checked) ~ #btn-participe-2:not(:checked) ~ .btn-participe-2 {
+  display: none;
+}
+
+#close-3:checked ~ #btn-participe-3:checked ~ .btn-participe-3 {
+  display: none !important;
+}
+
+#close-3:checked ~ #btn-participe-3:not(:checked) ~ .btn-participe-3 {
+  display: flex;
+}
+
+#close-3:not(:checked) ~ #btn-participe-3:checked ~ .btn-participe-3 {
+  display: flex;
+}
+
+#close-3:not(:checked) ~ #btn-participe-3:not(:checked) ~ .btn-participe-3 {
+  display: none;
+}
+
+#close-4:checked ~ #btn-participe-4:checked ~ .btn-participe-4 {
+  display: none !important;
+}
+
+#close-4:checked ~ #btn-participe-4:not(:checked) ~ .btn-participe-4 {
+  display: flex;
+}
+
+#close-4:not(:checked) ~ #btn-participe-4:checked ~ .btn-participe-4 {
+  display: flex;
+}
+
+#close-4:not(:checked) ~ #btn-participe-4:not(:checked) ~ .btn-participe-4 {
+  display: none;
+}
+
+#close-5:checked ~ #btn-participe-5:checked ~ .btn-participe-5 {
+  display: none !important;
+}
+
+#close-5:checked ~ #btn-participe-5:not(:checked) ~ .btn-participe-5 {
+  display: flex;
+}
+
+#close-5:not(:checked) ~ #btn-participe-5:checked ~ .btn-participe-5 {
+  display: flex;
+}
+
+#close-5:not(:checked) ~ #btn-participe-5:not(:checked) ~ .btn-participe-5 {
+  display: none;
+}
+
+#close-6:checked ~ #btn-participe-6:checked ~ .btn-participe-6 {
+  display: none !important;
+}
+
+#close-6:checked ~ #btn-participe-6:not(:checked) ~ .btn-participe-6 {
+  display: flex;
+}
+
+#close-6:not(:checked) ~ #btn-participe-6:checked ~ .btn-participe-6 {
+  display: flex;
+}
+
+#close-6:not(:checked) ~ #btn-participe-6:not(:checked) ~ .btn-participe-6 {
+  display: none;
+}
+
+#close-7:checked ~ #btn-participe-7:checked ~ .btn-participe-7 {
+  display: none !important;
+}
+
+#close-7:checked ~ #btn-participe-7:not(:checked) ~ .btn-participe-7 {
+  display: flex;
+}
+
+#close-7:not(:checked) ~ #btn-participe-7:checked ~ .btn-participe-7 {
+  display: flex;
+}
+
+#close-7:not(:checked) ~ #btn-participe-7:not(:checked) ~ .btn-participe-7 {
+  display: none;
+}
+
+#close-8:checked ~ #btn-participe-8:checked ~ .btn-participe-8 {
+  display: none !important;
+}
+
+#close-8:checked ~ #btn-participe-8:not(:checked) ~ .btn-participe-8 {
+  display: flex;
+}
+
+#close-8:not(:checked) ~ #btn-participe-8:checked ~ .btn-participe-8 {
+  display: flex;
+}
+
+#close-8:not(:checked) ~ #btn-participe-8:not(:checked) ~ .btn-participe-8 {
+  display: none;
+}
+
+#close-9:checked ~ #btn-participe-9:checked ~ .btn-participe-9 {
+  display: none !important;
+}
+
+#close-9:checked ~ #btn-participe-9:not(:checked) ~ .btn-participe-9 {
+  display: flex;
+}
+
+#close-9:not(:checked) ~ #btn-participe-9:checked ~ .btn-participe-9 {
+  display: flex;
+}
+
+#close-9:not(:checked) ~ #btn-participe-9:not(:checked) ~ .btn-participe-9 {
+  display: none;
+}
+
+#close-10:checked ~ #btn-participe-10:checked ~ .btn-participe-10 {
+  display: none !important;
+}
+
+#close-10:checked ~ #btn-participe-10:not(:checked) ~ .btn-participe-10 {
+  display: flex;
+}
+
+#close-10:not(:checked) ~ #btn-participe-10:checked ~ .btn-participe-10 {
+  display: flex;
+}
+
+#close-10:not(:checked) ~ #btn-participe-10:not(:checked) ~ .btn-participe-10 {
+  display: none;
+}
+
+#close-11:checked ~ #btn-participe-11:checked ~ .btn-participe-11 {
+  display: none !important;
+}
+
+#close-11:checked ~ #btn-participe-11:not(:checked) ~ .btn-participe-11 {
+  display: flex;
+}
+
+#close-11:not(:checked) ~ #btn-participe-11:checked ~ .btn-participe-11 {
+  display: flex;
+}
+
+#close-11:not(:checked) ~ #btn-participe-11:not(:checked) ~ .btn-participe-11 {
+  display: none;
+}
+
+#close-12:checked ~ #btn-participe-12:checked ~ .btn-participe-12 {
+  display: none !important;
+}
+
+#close-12:checked ~ #btn-participe-12:not(:checked) ~ .btn-participe-12 {
+  display: flex;
+}
+
+#close-12:not(:checked) ~ #btn-participe-12:checked ~ .btn-participe-12 {
+  display: flex;
+}
+
+#close-12:not(:checked) ~ #btn-participe-12:not(:checked) ~ .btn-participe-12 {
+  display: none;
+}
+
+#close-13:checked ~ #btn-participe-13:checked ~ .btn-participe-13 {
+  display: none !important;
+}
+
+#close-13:checked ~ #btn-participe-13:not(:checked) ~ .btn-participe-13 {
+  display: flex;
+}
+
+#close-13:not(:checked) ~ #btn-participe-13:checked ~ .btn-participe-13 {
+  display: flex;
+}
+
+#close-13:not(:checked) ~ #btn-participe-13:not(:checked) ~ .btn-participe-13 {
+  display: none;
+}
+
+#close-14:checked ~ #btn-participe-14:checked ~ .btn-participe-14 {
+  display: none !important;
+}
+
+#close-14:checked ~ #btn-participe-14:not(:checked) ~ .btn-participe-14 {
+  display: flex;
+}
+
+#close-14:not(:checked) ~ #btn-participe-14:checked ~ .btn-participe-14 {
+  display: flex;
+}
+
+#close-14:not(:checked) ~ #btn-participe-14:not(:checked) ~ .btn-participe-14 {
+  display: none;
+}
+
+#close-15:checked ~ #btn-participe-15:checked ~ .btn-participe-15 {
+  display: none !important;
+}
+
+#close-15:checked ~ #btn-participe-15:not(:checked) ~ .btn-participe-15 {
+  display: flex;
+}
+
+#close-15:not(:checked) ~ #btn-participe-15:checked ~ .btn-participe-15 {
+  display: flex;
+}
+
+#close-15:not(:checked) ~ #btn-participe-15:not(:checked) ~ .btn-participe-15 {
+  display: none;
+}
+
+#close-16:checked ~ #btn-participe-16:checked ~ .btn-participe-16 {
+  display: none !important;
+}
+
+#close-16:checked ~ #btn-participe-16:not(:checked) ~ .btn-participe-16 {
+  display: flex;
+}
+
+#close-16:not(:checked) ~ #btn-participe-16:checked ~ .btn-participe-16 {
+  display: flex;
+}
+
+#close-16:not(:checked) ~ #btn-participe-16:not(:checked) ~ .btn-participe-16 {
+  display: none;
+}
+
+#close-17:checked ~ #btn-participe-17:checked ~ .btn-participe-17 {
+  display: none !important;
+}
+
+#close-17:checked ~ #btn-participe-17:not(:checked) ~ .btn-participe-17 {
+  display: flex;
+}
+
+#close-17:not(:checked) ~ #btn-participe-17:checked ~ .btn-participe-17 {
+  display: flex;
+}
+
+#close-17:not(:checked) ~ #btn-participe-17:not(:checked) ~ .btn-participe-17 {
+  display: none;
+}
+
+#close-18:checked ~ #btn-participe-18:checked ~ .btn-participe-18 {
+  display: none !important;
+}
+
+#close-18:checked ~ #btn-participe-18:not(:checked) ~ .btn-participe-18 {
+  display: flex;
+}
+
+#close-18:not(:checked) ~ #btn-participe-18:checked ~ .btn-participe-18 {
+  display: flex;
+}
+
+#close-18:not(:checked) ~ #btn-participe-18:not(:checked) ~ .btn-participe-18 {
+  display: none;
+}
+
+#close-19:checked ~ #btn-participe-19:checked ~ .btn-participe-19 {
+  display: none !important;
+}
+
+#close-19:checked ~ #btn-participe-19:not(:checked) ~ .btn-participe-19 {
+  display: flex;
+}
+
+#close-19:not(:checked) ~ #btn-participe-19:checked ~ .btn-participe-19 {
+  display: flex;
+}
+
+#close-19:not(:checked) ~ #btn-participe-19:not(:checked) ~ .btn-participe-19 {
+  display: none;
+}
+
+#close-20:checked ~ #btn-participe-20:checked ~ .btn-participe-20 {
+  display: none !important;
+}
+
+#close-20:checked ~ #btn-participe-20:not(:checked) ~ .btn-participe-20 {
+  display: flex;
+}
+
+#close-20:not(:checked) ~ #btn-participe-20:checked ~ .btn-participe-20 {
+  display: flex;
+}
+
+#close-20:not(:checked) ~ #btn-participe-20:not(:checked) ~ .btn-participe-20 {
+  display: none;
+}
+
+#btn-participe-error:checked ~ #close__error:not(:checked) ~ .btn-participe-error {
+  display: flex;
+}
+
+#btn-participe-error:not(:checked) ~ #close__error:checked ~ .btn-participe-error {
+  display: flex;
+}
+
+#btn-participe-error:checked ~ #close__error:checked ~ .btn-participe-error {
+  display: none;
+}
+
+#btn-participe-error:not(:checked) ~ #close__error:not(:checked) ~ .btn-participe-error {
+  display: none;
+}
+
+#close__error:checked ~ .c-modal__box {
+  display: none;
+}
+
+#close__message--send:checked ~ .c-modal__box__message {
+  display: none;
+}
+
+.c-modal__box {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(163, 162, 162, 0.7);
+}
+.c-modal__box__confirmation-1 {
+  position: absolute;
+  width: 35%;
+  padding-bottom: 1%;
+  background-color: #f5f0ec;
+  overflow-y: auto;
+}
+.c-modal__box__confirmation-1__code {
+  width: 50%;
+  margin: 0 auto;
+}
+.c-modal__box__confirmation-1__code img {
+  width: 100%;
+}
+.c-modal__box__confirmation-1__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  background-color: #d6ccc2;
+  color: white;
+}
+.c-modal__box__confirmation-1__header__btn__close {
+  color: white;
+  padding: 1%;
+  cursor: pointer;
+  background-color: #960000;
+}
+.c-modal__box__confirmation-1__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.c-modal__box__confirmation-1__form {
+  width: 100%;
+  margin-bottom: 3%;
+}
+.c-modal__box__confirmation-1__form__error {
+  width: 55%;
+  margin: 0 auto 10px auto;
+  height: max-content;
+  padding-bottom: 1%;
+  background-color: #f5f0ec;
+  border: 2px solid #960000;
+}
+.c-modal__box__confirmation-1__form__error__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.3333333333;
+  margin-bottom: 0.5rem;
+  background-color: #960000;
+  color: white;
+}
+.c-modal__box__confirmation-1__form__error__header__btn__close {
+  color: white;
+  padding: 1%;
+  cursor: pointer;
+  background-color: #4f2e18;
+}
+.c-modal__box__confirmation-1__form__error__message {
+  display: block;
+  padding: 0% 1%;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.7142857143;
+}
+.c-modal__box__confirmation-1__form__input {
+  display: block;
+  width: 98%;
+  padding: 0.5rem 0.3rem;
+  margin: 0.7rem auto;
+  outline: none;
+  border: 2px solid #d6ccc2;
+  font-size: 1rem;
+}
+.c-modal__box__confirmation-1__form__btn {
+  display: block;
+  padding: 0.5rem 2.8rem;
+  border-radius: 1.4rem;
+  cursor: pointer;
+}
+.c-modal__box__confirmation-1__info {
+  margin: 0 1%;
+  text-align: justify;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.8461538462;
+}
+.c-modal__box__confirmation-2 {
+  position: absolute;
+  width: 50%;
+  padding-bottom: 1%;
+  background-color: #f5f0ec;
+  overflow-y: auto;
+}
+.c-modal__box__confirmation-2__paragraph {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+.c-modal__box__confirmation-2__header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0.5rem 1rem;
+  background-color: #d6ccc2;
+  color: white;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.c-modal__box__confirmation-2__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5%;
+}
+.c-modal__box__confirmation-2__codeqr {
+  width: 35%;
+  margin: 0 auto;
+}
+.c-modal__box__confirmation-2__codeqr__qr {
+  width: 100%;
+  margin: 5% auto 0 auto;
+}
+.c-modal__box__confirmation-2__codeqr__qr__img {
+  width: 100%;
+}
+.c-modal__box__confirmation-2__form {
+  position: relative;
+}
+.c-modal__box__confirmation-2__form__input {
+  display: block;
+  width: 98%;
+  padding: 0.5rem 0.3rem;
+  margin: 0.7rem auto;
+  outline: none;
+}
+.c-modal__box__confirmation-2__form__input:not(:focus) ~ .c-modal__box__confirmation-2__form__message {
+  display: none;
+}
+.c-modal__box__confirmation-2__form__input:focus ~ .c-modal__box__confirmation-2__form__message {
+  display: block;
+  width: max-content;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: #960000;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  z-index: 10;
+  color: white;
+}
+.c-modal__box__confirmation-2__form__input:focus ~ .c-modal__box__confirmation-2__form__message::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.25rem;
+  background-color: #960000;
+  height: 0.5rem;
+  width: 0.5rem;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: 10;
+}
+.c-modal__box__confirmation-2__info {
+  margin: 2%;
+  text-align: justify;
+}
+.c-modal__box__participe {
+  position: absolute;
+  width: 35%;
+  margin: 0 auto 0 auto;
+  padding-bottom: 1%;
+  background-color: #f5f0ec;
+}
+.c-modal__box__participe__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 1.3846153846;
+  margin-bottom: 0.5rem;
+  background-color: #d6ccc2;
+  color: white;
+}
+.c-modal__box__participe__header__btn__close {
+  color: white;
+  padding: 1%;
+  cursor: pointer;
+  background-color: #960000;
+}
+.c-modal__box__participe__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 98%;
+}
+.c-modal__box__participe__form__input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.3rem;
+  margin: 0.7rem auto;
+  outline: none;
+  border: 2px solid #d6ccc2;
+}
+.c-modal__box__participe__form__btn {
+  display: block;
+  padding: 0.5rem 2.8rem;
+  border-radius: 1.4rem;
+  cursor: pointer;
+}
+.c-modal__box__error {
+  width: 55%;
+  margin: 136px auto 0 auto;
+  height: max-content;
+  padding-bottom: 1%;
+  background-color: #f5f0ec;
+  border: 2px solid #960000;
+}
+.c-modal__box__error__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.3333333333;
+  margin-bottom: 0.5rem;
+  background-color: #960000;
+  color: white;
+}
+.c-modal__box__error__header__btn__close {
+  color: white;
+  padding: 1%;
+  cursor: pointer;
+  background-color: #4f2e18;
+}
+.c-modal__box__error__message {
+  display: block;
+  padding: 0% 1%;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.7142857143;
+}
+.c-modal__box__message--send {
+  width: 35%;
+  margin: 136px auto 0 auto;
+  height: max-content;
+  padding-bottom: 1%;
+  background-color: #f5f0ec;
+  border: 2px solid #00962b;
+}
+.c-modal__box__message--send__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.3333333333;
+  margin-bottom: 0.5rem;
+  background-color: #00962b;
+  color: white;
+}
+.c-modal__box__message--send__header__btn__close {
+  color: white;
+  padding: 1%;
+  cursor: pointer;
+  background-color: #004a15;
+}
+.c-modal__box__message--send__message {
+  display: block;
+  padding: 0% 1%;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.7142857143;
+}
+
+@media (max-width: 46.25em) and (orientation:portrait) {
+  .c-modal__box {
+    position: fixed;
+  }
+}
+@media (max-width: 61.24em) and (orientation: landscape) {
+  .c-modal__box {
+    background-color: #f5f0ec;
+  }
+}
+@media (max-width: 61.24em) and (min-height:480px) {
+  .c-modal__box {
+    background-color: #f5f0ec;
+  }
+}
+@media (max-width: 19.99em) and (min-height:480px) {
+  .c-modal__box {
+    background-color: #f5f0ec;
+  }
+}
+@media (max-width: 61.24em) and (min-height:480px) {
+  .c-modal__box {
+    background-color: #f5f0ec;
+  }
+}
+@media (max-width: 19.99em) and (min-height:480px) {
+  .c-modal__box {
+    background-color: #f5f0ec;
+  }
+}
+@media (max-width: 46.24em) and (min-height:480px) {
+  .c-modal__box {
+    background-color: #f5f0ec;
+  }
+}
+@media (max-width: 19.99em) and (min-height:480px) {
+  .c-modal__box {
+    background-color: #f5f0ec;
+  }
+}
+@media (max-width: 46.24em) and (max-height:480px) {
+  .c-modal__box {
+    background-color: #f5f0ec;
+  }
+}
+
+@media (min-width: 61.25em) and (max-width: 89.99em) {
+  .c-modal__box__confirmation-1 {
+    width: 45% !important;
+  }
+}
+@media (max-width: 61.24em) and (orientation: landscape) {
+  .c-modal__box__confirmation-1 {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 61.24em) and (min-height:480px) {
+  .c-modal__box__confirmation-1 {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 19.99em) and (min-height:480px) {
+  .c-modal__box__confirmation-1 {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 61.24em) and (min-height:480px) {
+  .c-modal__box__confirmation-1 {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 19.99em) and (min-height:480px) {
+  .c-modal__box__confirmation-1 {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 46.24em) and (min-height:480px) {
+  .c-modal__box__confirmation-1 {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 19.99em) and (min-height:480px) {
+  .c-modal__box__confirmation-1 {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 89.99em) and (max-height:480px) {
+  .c-modal__box__confirmation-1 {
+    top: 0;
+    width: 100% !important;
+  }
+}
+@media (max-width: 46.24em) and (max-height:480px) {
+  .c-modal__box__confirmation-1 {
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 61.25em) and (max-width: 89.99em) {
+  .c-modal__box__confirmation-2 {
+    width: 45% !important;
+  }
+}
+@media (max-width: 61.24em) and (orientation: landscape) {
+  .c-modal__box__confirmation-2 {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 61.24em) and (min-height:480px) {
+  .c-modal__box__confirmation-2 {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 19.99em) and (min-height:480px) {
+  .c-modal__box__confirmation-2 {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 61.24em) and (min-height:480px) {
+  .c-modal__box__confirmation-2 {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 19.99em) and (min-height:480px) {
+  .c-modal__box__confirmation-2 {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 46.24em) and (min-height:480px) {
+  .c-modal__box__confirmation-2 {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 19.99em) and (min-height:480px) {
+  .c-modal__box__confirmation-2 {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 89.99em) and (max-height:480px) {
+  .c-modal__box__confirmation-2 {
+    top: 0;
+    width: 100% !important;
+  }
+}
+@media (max-width: 46.24em) and (max-height:480px) {
+  .c-modal__box__confirmation-2 {
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 46.25em) and (max-height:600px) {
+  .c-modal__box__confirmation-1__header {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 46.25em) and (min-height:700px) {
+  .c-modal__box__confirmation-1__header {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 46.25em) and (min-height:800px) {
+  .c-modal__box__confirmation-1__header {
+    font-size: 1.35rem;
+  }
+}
+
+@media (min-width: 61.25em) and (max-width: 89.99em) {
+  .c-modal__box__confirmation-1__header p {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 46.25em) and (max-height:600px) {
+  .c-modal__box__confirmation-1__form__input {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 46.25em) and (min-height:600px) {
+  .c-modal__box__confirmation-1__form__input {
+    margin: 3% auto;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 46.25em) and (min-height:700px) {
+  .c-modal__box__confirmation-1__form__input {
+    margin: 8% auto;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 46.25em) and (min-height:800px) {
+  .c-modal__box__confirmation-1__form__input {
+    margin: 8% auto;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 46.25em) and (min-height:600px) {
+  .c-modal__box__confirmation-1__form {
+    margin: 3% auto;
+  }
+}
+@media (max-width: 46.25em) and (min-height:800px) {
+  .c-modal__box__confirmation-1__form {
+    margin: 4.5% auto;
+  }
+}
+
+@media (max-width: 46.25em) and (max-height:600px) {
+  .c-modal__box__confirmation-1__content {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 46.25em) and (min-height:600px) {
+  .c-modal__box__confirmation-1__content {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 46.25em) and (max-height:600px) {
+  .c-modal__box__confirmation-1__form__btn {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 46.25em) and (min-height:600px) {
+  .c-modal__box__confirmation-1__form__btn {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 46.25em) and (min-height:800px) {
+  .c-modal__box__confirmation-1__form__btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 46.25em) and (max-height:600px) {
+  .c-modal__box__error__header {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 46.25em) and (max-height:600px) {
+  .c-modal__box__error__message {
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 61.25em) and (max-width: 89.99em) {
+  .c-modal__box__confirmation-1__info {
+    line-height: 1.2461538462;
+  }
+}
+@media (max-width: 46.25em) and (max-height:600px) {
+  .c-modal__box__confirmation-1__info {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 46.25em) and (min-height:600px) {
+  .c-modal__box__confirmation-1__info {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 46.25em) and (min-height:800px) {
+  .c-modal__box__confirmation-1__info {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 46.24em) and (orientation: landscape) {
+  .c-modal__box > .c-modal__box__error {
+    position: absolute;
+    top: 0;
+    width: 50% !important;
+  }
+}
+@media (max-width: 19.99em) and (orientation: landscape) {
+  .c-modal__box > .c-modal__box__error {
+    position: absolute;
+    top: 0;
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 61.24em) {
+  .c-modal__box__participe {
+    width: 45%;
+  }
+}
+@media (max-width: 61.24em) and (orientation: landscape) {
+  .c-modal__box__participe {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 61.24em) and (min-height:480px) {
+  .c-modal__box__participe {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 19.99em) and (min-height:480px) {
+  .c-modal__box__participe {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 61.24em) and (min-height:480px) {
+  .c-modal__box__participe {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 19.99em) and (min-height:480px) {
+  .c-modal__box__participe {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 46.24em) and (min-height:480px) {
+  .c-modal__box__participe {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 19.99em) and (min-height:480px) {
+  .c-modal__box__participe {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 89.99em) and (max-height:480px) {
+  .c-modal__box__participe {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+  }
+}
+@media (max-width: 46.24em) and (max-height:480px) {
+  .c-modal__box__participe {
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 46.24em) and (max-height:600px) {
+  .c-modal__box__participe__form {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 46.24em) and (min-height:600px) {
+  .c-modal__box__participe__form {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 19.99em) and (max-height:600px) {
+  .c-modal__box__participe__form {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 19.99em) and (min-height:600px) {
+  .c-modal__box__participe__form {
+    font-size: 1.6rem;
+  }
+}
+
+.c-tables {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3%;
+  background-color: #9b9898;
+}
+.c-tables__table {
+  margin: 1rem 0;
+  flex-grow: 1;
+  text-align: center;
+}
+.c-tables__table__button {
+  display: block;
+  margin: 0.6rem auto 0 auto;
+  padding: 0.5rem 2.8rem;
+  border-radius: 1.4rem;
+  width: fit-content;
+  cursor: pointer;
+}
+.c-tables__id {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-tables__img {
+  width: 20rem;
+}
+.c-tables__info {
+  position: absolute;
+  z-index: 100;
+  text-align: center;
+  padding: 0.4rem;
+}
+.c-tables__name {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+.c-tables__ciegas, .c-tables__amount {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.3333333333;
+}
+.c-tables__competitor {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.3333333333;
+  margin-top: 0.3rem;
+  color: white;
+}
+.c-tables__btn__competitor {
+  border: none;
+  outline: none;
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 0.6rem;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.3636363636;
+  position: relative;
+  background-color: transparent;
+}
+.c-tables__btn__competitor a, .c-tables__btn__competitor p {
+  position: relative;
+  cursor: pointer;
+}
+.c-tables__btn__competitor .carlos {
+  display: none;
+}
+.c-tables__btn__competitor input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 10000;
+  opacity: 0;
+  cursor: pointer;
+}
+.c-tables__btn__competitor input[type=checkbox]:checked {
+  display: none !important;
+}
+.c-tables__btn__competitor input[type=checkbox]:checked ~ p {
+  display: none;
+}
+.c-tables__btn__competitor input[type=checkbox]:checked + .carlos {
+  display: block;
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-tables {
+    flex-direction: column !important;
+  }
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-tables__img {
+    width: 80% !important;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-tables__name {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-tables__ciegas,
+  .c-tables__amount {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-tables__competitor {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-tables__table__button {
+    font-size: 0.9rem;
+  }
+}
+
+#language__menu:not(:checked) ~ .c-language--mobile {
+  height: auto !important;
+}
+
+#language__menu:checked ~ .c-language--mobile .c-language--mobile__menu .c-language--mobile__principal {
+  border: none;
+}
+
+#language__menu:checked ~ .c-language--mobile .c-language--mobile__menu .c-language--mobile__menu__contain {
+  display: block;
+}
+
+#language__menu:not(:checked) ~ .c-language--mobile .c-language--mobile__menu .c-language--mobile__menu__contain {
+  display: none !important;
+}
+
+#language__menu:checked ~ .c-language--mobile .c-language--mobile__menu {
+  display: block !important;
+}
+
+#language__menu:checked ~ .c-language--mobile .c-language--mobile__page {
+  display: none;
+}
+
+#language__menu:not(:checked) ~ .c-language--mobile .c-language--mobile__page {
+  padding: 0.5rem 1rem;
+  border: 3px solid gray;
+  border-radius: 12px;
+  background-color: rgba(163, 162, 162, 0.7);
+}
+
+.c-language--desktop {
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  height: 50vh;
+  z-index: 1000;
+}
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-language--desktop {
+    display: none;
+  }
+}
+.c-language--desktop__page {
+  padding: 0.8rem;
+  border-radius: 100%;
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+.c-language--desktop:hover .c-language--desktop__page {
+  display: none;
+}
+.c-language--desktop:hover .c-language--desktop__menu {
+  display: block;
+  width: 15rem;
+  margin-right: 0.4rem;
+}
+.c-language--desktop__menu {
+  display: none;
+  height: 100%;
+  background-color: rgba(163, 162, 162, 0.7);
+  text-align: center;
+}
+.c-language--desktop__menu__contain {
+  overflow-y: auto;
+  height: calc(100% - 66px);
+}
+.c-language--desktop__principal {
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: rgba(163, 162, 162, 0.7);
+}
+.c-language--desktop__principal div {
+  margin: 0 auto;
+}
+.c-language--desktop__otros {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.4rem;
+  border-top: 2px solid white;
+  color: white;
+}
+.c-language--desktop__img {
+  display: block;
+  height: 50px;
+  width: 75px;
+  background: url(../img/flags/flags.png);
+  background-size: cover;
+}
+.c-language--desktop__img--usa {
+  background-position: 0px 0;
+}
+.c-language--desktop__img--germany {
+  background-position: -150px 0;
+}
+.c-language--desktop__img--spain {
+  background-position: -225px 0;
+}
+.c-language--desktop__img--france {
+  background-position: -75px 0;
+}
+.c-language--desktop__img--italy {
+  background-position: -300px 0;
+}
+.c-language--desktop__img--portugal {
+  background-position: -375px 0;
+}
+.c-language--desktop__img--russia {
+  background-position: -450px 0;
+}
+.c-language--desktop__img--china {
+  background-position: -525px 0;
+}
+.c-language--desktop__img--hungary {
+  background-position: -600px 0;
+}
+.c-language--desktop__img--romania {
+  background-position: -675px 0;
+}
+
+.c-language--mobile {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  height: 50vh;
+  z-index: 10000;
+}
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-language--mobile {
+    display: block;
+  }
+}
+.c-language--mobile__page {
+  padding: 0.8rem;
+  border-radius: 100%;
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+.c-language--mobile__otros {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.4rem;
+  border-top: 2px solid white;
+  color: white;
+}
+.c-language--mobile__menu {
+  display: none;
+  height: 100%;
+  background-color: rgba(163, 162, 162, 0.7);
+  text-align: center;
+}
+.c-language--mobile__menu__contain {
+  height: calc(100% - 56px);
+  overflow-y: auto;
+}
+.c-language--mobile__principal {
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: rgba(163, 162, 162, 0.7);
+}
+.c-language--mobile__principal label {
+  margin: 0 auto;
+}
+.c-language--mobile__img {
+  display: block;
+  height: 40px;
+  width: 60px;
+  background: url(../img/flags/flags.png);
+  background-size: cover;
+}
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-language--mobile__img--usa {
+    background-position: 0 0;
+  }
+}
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-language--mobile__img--germany {
+    background-position: -120px 0;
+  }
+}
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-language--mobile__img--spain {
+    background-position: -180px 0;
+  }
+}
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-language--mobile__img--france {
+    background-position: -60px 0;
+  }
+}
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-language--mobile__img--italy {
+    background-position: -239px 0;
+  }
+}
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-language--mobile__img--portugal {
+    background-position: -299px 0;
+  }
+}
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-language--mobile__img--russia {
+    background-position: -360px 0;
+  }
+}
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-language--mobile__img--china {
+    background-position: -420px 0;
+  }
+}
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-language--mobile__img--hungary {
+    background-position: -480px 0;
+  }
+}
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .c-language--mobile__img--romania {
+    background-position: -540px 0;
+  }
+}
+
+.c-navegation {
+  width: 100%;
+  padding: 0.35rem 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.c-navegation__lista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 3%;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.c-navegation__lista li > a {
+  color: white;
+}
+
+.c-navegation--mobile {
+  display: none;
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-navegation__lista {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-navegation__lista li > a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-navegation--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-navegation--mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 19.99em) {
+  .c-navegation--desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 19.99em) {
+  .c-navegation--mobile {
+    display: block;
+  }
+}
+
+.c-info__title {
+  font-size: 42px;
+  font-size: 2.625rem;
+  line-height: 1.1428571429;
+  margin-bottom: 0.7rem;
+}
+.c-info__paragraph {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+.c-info__contain {
+  width: 85%;
+}
+.c-info__contain__block {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+.c-info__contain__block__lista {
+  width: 50%;
+}
+
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-info {
+    padding: 1rem 0 !important;
+  }
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-info__title {
+    margin-top: 0 !important;
+  }
+}
+
+.c-counter {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  background-color: #414144;
+}
+.c-counter__title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.c-counter__paragraph {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: #d5d5de;
+}
+.c-counter__contain {
+  width: 100%;
+  height: 8.5rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-counter__contain__img {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-counter__contain__img img {
+  display: block;
+  width: 18rem;
+  margin: 0 auto;
+}
+.c-counter__contain__img__paragraph {
+  font-size: 1.3rem;
+  color: white;
+}
+.c-counter__contain__month {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-counter__contain__month__actually {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #8c8c91;
+}
+.c-counter__contain__month__paragraph {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+.c-counter__contain__number {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-counter__contain__number__img {
+  display: block;
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+}
+.c-counter__contain__number__img__paragraph {
+  position: absolute;
+  top: 33%;
+  left: 17%;
+  right: 17%;
+  bottom: 33%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+}
+.c-counter__contain__number__paragraph {
+  color: white;
+  text-align: center;
+}
+
+.c-counter__title {
+  font-size: 2rem;
+}
+.c-counter__paragraph {
+  font-size: 1rem;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-counter__contain {
+    height: auto !important;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media (max-width: 19.99em) {
+  .c-counter__contain {
+    height: auto !important;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .c-counter__contain__img, .c-counter__contain__month, .c-counter__contain__number {
+    width: 100%;
+    gap: 1rem;
+  }
+}
+@media (max-width: 46.24em) {
+  .c-counter__contain__img, .c-counter__contain__month, .c-counter__contain__number {
+    width: 100%;
+    gap: 1rem;
+  }
+}
+
+/* ==========================================================================
+   #HIDE
+   ========================================================================== */
+/**
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.u-hidden-visually {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
+/**
+ * Hide visually and from screen readers.
+ */
+.u-hidden {
+  display: none !important;
+}
+
+/*# sourceMappingURL=style.css.map */

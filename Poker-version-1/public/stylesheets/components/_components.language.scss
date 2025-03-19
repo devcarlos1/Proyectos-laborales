@@ -1,0 +1,226 @@
+#language__menu:not(:checked) ~ .c-language--mobile {
+  height: auto !important;
+}
+
+#language__menu:checked
+  ~ .c-language--mobile
+  .c-language--mobile__menu
+  .c-language--mobile__principal {
+  border: none;
+}
+#language__menu:checked
+  ~ .c-language--mobile
+  .c-language--mobile__menu
+  .c-language--mobile__menu__contain {
+  display: block;
+}
+#language__menu:not(:checked)
+  ~ .c-language--mobile
+  .c-language--mobile__menu
+  .c-language--mobile__menu__contain {
+  display: none !important;
+}
+
+#language__menu:checked ~ .c-language--mobile .c-language--mobile__menu {
+  display: block !important;
+}
+#language__menu:checked ~ .c-language--mobile .c-language--mobile__page {
+  display: none;
+}
+#language__menu:not(:checked) ~ .c-language--mobile .c-language--mobile__page {
+  padding: 0.5rem 1rem;
+  border: 3px solid gray;
+  border-radius: 12px;
+  background-color: $gray-7;
+}
+.c-language--desktop {
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  height: 50vh;
+  z-index: 1000;
+  @include mq($from: mobile, $until: desktop) {
+    display: none;
+  }
+  &__page {
+    padding: 0.8rem;
+    border-radius: 100%;
+    margin-right: 0.3rem;
+    cursor: pointer;
+  }
+  &:hover &__page {
+    display: none;
+  }
+  &:hover &__menu {
+    display: block;
+    width: 15rem;
+    margin-right: 0.4rem;
+  }
+  &__menu {
+    display: none;
+    height: 100%;
+    background-color: $gray-7;
+    text-align: center;
+    &__contain {
+      overflow-y: auto;
+      height: calc(100% - 66px);
+    }
+  }
+  &__principal {
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: $gray-7;
+
+    & div {
+      margin: 0 auto;
+    }
+  }
+  &__otros {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.4rem;
+    border-top: 2px solid $white;
+    color: $white;
+  }
+  &__img {
+    display: block;
+    height: 50px;
+    width: 75px;
+    background: url(../img/flags/flags.png);
+    background-size: cover;
+  }
+  &__img--usa {
+    background-position: 0px 0;
+  }
+  &__img--germany {
+    background-position: -150px 0;
+  }
+  &__img--spain {
+    background-position: -225px 0;
+  }
+  &__img--france {
+    background-position: -75px 0;
+  }
+  &__img--italy {
+    background-position: -300px 0;
+  }
+  &__img--portugal {
+    background-position: -375px 0;
+  }
+  &__img--russia {
+    background-position: -450px 0;
+  }
+  &__img--china {
+    background-position: -525px 0;
+  }
+  &__img--hungary {
+    background-position: -600px 0;
+  }
+  &__img--romania {
+    background-position: -675px 0;
+  }
+}
+
+.c-language--mobile {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  height: 50vh;
+  z-index: 10000;
+  @include mq($from: mobile, $until: desktop) {
+    display: block;
+  }
+  &__page {
+    padding: 0.8rem;
+    border-radius: 100%;
+    margin-right: 0.3rem;
+    cursor: pointer;
+  }
+  &__otros {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.4rem;
+    border-top: 2px solid $white;
+    color: $white;
+  }
+  &__menu {
+    display: none;
+    height: 100%;
+    background-color: $gray-7;
+    text-align: center;
+    &__contain {
+      height: calc(100% - 56px);
+      overflow-y: auto;
+    }
+  }
+  &__principal {
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: $gray-7;
+
+    & label {
+      margin: 0 auto;
+    }
+  }
+  &__img {
+    display: block;
+    height: 40px;
+    width: 60px;
+    background: url(../img/flags/flags.png);
+    background-size: cover;
+
+    &--usa {
+      @include mq($from: mobile, $until: desktop) {
+        background-position: 0 0;
+      }
+    }
+    &--germany {
+      @include mq($from: mobile, $until: desktop) {
+        background-position: -120px 0;
+      }
+    }
+    &--spain {
+      @include mq($from: mobile, $until: desktop) {
+        background-position: -180px 0;
+      }
+    }
+    &--france {
+      @include mq($from: mobile, $until: desktop) {
+        background-position: -60px 0;
+      }
+    }
+    &--italy {
+      @include mq($from: mobile, $until: desktop) {
+        background-position: -239px 0;
+      }
+    }
+    &--portugal {
+      @include mq($from: mobile, $until: desktop) {
+        background-position: -299px 0;
+      }
+    }
+    &--russia {
+      @include mq($from: mobile, $until: desktop) {
+        background-position: -360px 0;
+      }
+    }
+    &--china {
+      @include mq($from: mobile, $until: desktop) {
+        background-position: -420px 0;
+      }
+    }
+    &--hungary {
+      @include mq($from: mobile, $until: desktop) {
+        background-position: -480px 0;
+      }
+    }
+    &--romania {
+      @include mq($from: mobile, $until: desktop) {
+        background-position: -540px 0;
+      }
+    }
+  }
+}

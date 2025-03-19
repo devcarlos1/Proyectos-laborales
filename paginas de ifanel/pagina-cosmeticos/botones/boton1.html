@@ -1,0 +1,59 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<style>
+    /*FUENTES*/
+.ifanel-monserrat-regular{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.ifanel-monserrat-bold{
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+}
+/*COLORES*/
+.ifanel-blanco{
+    color: white;
+}
+
+/*CODIGO POR ELEMENTO*/
+.ifanel-section--1__izquierda__boton{
+    width: max-content;
+    align-self: flex-start;
+   margin-top: 1.2rem;
+  border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url(../imagenes/svg/seccion-1/recuadro\ CTA.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3% 5%;
+    font-size: 1.3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ifanel-section--1__izquierda__boton::after{ 
+        content: "";
+        position: relative;
+        top: 0;
+        right: 3%;
+        background-image: url(../imagenes/svg/seccion-1/flecha.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 1rem;
+        display: block;
+    width: 1.5rem;
+    height: 1rem;
+}
+</style>
+<body>
+    <button class="ifanel-section--1__izquierda__boton ifanel-monserrat-regular  ifanel-blanco">
+        ¿QUIERO SABER CÓMO? 
+    </button>
+</body>

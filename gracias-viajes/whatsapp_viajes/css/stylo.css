@@ -1,0 +1,197 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url( https://ifanel.com/userfiles/templates/whatsapp_viajes/recursos/fuentes/Poppins/Poppins-Bold.ttf) format('ttf'),
+    url( https://ifanel.com/userfiles/templates/whatsapp_viajes/recursos/fuentes/Poppins/Poppins-SemiBold.ttf) format('ttf'),
+    url( https://ifanel.com/userfiles/templates/whatsapp_viajes/recursos/fuentes/Poppins/Poppins-Medium.ttf) format('ttf'),
+    url( https://ifanel.com/userfiles/templates/whatsapp_viajes/recursos/fuentes/Poppins/Poppins-Regular.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Fuentes*/
+.ifanel-poppins-bold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.ifanel-poppins-semibold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.ifanel-poppins-regular{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.ifanel-poppins-medium{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+/*General*/
+.ifanel-blanco{
+    color: #fff;
+}
+.ifanel-negro{
+    color: #261B19;
+}
+.ifanel-verde{
+    color: #00BD85;
+}
+.ifanel-naranja{
+    color: #FFD350;
+}
+.ifanel-azul-poco-oscuro {
+color: #008FBD !important;
+}
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    display: block;
+margin: 0 auto;
+}
+.ifanel-seccion-1{
+    padding: 8% 0 10% 0;
+    position: relative;
+    background-color: #018fbf;
+}
+.ifanel-seccion-1__avion{
+    position: absolute;
+    left: 0%;
+    width: 17%;
+}
+.ifanel-seccion-1__parrafo{
+    padding-top: 3%;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.ifanel-seccion-1__nube{
+    position: relative;
+    bottom: 0%;
+    width: 25%;
+}
+.ifanel-seccion-1__blanca{
+    position: absolute;
+    display: flex;
+    left: 0%;
+    bottom: 0%;
+    width: 40%;
+}
+.ifanel-seccion-2{
+    padding-top:5% ;
+    position: relative;
+}
+.ifanel-seccion-2__parrafo{
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+    line-height: 3rem;
+    text-align: center;
+}
+.ifanel-seccion-2__nube{
+    display: flex;
+    position: relative;
+    right:-70%;
+    bottom: 0;
+    width: 30%;
+}
+.ifanel-seccion-3{
+    position: relative;
+    padding: 8% 8% 0 8%;
+    background-color: #02D589;
+}
+.ifanel-seccion-3__parrafo{
+ font-size: 2.5rem;
+ text-align: center;
+ margin-bottom: 2%;   
+}
+.ifanel-seccion-3__btn{
+    border: none;
+    outline: none;
+    display: block;
+    background-image: url(https://ifanel.com/userfiles/templates/whatsapp_viajes/recursos/imagenes/boton-1.png);
+    background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+background-color: transparent;
+height: 8rem;
+    width: 60%;
+    margin: 0 auto;
+}
+.ifanel-seccion-3__contenedor{
+    position:relative;
+    top: 5rem;
+    right: 0%;
+    bottom: -5%;
+    left: 0;
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+    width: 40%;
+}
+.ifanel-seccion-3__contenedor__reloj{
+  width: 20%;
+}
+.ifanel-section--3__contador{
+    width: max-content;
+    margin: 0 auto;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.ifanel-section--2__contador--1,.ifanel-section--2__contador--2,.ifanel-section--2__contador--3{
+    padding: 1.1rem 1rem;
+    background-color: #FFD350;
+    border-radius: 20px;
+    height: 80%;
+}
+.ifanel-seccion-4{
+    padding-top: 15%;
+}
+.ifanel-seccion-4__parrafo-1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.ifanel-seccion-4__parrafo-2{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.ifanel-seccion-4__btn{
+    border: none;
+    outline: none;
+    display: block;
+    background-image: url(https://ifanel.com/userfiles/templates/whatsapp_viajes/recursos/imagenes/boton-2.png);
+    background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+background-color: transparent;
+height: 8rem;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+}
+.ifanel-seccion-4__nube{
+    width: 50%;
+    display: flex;
+}
+@media (max-width:1200px){
+    html{
+      font-size: calc(1.3vw - .1vh);
+    }
+  }
+  @media (max-width:720px){
+    html{
+        font-size: calc(1.4vw - .1vh);
+      }
+    }
+    @media (max-width:520px){
+        html{
+            font-size: calc(1.5vw - .1vh);
+          } 
+        }
